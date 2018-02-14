@@ -1,0 +1,8 @@
+{
+  "name": "HIDOC",
+  "app_id": "5eee3cc8",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
