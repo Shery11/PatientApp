@@ -34,19 +34,30 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
+  primary:    #2aa0bd,
+  secondary:  #ca3b6d,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  bordercolor:#ddd,
+  dark:       #222,
+  Enregistrer :  #d9d9da,
+  Bilanheader: #D8D8D8,
 );
 
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-
-
+$segment-button-ios-height:4.3rem;
+$segment-button-ios-line-height:4.1rem;
+$segment-button-ios-border-radius:0;
+$segment-button-ios-font-size:1.4rem;
+$segment-button-ios-border-width:0;
+$button-ios-border-radius:0;
+$alert-ios-button-main-font-weight:normal;
+$alert-ios-button-font-size:15px;
+$text-input-placeholder-color:#666;
+$toolbar-ios-height:55px;
 
 
 // App Material Design Variables

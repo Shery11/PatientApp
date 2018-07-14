@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+    Add clinical history
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="outer-content">
+    <ion-list>
+      <ion-item no-lines>
+        <ion-label>Date</ion-label>
+        <ion-datetime displayFormat="DD MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
+      </ion-item>
+    </ion-list>
+
+    <ion-list-header>
+    Clinical history
+    </ion-list-header>
+
+    <ion-list>
+    <ion-item no-lines>
+      <ion-textarea placeholder="clinical history details" [(ngModel)]="clinicalHistory"></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+<ion-list>
+    <ion-list-header>
+      Drug Intolerance
+    </ion-list-header>
+      <ion-item no-lines>
+        <ion-label>Drug name:</ion-label>
+        <ion-input [(ngModel)]="drugName" placeholder="Drug name"></ion-input>
+
+      </ion-item>
+    </ion-list>
+
+
+
+    <div padding>
+      <ion-row>
+        <ion-col>
+          <button ion-button full (tap)="saveAntecedent()" color="Enregistrer" [disabled]="!enableform">Save </button>
+        </ion-col>
+
+        <ion-col>
+          <ion-buttons end>
+        <button ion-button full (tap)="close()" color="danger">Cancel</button>
+        </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </div></ion-content>

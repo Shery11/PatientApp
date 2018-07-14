@@ -1,0 +1,64 @@
+<ion-content padding>
+  <div class="login_content">
+        <p class="logo">- logo -</p>
+        <div class="login_tabs">
+            <ion-segment [(ngModel)]="login_reg" >
+              <ion-segment-button value="login">
+              Log in
+              </ion-segment-button>
+              <ion-segment-button value="register">
+              Registration
+              </ion-segment-button>
+              </ion-segment>
+        </div>
+        <div [ngSwitch]="login_reg" class="login_form" padding >
+          <div *ngSwitchCase="'login'">
+          <form [formGroup]="loginForm" (submit)="login()" novalidate>
+            <ion-list>
+                <ion-item no-lines>
+                  <ion-icon name="ios-person-outline" color="secondary" item-start></ion-icon>
+                  <ion-input formControlName="email" type="text" placeholder="email"></ion-input>
+                </ion-item>
+
+                <ion-item no-lines>
+                  <ion-icon name="ios-unlock-outline"color="secondary" item-start></ion-icon>
+                  <ion-input formControlName="password" type="password" placeholder="Password"></ion-input>
+                </ion-item>
+            </ion-list>
+          <button type="submit" [disabled]="!loginForm.valid" ion-button block color="primary">Login</button>
+          </form>
+          <button color="dark" (click)="forgotPassword()"  class="forgetPsw" ion-button clear>Forgot your password?</button>
+          </div>
+
+          <div *ngSwitchCase="'register'">
+
+              <form [formGroup]="registerForm" (submit)="register()" novalidate>
+        
+            
+              <ion-list>
+
+                <ion-item no-lines>
+                 <ion-icon name="ios-person-outline" color="secondary" item-start></ion-icon>
+                 <ion-input formControlName="name" type="text" placeholder="Username"></ion-input>
+               </ion-item>
+
+
+                  <ion-item no-lines>
+                    <ion-icon name="ios-mail-outline" color="secondary" item-start></ion-icon>
+                    <ion-input formControlName="email" type="email" placeholder="Email"></ion-input>
+                  </ion-item>
+
+                  <ion-item no-lines>
+                    <ion-icon name="ios-unlock-outline"color="secondary" item-start></ion-icon>
+                    <ion-input formControlName="password" type="password" placeholder="Password"></ion-input>
+                  </ion-item>
+
+
+              </ion-list>
+              
+            <button ion-button block color="primary" type="submit" [disabled]="!registerForm.valid">Register</button>
+          </form>
+          </div>
+        </div>
+  </div>
+</ion-content>

@@ -1,0 +1,119 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Add Vaccination </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding id="currentVaccin">
+  <ion-list-header>
+    My vaccin
+  </ion-list-header>
+  <ion-list>
+  <ion-item no-lines>
+        <ion-input placeholder="Nom du vaccin" clearInput [(ngModel)]="name"></ion-input>
+  </ion-item>
+</ion-list>
+
+<ion-list-header>
+  Choose by name
+</ion-list-header>
+
+<ion-list>
+  <ion-item>
+  <ion-label>Vaccin available 2018</ion-label>
+  <ion-select [(ngModel)]="availableVaccines" multiple="true">
+    <ion-option>BCG SSI®</ion-option>
+    <ion-option>Revaxis® (valences dTP)</ion-option>
+    <ion-option>Infanrix Tetra®</ion-option>
+    <ion-option>Tétravac-acellulaire®</ion-option>
+    <ion-option>Boostrixtetra® </ion-option>
+    <ion-option>Repevax®</ion-option>
+    <ion-option>Infanrix Quinta®</ion-option>
+    <ion-option>Pentavac®</ion-option>
+    <ion-option>Infanrix Hexa® </ion-option>
+    <ion-option>Hexyon®</ion-option>
+    <ion-option>Stamaril®</ion-option>
+    <ion-option>Immugrip®</ion-option>
+    <ion-option>Influvac® </ion-option>
+    <ion-option>Vaxigrip®</ion-option>
+    <ion-option>Act-Hib®</ion-option>
+    <ion-option>Havrix® 720</ion-option>
+    <ion-option>Avaxim® 80 U</ion-option>
+    <ion-option>Avaxim® 160 U</ion-option>
+    <ion-option>Havrix® 1440</ion-option>
+    <ion-option>Vaqta 50 U®</ion-option>
+    <ion-option>Engerix® B10 μg</ion-option>
+    <ion-option>HBVaxpro 5 μg®</ion-option>
+    <ion-option> Vaccin Genhevac B Pasteur 20 μg®</ion-option>
+    <ion-option>Engerix® B20 μg</ion-option>
+    <ion-option>HBVaxpro® 10 μg </ion-option>
+    <ion-option>Vaccin Genhevac B Pasteur 20 μg®</ion-option>
+    <ion-option>HBVAXPRO 40®</ion-option>
+    <ion-option>Twinrix® Enfant</ion-option>
+    <ion-option>Twinrix® Adulte</ion-option>
+    <ion-option>Spirolept®</ion-option>
+    <ion-option>Vaccin Méningococcique A+C®</ion-option>
+    <ion-option>Nimenrix®</ion-option>
+    <ion-option>Menveo®</ion-option>
+    <ion-option>Menjugate®</ion-option>
+    <ion-option>Neisvac®</ion-option>
+    <ion-option>Bexsero®</ion-option>
+    <ion-option>Cervarix®</ion-option>
+    <ion-option>Gardasil®</ion-option>
+    <ion-option>Imovax Polio®</ion-option>
+    <ion-option>Vaccin rabique Pasteur®</ion-option>
+    <ion-option>Rabipur®</ion-option>
+    <ion-option>M-M-RVaxPro® </ion-option>
+    <ion-option>Priorix®</ion-option>
+    <ion-option>Vaccin tétanique Pasteur®</ion-option>
+    <ion-option>Typhim Vi®</ion-option>
+    <ion-option>Typherix®</ion-option>
+    <ion-option>Tyavax®</ion-option>
+    <ion-option>Varilrix®</ion-option>
+    <ion-option>Varivax®</ion-option>
+    <ion-option>Zostavax®</ion-option>
+  </ion-select>
+</ion-item>
+</ion-list>
+
+<ion-list>
+    <ion-item no-lines>
+    <ion-label color="primary">Date injection</ion-label>
+  <ion-datetime displayFormat="MMMM/YYYY" [(ngModel)]="sDate"></ion-datetime>
+</ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item no-lines>
+  <ion-label color="primary">Reminder</ion-label>
+  <ion-datetime displayFormat="MMMM/YYYY" [(ngModel)]="rDate"></ion-datetime>
+  </ion-item>
+</ion-list>
+
+  <ion-list>
+      <ion-item>
+        <ion-textarea placeholder="Add detais" [(ngModel)]="details"></ion-textarea>
+      </ion-item>
+
+      <button ion-button block outline icon-start (click)="takePicture('gallery')">
+          <ion-icon name="camera"></ion-icon>
+        Add photo</button>
+      </ion-list>
+
+
+  <div padding>
+    <ion-row>
+      <ion-col>
+        <button ion-button full (tap)="save()" color="Enregistrer">Save</button>
+      </ion-col>
+
+      <ion-col>
+        <ion-buttons end>
+      <button ion-button full (tap)="close()" color="danger">Cancel</button>
+      </ion-buttons>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>

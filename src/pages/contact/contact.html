@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Contact</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  This page displays all the information about the patient's contact
+  <ion-fab bottom right #fab>
+    <button ion-fab color="add" (tap)="doContact()"><ion-icon name="person-add"></ion-icon></button>
+  </ion-fab>
+</ion-content>
