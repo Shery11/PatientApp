@@ -58,7 +58,7 @@ export class AntecedentsPage {
 
   edit(id){
 
-    id = '-LHO4WxZY7u-ChFT_2Xt';
+    // id = '-LHO4WxZY7u-ChFT_2Xt';
 
     this.navCtrl.push('AddantecedentPage', {id : id});
 
@@ -66,7 +66,7 @@ export class AntecedentsPage {
 
   delete(id){
 
-    id = '-LHO4WxZY7u-ChFT_2Xt';
+    // id = '-LHO4WxZY7u-ChFT_2Xt';
 
 
     let alertt = this.alertCtrl.create({

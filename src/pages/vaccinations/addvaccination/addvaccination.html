@@ -105,7 +105,7 @@
   <div padding>
     <ion-row>
       <ion-col>
-        <button ion-button full (tap)="save()" color="Enregistrer">Save</button>
+        <button ion-button full (tap)="save()" color="Enregistrer" [disabled]="!enableform">Save</button>
       </ion-col>
 
       <ion-col>

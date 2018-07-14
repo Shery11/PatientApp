@@ -59,12 +59,19 @@ export class AddvaccinationPage {
       this.id =this.navParams.get('id')
      
       if(this.id){
-        firebase.database().ref('userProfile/'+this.userKey+'/clinicalHistory/'+this.id).once('value',snapShot=>{
+        firebase.database().ref('userProfile/'+this.userKey+'/vaccines/'+this.id).once('value',snapShot=>{
           console.log(snapShot.val());
 
           // this.myDate = snapShot.val().date;
           // this.clinicalHistory = snapShot.val().history;
           // this.drugName = snapShot.val().drug;
+
+          this.name =snapShot.val().name;
+          this.availableVaccines = snapShot.val().availableVaccines;
+          this.sDate=snapShot.val().startDate;
+          this.rDate=snapShot.val().remainderDate;
+          this.details=snapShot.val().details;
+          this. photoURL=snapShot.val().photoURL;
 
         })
       }
@@ -139,7 +146,7 @@ export class AddvaccinationPage {
           details: this.details,
           startDate: this.sDate,
           remainderDate: this.rDate,
-          availabeVaccines: this.availableVaccines,
+          availableVaccines: this.availableVaccines,
           photoURL: this.photoURL
            
         }).then(()=>{
@@ -177,7 +184,7 @@ export class AddvaccinationPage {
           details: this.details,
           startDate: this.sDate,
           remainderDate: this.rDate,
-          availabeVaccines: this.availableVaccines,
+          availableVaccines: this.availableVaccines,
           photoURL: this.photoURL
          
       }).then(()=>{

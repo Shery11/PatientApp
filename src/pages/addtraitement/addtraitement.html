@@ -13,7 +13,7 @@
     Add drug
   </ion-list-header>
       <ion-item>
-  <ion-input placeholder="Drug name" clearInput></ion-input>
+  <ion-input placeholder="Drug name" clearInput [(ngModel)]="name" ></ion-input>
 </ion-item>
 
 
@@ -33,7 +33,7 @@
     <ion-list>
       <ion-item>
         <ion-label>Moment</ion-label>
-        <ion-select [(ngModel)]="horaire" multiple="true">
+        <ion-select [(ngModel)]="time" multiple="true">
           <ion-option value="matin">Morning</ion-option>
           <ion-option value="midi">Lunch time</ion-option>
           <ion-option value="soir"> Night </ion-option>
@@ -43,7 +43,7 @@
 
   <ion-list>
   <ion-item>
-    <ion-textarea placeholder="Add text details" [(ngModel)]="texteLibre"></ion-textarea>
+    <ion-textarea placeholder="Add text details" [(ngModel)]="detail"></ion-textarea>
   </ion-item>
 </ion-list>
 
@@ -51,27 +51,27 @@
   <ion-list>
   <ion-item>
     <ion-label>Stop drug</ion-label>
-    <ion-toggle [(ngModel)]="stopArt"></ion-toggle>
+    <ion-toggle [(ngModel)]="stop"></ion-toggle>
   </ion-item>
 </ion-list>
 
 <ion-list>
 <ion-item>
-  <ion-textarea placeholder="If stop treatment please add reasons" [(ngModel)]="texteLibre"></ion-textarea>
+  <ion-textarea placeholder="If stop treatment please add reasons" [(ngModel)]="stoppingDetail"></ion-textarea>
 </ion-item>
 </ion-list>
 
   <ion-list>
     <ion-item no-lines>
     <ion-label>Stop date </ion-label>
-    <ion-datetime displayFormat="MMM DD YYYY"></ion-datetime>
+    <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="stopDate"></ion-datetime>
     </ion-item>
   </ion-list>
 
 <div padding>
   <ion-row>
     <ion-col>
-      <button ion-button full (tap)="storeNotes()" color="Enregistrer">Save </button>
+      <button ion-button full (tap)="save()" [disabled]="!enableform" color="Enregistrer">Save </button>
     </ion-col>
 
     <ion-col>

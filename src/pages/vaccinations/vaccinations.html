@@ -8,7 +8,35 @@
 </ion-header>
 
 <ion-content padding>
-  This page displays all the information about the patient's Vaccine sort by date
+    <ion-list>
+        <ion-item-sliding *ngFor="let vaccine of VaccinesArr">
+          <ion-item>
+             
+              <h2 (click)="edit(vaccine.key)">{{vaccine.name}}</h2>
+              <p item-end>{{vaccine.startDate   | date: 'dd/MM/yyyy'}}</p>
+    
+              <ion-icon name="arrow-dropright" item-end ></ion-icon>
+    
+            </ion-item> 
+            
+             <ion-item-options icon-left icon-start>
+              <button ion-button color="primary" (click)="edit(vaccine.key)">
+                <ion-icon name="open"></ion-icon>
+                Edit
+              </button>
+              <button ion-button color="danger" (click)="delete(vaccine.key)">
+                  <ion-icon name="trash"></ion-icon>
+                  remove
+                </button>
+            </ion-item-options> 
+           
+          </ion-item-sliding>
+        </ion-list>
+    
+    
+        <!-- <button (click)="delete('key')">Delete</button>
+        <button (click)="edit('key')">Edit</button> -->
+ 
   <ion-fab bottom right #fab>
     <button ion-fab color="add" (tap)="doVaccinations()"><ion-icon name="add"></ion-icon></button>
   </ion-fab>

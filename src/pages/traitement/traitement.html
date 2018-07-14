@@ -10,7 +10,30 @@
 
 <ion-content padding>
 
-This page displays all the information about the patient's treatment sort by date
+		<ion-list>
+        <ion-item-sliding *ngFor="let treatment of TreatmentsArr">
+          <ion-item>
+             
+              <h2 (click)="edit(treatment.key)">{{treatment.name}}</h2>
+              <p item-end>{{treatment.date | date: 'dd/MM/yyyy'}}</p>
+    
+              <ion-icon name="arrow-dropright" item-end ></ion-icon>
+    
+            </ion-item> 
+            
+             <ion-item-options icon-left icon-start>
+              <button ion-button color="primary" (click)="edit(treatment.key)">
+                <ion-icon name="open"></ion-icon>
+                Edit
+              </button>
+              <button ion-button color="danger" (click)="delete(treatment.key)">
+                  <ion-icon name="trash"></ion-icon>
+                  remove
+                </button>
+            </ion-item-options> 
+           
+          </ion-item-sliding>
+        </ion-list>
 
   <ion-fab bottom right #fab>
     <button ion-fab color="add" (tap)="doTraitement()"><ion-icon name="add"></ion-icon></button>

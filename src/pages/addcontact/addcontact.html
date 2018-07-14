@@ -8,24 +8,24 @@
 <ion-content>
     <ion-list>
       <ion-item no-lines>
-        <ion-input type="text" [(ngModel)]="nom" placeholder="Name"></ion-input>
+        <ion-input type="text" [(ngModel)]="name" placeholder="Name"></ion-input>
       </ion-item>
     </ion-list>
 
   <ion-list>
       <ion-item no-lines>
-        <ion-input type="text" [(ngModel)]="prenom" placeholder="Surname"></ion-input>
+        <ion-input type="text" [(ngModel)]="surname" placeholder="Surname"></ion-input>
       </ion-item>
     </ion-list>
     <ion-list>
       <ion-item no-lines>
-        <ion-input type="text" [(ngModel)]="specialite" placeholder="Spéciality"></ion-input>
+        <ion-input type="text" [(ngModel)]="speciality" placeholder="Spéciality"></ion-input>
       </ion-item>
 </ion-list>
 <ion-list>
   <ion-item no-lines>
-    <ion-input type="tel"  [(ngModel)]="telfixe" placeholder="Phone"></ion-input>
-    <ion-input type="tel" [(ngModel)]="telmobile" placeholder="Mobile"></ion-input>
+    <ion-input type="tel"  [(ngModel)]="phone" placeholder="Phone"></ion-input>
+    <ion-input type="tel" [(ngModel)]="mobile" placeholder="Mobile"></ion-input>
   </ion-item>
 </ion-list>
 
@@ -37,14 +37,14 @@
 
 <ion-list>
   <ion-item no-lines>
-    <ion-textarea type="textearea" [(ngModel)]="adresse" placeholder="Address"></ion-textarea>
+    <ion-textarea type="textearea" [(ngModel)]="address" placeholder="Address"></ion-textarea>
   </ion-item>
 </ion-list>
 
 <div padding>
   <ion-row>
     <ion-col>
-      <button ion-button full (tap)="addContact()" color="Enregistrer">Save </button>
+      <button ion-button full (tap)="save()" color="Enregistrer">Save </button>
     </ion-col>
 
     <ion-col>
