@@ -93,4 +93,5 @@
     <plugin name="cordova-plugin-secure-storage" spec="^2.6.8" />
     <plugin name="cordova-plugin-android-permissions" spec="^1.0.0" />
     <plugin name="cordova-plugin-camera" spec="^4.0.2" />
+    <engine name="android" spec="7.0.0" />
 </widget>

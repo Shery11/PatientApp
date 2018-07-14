@@ -48,7 +48,7 @@ export class AddcontactPage {
         this.id =this.navParams.get('id')
        
         if(this.id){
-          firebase.database().ref('userProfile/'+this.userKey+'/treatments/'+this.id).once('value',snapShot=>{
+          firebase.database().ref('userProfile/'+this.userKey+'/contacts/'+this.id).once('value',snapShot=>{
             console.log(snapShot.val());
   
             // this.myDate= snapShot.val().date;
@@ -137,7 +137,7 @@ export class AddcontactPage {
 
      
 
-      firebase.database().ref('userProfile/'+this.userKey).child('treatments').push({
+      firebase.database().ref('userProfile/'+this.userKey).child('contacts').push({
         name: this.name,
         surname: this.surname,
          speciality: this.speciality,

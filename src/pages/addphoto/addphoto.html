@@ -21,7 +21,7 @@
         <ion-list>
           <ion-item no-lines>
             <ion-label>Choose category</ion-label>
-            <ion-select [(ngModel)]="toppings" multiple="true" cancelText="Annuler" okText="Valider!">
+            <ion-select [(ngModel)]="category" multiple="true" cancelText="Annuler" okText="Valider!">
               <ion-option value="traitement">Treatment</ion-option>
               <ion-option value="bilan">Other</ion-option>
               <ion-option value="vaccin">Vaccine</ion-option>
@@ -34,21 +34,24 @@
 
             <ion-list>
                 <ion-item no-lines>
-                  <ion-textarea placeholder="Add note" [(ngModel)]="texteLibre"></ion-textarea>
+                  <ion-textarea placeholder="Add note" [(ngModel)]="note"></ion-textarea>
                 </ion-item>
               </ion-list>
 
               <ion-list>
-                <button ion-button block outline icon-start>
+                <button ion-button block outline icon-start (click)="takePicture('camera')">
                     <ion-icon name="camera"></ion-icon>
-                  take picture</button>
+                  Take picture</button>
+                  <button ion-button block outline icon-start (click)="takePicture('gallery')">
+                      <ion-icon name="camera"></ion-icon>
+                    Choose From Gallery</button>
                 </ion-list>
 
 
                 <div padding>
                   <ion-row>
                     <ion-col>
-                      <button ion-button full (tap)="storeNotes()" color="Enregistrer">Save </button>
+                      <button ion-button full (tap)="save()"  [disabled]="!enableform" color="Enregistrer">Save </button>
                     </ion-col>
 
                     <ion-col>
