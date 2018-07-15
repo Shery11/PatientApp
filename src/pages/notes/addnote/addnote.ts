@@ -30,7 +30,8 @@ export class AddnotePage {
 
   myDate;
   note;
-  photoURL;
+  photoURL = 'http://tradepending.com/wp-content/uploads/2015/03/placeholder.png';
+  
   base64Image;
 
   constructor(public storage: Storage, public navCtrl: NavController, public navParams: NavParams,public toast: ToastController
@@ -109,26 +110,158 @@ export class AddnotePage {
 
   loading.present();
 
-
   if(this.base64Image){
-    this.photoURL = this.base64Image;
-  }else{
-    this.photoURL = 'https://www.ppihotline.co.uk/wp-content/uploads/2017/02/placeholder-image.jpg';
-  }
 
-
-
-
-
-  if(this.myDate && this.note){
+    let storageRef = firebase.storage().ref();
+    const filename = Math.floor(Date.now() / 1000);
+    const imageRef = storageRef.child(`images/${filename}.jpg`);
+    imageRef.putString(this.base64Image, 'data_url').then(snapShot=>{
+      if(this.myDate && this.note){
     
-    if(this.id){
 
 
-      firebase.database().ref('userProfile/'+this.userKey+'/notes/'+this.id).update({
-        category: this.myDate,
-        note: this.note,
-        photoURL: this.photoURL
+        if(this.id){
+    
+        
+    
+    
+          firebase.database().ref('userProfile/'+this.userKey+'/notes/'+this.id).update({
+            myDate: this.myDate,
+            note: this.note,
+            photoURL: snapShot.downloadURL
+             
+          }).then(()=>{
+            this.toast.create({
+              message: 'Data saved',
+              duration: 3000,
+              position: 'top'
+            }).present();
+      
+            this.enableform =true;
+            loading.dismiss();
+            this.navCtrl.pop();
+    
+          },err=>{
+            loading.dismiss();
+            this.toast.create({
+              message: 'Unable to save. Try again !!!',
+              duration: 3000,
+              position: 'top'
+            }).present();
+      
+            this.enableform =true;
+           
+    
+          })
+    
+        }else{
+    
+    
+         
+       
+    
+        firebase.database().ref('userProfile/'+this.userKey).child('notes').push({
+          myDate: this.myDate,
+            note: this.note,
+            photoURL: snapShot.downloadURL
+           
+        }).then(()=>{
+          this.toast.create({
+            message: 'Data saved',
+            duration: 3000,
+            position: 'top'
+          }).present();
+    
+          this.enableform =true;
+          loading.dismiss();
+          this.navCtrl.pop();
+    
+        },err=>{
+          loading.dismiss();
+          this.toast.create({
+            message: 'Unable to save. Try again !!!',
+            duration: 3000,
+            position: 'top'
+          }).present();
+    
+          this.enableform =true;
+         
+    
+        })
+    
+      }
+    
+      }else{
+        loading.dismiss();
+    
+        this.toast.create({
+          message: 'Please fill all the inputs',
+          duration: 3000,
+          position: 'top'
+        }).present();
+    
+        this.enableform =true;
+       
+    
+      }
+    }, (err)=>{
+      loading.dismiss()
+      alert(err);
+    });
+
+  }else{
+
+    
+
+
+    if(this.myDate && this.note){
+    
+
+
+      if(this.id){
+  
+      
+  
+  
+        firebase.database().ref('userProfile/'+this.userKey+'/notes/'+this.id).update({
+          myDate: this.myDate,
+          note: this.note,
+          photoURL: this.photoURL
+           
+        }).then(()=>{
+          this.toast.create({
+            message: 'Data saved',
+            duration: 3000,
+            position: 'top'
+          }).present();
+    
+          this.enableform =true;
+          loading.dismiss();
+          this.navCtrl.pop();
+  
+        },err=>{
+          loading.dismiss();
+          this.toast.create({
+            message: 'Unable to save. Try again !!!',
+            duration: 3000,
+            position: 'top'
+          }).present();
+    
+          this.enableform =true;
+         
+  
+        })
+  
+      }else{
+  
+  
+       
+     
+  
+      firebase.database().ref('userProfile/'+this.userKey).child('notes').push({
+        myDate: this.myDate,
+          note: this.note,
+          photoURL: this.photoURL
          
       }).then(()=>{
         this.toast.create({
@@ -140,7 +273,7 @@ export class AddnotePage {
         this.enableform =true;
         loading.dismiss();
         this.navCtrl.pop();
-
+  
       },err=>{
         loading.dismiss();
         this.toast.create({
@@ -151,63 +284,33 @@ export class AddnotePage {
   
         this.enableform =true;
        
-
+  
       })
-
+  
+    }
+  
     }else{
-
-
-     
-   
-
-    firebase.database().ref('userProfile/'+this.userKey).child('notes').push({
-        category: this.myDate,
-        note: this.note,
-        photoURL: this.photoURL
-       
-    }).then(()=>{
+      loading.dismiss();
+  
       this.toast.create({
-        message: 'Data saved',
+        message: 'Please fill all the inputs',
         duration: 3000,
         position: 'top'
       }).present();
-
-      this.enableform =true;
-      loading.dismiss();
-      this.navCtrl.pop();
-
-    },err=>{
-      loading.dismiss();
-      this.toast.create({
-        message: 'Unable to save. Try again !!!',
-        duration: 3000,
-        position: 'top'
-      }).present();
-
+  
       this.enableform =true;
      
-
-    })
-
-  }
-
-  }else{
-    loading.dismiss();
-
-    this.toast.create({
-      message: 'Please fill all the inputs',
-      duration: 3000,
-      position: 'top'
-    }).present();
-
-    this.enableform =true;
-   
+  
+    }
 
   }
 
- 
+  
+
 
 }
+
+
 
 close() {
 this.navCtrl.setRoot('NotesPage');

@@ -24,6 +24,14 @@
             Choose From Gallery</button>
     </ion-list>
 
+    <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+           <img [src]="base64Image" *ngIf="base64Image" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
 <div padding>
   <ion-row>
     <ion-col>
