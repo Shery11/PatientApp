@@ -1,32 +1,30 @@
 page-photo {
 
     
-        .image-container {
-            min-height: 200px;
-            background-size: cover;
+    .card-background-page {
+
+        ion-card {
+          position: relative;
+          text-align: center;
         }
-     
-        @media (min-width: 0px) {
-            .images {
-                column-count: 2;
-            }
+      
+        .card-title {
+          position: absolute;
+          top: 36%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: #fff;
         }
-     
-        @media (min-width: 420px) {
-            .images {
-                column-count: 3;
-            }
+      
+        .card-subtitle {
+          font-size: 1.0em;
+          position: absolute;
+          top: 52%;
+          width: 100%;
+          color: #fff;
         }
-     
-        @media (min-width: 720px) {
-            .images {
-                column-count: 4;
-            }
-        }
-     
-        .one-image {
-            margin: 2px;
-        }
-    
+      
+      }
 
 }

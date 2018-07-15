@@ -8,9 +8,14 @@
 </ion-header>
 
 
-<ion-content padding>
-  This page displays all the information about the patient's notes sort by date
+<ion-content class="card-background-page" >
+    
 
+  <ion-card *ngFor="let image of imagesArr">
+    <img [src]="image.photoURL"/>
+    <div class="card-title" (click)="edit(image.key)">Click for details</div>
+    <div class="card-subtitle">{{image.note}}</div>
+  </ion-card>
   <ion-fab bottom right #fab>
     <button ion-fab color="add" (tap)="doNotes()"><ion-icon name="add"></ion-icon></button>
   </ion-fab>

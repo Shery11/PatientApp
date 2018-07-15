@@ -14,12 +14,12 @@ export class AuthProvider {
 
   constructor(public storage: Storage) {
     firebase.initializeApp({
-      apiKey: "AIzaSyCajZFsB4UT0WGKB-H9t-imZWt-br1G4nY",
-      authDomain: "hidoc-fd1da.firebaseapp.com",
-      databaseURL: "https://hidoc-fd1da.firebaseio.com",
-      projectId: "hidoc-fd1da",
-      storageBucket: "",
-      messagingSenderId: "547674484860"
+			apiKey: "AIzaSyCajZFsB4UT0WGKB-H9t-imZWt-br1G4nY",
+			authDomain: "hidoc-fd1da.firebaseapp.com",
+			databaseURL: "https://hidoc-fd1da.firebaseio.com",
+			projectId: "hidoc-fd1da",
+			storageBucket: "hidoc-fd1da.appspot.com",
+			messagingSenderId: "547674484860"
     })
   }
 

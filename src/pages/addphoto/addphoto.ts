@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 
-import * as firebase from 'firebase';
+import firebase from 'firebase';
 
 import { AndroidPermissions } from '@ionic-native/android-permissions';
 import { Camera } from '@ionic-native/camera';
@@ -55,12 +55,16 @@ export class AddphotoPage {
       this.id =this.navParams.get('id')
      
       if(this.id){
+        
+        
+
         firebase.database().ref('userProfile/'+this.userKey+'/photos/'+this.id).once('value',snapShot=>{
           console.log(snapShot.val());
 
           this.category =snapShot.val().category;
           this.note = snapShot.val().note;
           this.photoURL = snapShot.val().photoURL;
+          this.base64Image = snapShot.val().photoURL;
           
 
         })
@@ -112,20 +116,16 @@ export class AddphotoPage {
 
   if(this.base64Image){
 
-    let storageRef = firebase.storage().ref();
   const filename = Math.floor(Date.now() / 1000);
-  const imageRef = storageRef.child(`images/${filename}.jpg`);
- imageRef.putString(this.base64Image, 'data_url').then((snapShot)=>{
+  firebase.storage().ref().child(`images/${filename}.jpg`).
+  putString(this.base64Image, 'data_url').then((snapShot)=>{
       if(this.category && this.note){
     
 
 
         if(this.id){
     
-        
-    
-    
-          firebase.database().ref('userProfile/'+this.userKey+'/photos/'+this.id).update({
+        firebase.database().ref('userProfile/'+this.userKey+'/photos/'+this.id).update({
             category: this.category,
             note: this.note,
             photoURL: snapShot.downloadURL

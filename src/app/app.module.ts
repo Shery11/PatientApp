@@ -16,7 +16,6 @@ import { AuthProvider } from '../providers/auth/auth';
 import { LoginPage } from '../pages/login/login';
 import { DataProvider } from '../providers/data/data';
 
-
 var config = {
       backButtonText: '',
       backButtonIcon: 'md-arrow-back',
@@ -29,8 +28,8 @@ var config = {
   declarations: [
     MyApp,
     LoginPage,
-     MenuPage
-  ],
+    MenuPage,
+   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp,config),
@@ -40,7 +39,7 @@ var config = {
   entryComponents: [
     MyApp,
     LoginPage,
-    MenuPage
+    MenuPage,
   ],
   providers: [
     StatusBar,

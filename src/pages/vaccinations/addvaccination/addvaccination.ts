@@ -35,7 +35,7 @@ export class AddvaccinationPage {
   sDate;
   rDate;
   details;
-  photoURL;
+  photoURL = 'http://tradepending.com/wp-content/uploads/2015/03/placeholder.png';
   base64Image;
 
   constructor(public storage: Storage, public navCtrl: NavController, public navParams: NavParams,public toast: ToastController
@@ -72,6 +72,7 @@ export class AddvaccinationPage {
           this.rDate=snapShot.val().remainderDate;
           this.details=snapShot.val().details;
           this. photoURL=snapShot.val().photoURL;
+          this.base64Image=snapShot.val().photoURL;
 
         })
       }
@@ -126,106 +127,209 @@ export class AddvaccinationPage {
     loading.present();
 
 
+  
     if(this.base64Image){
-      this.photoURL = this.base64Image;
-    }else{
-      this.photoURL = 'https://www.ppihotline.co.uk/wp-content/uploads/2017/02/placeholder-image.jpg';
-    }
 
-
-  
-
-  
-    if(this.name && this.details && this.sDate &&this.rDate && this.availableVaccines){
-      
-      if(this.id){
-
-
-        firebase.database().ref('userProfile/'+this.userKey+'/vaccines/'+this.id).update({
-          name: this.name,
-          details: this.details,
-          startDate: this.sDate,
-          remainderDate: this.rDate,
-          availableVaccines: this.availableVaccines,
-          photoURL: this.photoURL
+      const filename = Math.floor(Date.now() / 1000);
+      firebase.storage().ref().child(`images/${filename}.jpg`).
+      putString(this.base64Image, 'data_url').then((snapShot)=>{
+          if(this.name && this.details && this.sDate &&this.rDate && this.availableVaccines){
+        
+    
+    
+            if(this.id){
+        
+            firebase.database().ref('userProfile/'+this.userKey+'/vaccines/'+this.id).update({
+                name: this.name,
+                details: this.details,
+                startDate: this.sDate,
+                remainderDate: this.rDate,
+                availableVaccines: this.availableVaccines,
+                photoURL: snapShot.downloadURL
+                 
+              }).then(()=>{
+                this.toast.create({
+                  message: 'Data saved',
+                  duration: 3000,
+                  position: 'top'
+                }).present();
+          
+                this.enableform =true;
+                loading.dismiss();
+                this.navCtrl.pop();
+        
+              },err=>{
+                loading.dismiss();
+                this.toast.create({
+                  message: 'Unable to save. Try again !!!',
+                  duration: 3000,
+                  position: 'top'
+                }).present();
+          
+                this.enableform =true;
+               
+        
+              })
+        
+            }else{
+        
+        
+             
            
-        }).then(()=>{
-          this.toast.create({
-            message: 'Data saved',
-            duration: 3000,
-            position: 'top'
-          }).present();
+        
+            firebase.database().ref('userProfile/'+this.userKey).child('vaccines').push({
+              name: this.name,
+              details: this.details,
+              startDate: this.sDate,
+              remainderDate: this.rDate,
+              availableVaccines: this.availableVaccines,
+              photoURL: snapShot.downloadURL
+               
+            }).then(()=>{
+              this.toast.create({
+                message: 'Data saved',
+                duration: 3000,
+                position: 'top'
+              }).present();
+        
+              this.enableform =true;
+              loading.dismiss();
+              this.navCtrl.pop();
+        
+            },err=>{
+              loading.dismiss();
+              this.toast.create({
+                message: 'Unable to save. Try again !!!',
+                duration: 3000,
+                position: 'top'
+              }).present();
+        
+              this.enableform =true;
+             
+        
+            })
+        
+          }
+        
+          }else{
+            loading.dismiss();
+        
+            this.toast.create({
+              message: 'Please fill all the inputs',
+              duration: 3000,
+              position: 'top'
+            }).present();
+        
+            this.enableform =true;
+           
+        
+          }
+        }, (err)=>{
+          loading.dismiss()
+          alert(err);
+        });
     
-          this.enableform =true;
-          loading.dismiss();
-          this.navCtrl.pop();
-  
-        },err=>{
-          loading.dismiss();
-          this.toast.create({
-            message: 'Unable to save. Try again !!!',
-            duration: 3000,
-            position: 'top'
-          }).present();
-    
-          this.enableform =true;
-         
-  
-        })
-
       }else{
-
-
-       
-     
-
-      firebase.database().ref('userProfile/'+this.userKey).child('vaccines').push({
-        name: this.name,
-          details: this.details,
-          startDate: this.sDate,
-          remainderDate: this.rDate,
-          availableVaccines: this.availableVaccines,
-          photoURL: this.photoURL
+    
+        
+    
+    
+        if(this.name && this.details && this.sDate &&this.rDate && this.availableVaccines){
+        
+    
+    
+          if(this.id){
+      
+          
+      
+      
+            firebase.database().ref('userProfile/'+this.userKey+'/vaccines/'+this.id).update({
+              name: this.name,
+              details: this.details,
+              startDate: this.sDate,
+              remainderDate: this.rDate,
+              availableVaccines: this.availableVaccines,
+              photoURL: this.photoURL
+               
+            }).then(()=>{
+              this.toast.create({
+                message: 'Data saved',
+                duration: 3000,
+                position: 'top'
+              }).present();
+        
+              this.enableform =true;
+              loading.dismiss();
+              this.navCtrl.pop();
+      
+            },err=>{
+              loading.dismiss();
+              this.toast.create({
+                message: 'Unable to save. Try again !!!',
+                duration: 3000,
+                position: 'top'
+              }).present();
+        
+              this.enableform =true;
+             
+      
+            })
+      
+          }else{
+      
+      
+           
          
-      }).then(()=>{
-        this.toast.create({
-          message: 'Data saved',
-          duration: 3000,
-          position: 'top'
-        }).present();
-  
-        this.enableform =true;
-        loading.dismiss();
-        this.navCtrl.pop();
-
-      },err=>{
-        loading.dismiss();
-        this.toast.create({
-          message: 'Unable to save. Try again !!!',
-          duration: 3000,
-          position: 'top'
-        }).present();
-  
-        this.enableform =true;
-       
-
-      })
-
-    }
-
-    }else{
-      loading.dismiss();
-
-      this.toast.create({
-        message: 'Please fill all the inputs',
-        duration: 3000,
-        position: 'top'
-      }).present();
-
-      this.enableform =true;
-     
-
-    }
+      
+          firebase.database().ref('userProfile/'+this.userKey).child('vaccines').push({
+            name: this.name,
+            details: this.details,
+            startDate: this.sDate,
+            remainderDate: this.rDate,
+            availableVaccines: this.availableVaccines,
+            photoURL: this.photoURL
+             
+          }).then(()=>{
+            this.toast.create({
+              message: 'Data saved',
+              duration: 3000,
+              position: 'top'
+            }).present();
+      
+            this.enableform =true;
+            loading.dismiss();
+            this.navCtrl.pop();
+      
+          },err=>{
+            loading.dismiss();
+            this.toast.create({
+              message: 'Unable to save. Try again !!!',
+              duration: 3000,
+              position: 'top'
+            }).present();
+      
+            this.enableform =true;
+           
+      
+          })
+      
+        }
+      
+        }else{
+          loading.dismiss();
+      
+          this.toast.create({
+            message: 'Please fill all the inputs',
+            duration: 3000,
+            position: 'top'
+          }).present();
+      
+          this.enableform =true;
+         
+      
+        }
+    
+      }
 
    
 
@@ -242,3 +346,17 @@ export class AddvaccinationPage {
   }
 
 }
+
+
+
+
+// name: this.name,
+// details: this.details,
+// startDate: this.sDate,
+// remainderDate: this.rDate,
+// availableVaccines: this.availableVaccines,
+// photoURL: this.photoURL
+
+
+
+// this.name && this.details && this.sDate &&this.rDate && this.availableVaccines

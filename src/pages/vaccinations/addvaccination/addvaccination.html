@@ -96,10 +96,27 @@
         <ion-textarea placeholder="Add detais" [(ngModel)]="details"></ion-textarea>
       </ion-item>
 
-      <button ion-button block outline icon-start (click)="takePicture('gallery')">
+      <button ion-button block outline icon-start (click)="takePicture('camera')">
           <ion-icon name="camera"></ion-icon>
-        Add photo</button>
+        Add photo fom camera</button>
+
+        <button ion-button block outline icon-start (click)="takePicture('gallery')">
+          <ion-icon name="image"></ion-icon>
+        Add photofrom gallery </button>
+      
       </ion-list>
+
+
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+           <img [src]="base64Image" *ngIf="base64Image" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+      
 
 
   <div padding>

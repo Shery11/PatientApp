@@ -8,7 +8,32 @@
 </ion-header>
 
 <ion-content padding>
-  This page displays all the information about the patient's agenda sort by date
+  <ion-list>
+    <ion-item-sliding *ngFor="let agenda of AgendasArr">
+      <ion-item>
+
+          <ion-icon name="contact" item-start ></ion-icon>
+         
+          <h2>{{agenda.name}}</h2>
+          <p item-end>{{agenda.date   | date: 'dd/MM/yyyy'}}</p>
+
+          <ion-icon name="arrow-dropright" item-end ></ion-icon>
+
+        </ion-item> 
+        
+         <ion-item-options icon-left icon-start>
+          <button ion-button color="primary" (click)="edit(agenda.key)">
+            <ion-icon name="open"></ion-icon>
+            Edit
+          </button>
+          <button ion-button color="danger" (click)="delete(agenda.key)">
+              <ion-icon name="trash"></ion-icon>
+              remove
+            </button>
+        </ion-item-options> 
+       
+      </ion-item-sliding>
+    </ion-list>
   <ion-fab bottom right #fab>
     <button ion-fab color="add" (tap)="doAgenda()"><ion-icon name="add"></ion-icon></button>
   </ion-fab>

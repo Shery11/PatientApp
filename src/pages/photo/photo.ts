@@ -17,7 +17,6 @@ import * as firebase from 'firebase';
 })
 export class PhotoPage {
 
-  galleryType = 'regular';
   imagesArr = [];
   
   loading = this.loadingCtrl.create();
@@ -56,6 +55,57 @@ export class PhotoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PhotoPage');
   }
+
+
+  edit(id){
+
+    // id = '-LHO4WxZY7u-ChFT_2Xt';
+
+    console.log(id);
+
+    this.navCtrl.push('AddphotoPage', {id : id});
+
+  }
+
+  delete(id){
+
+    // id = '-LHO4WxZY7u-ChFT_2Xt';
+
+    console.log(id);
+
+
+    let alertt = this.alertCtrl.create({
+      title: 'Are you sure',
+      message: 'Do you want to Permenantly delete this post?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Confirm',
+          handler: () => {
+            firebase.database().ref('userProfile/'+this.userkey+'/photos/'+id).remove().then(data=>{
+
+              alert("deleted successfully");
+      
+            }, err=>{
+              alert("Try again,Err while deleting");
+            });
+          }
+        }
+      ]
+    });
+
+    alertt.present();
+
+  }
+
+
+
 
 
 

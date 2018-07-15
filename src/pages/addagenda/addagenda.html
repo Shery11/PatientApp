@@ -17,22 +17,22 @@
 
   <ion-item>
     <ion-label color="primary" stacked>Contact Name</ion-label>
-    <ion-input type="text" placeholder="text"></ion-input>
+    <ion-input type="text" placeholder="text" [(ngModel)]="name"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label color="primary" stacked>Date</ion-label>
-    <ion-input type="datetime" placeholder="datetime"></ion-input>
+    <ion-datetime displayFormat="DD MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
   </ion-item>
 
   <ion-item>
     <ion-label color="primary" stacked>Place</ion-label>
-    <ion-input type="text" placeholder="text"></ion-input>
+    <ion-input type="text" placeholder="text" [(ngModel)]="place"></ion-input>
   </ion-item>
 
   <ion-list>
   <ion-item>
-    <ion-textarea placeholder="Add notes" [(ngModel)]="texteLibre"></ion-textarea>
+    <ion-textarea placeholder="Add notes" [(ngModel)]="note"></ion-textarea>
   </ion-item>
   </ion-list>
 
@@ -40,7 +40,7 @@
   <div padding>
     <ion-row>
       <ion-col>
-        <button ion-button full (tap)="storeNotes()" color="Enregistrer">Save </button>
+        <button ion-button full (tap)="save()" [disabled]="!enableform" color="Enregistrer">Save </button>
       </ion-col>
 
       <ion-col>

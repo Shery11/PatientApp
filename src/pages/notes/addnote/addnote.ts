@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, ToastController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 
-import * as firebase from 'firebase';
+import firebase from 'firebase';
 
 import { AndroidPermissions } from '@ionic-native/android-permissions';
 import { Camera } from '@ionic-native/camera';
@@ -61,6 +61,7 @@ export class AddnotePage {
           this.myDate =snapShot.val().myDate;
           this.note = snapShot.val().note;
           this.photoURL = snapShot.val().photoURL;
+          this.base64Image = snapShot.val().photoURL;
           
 
         })

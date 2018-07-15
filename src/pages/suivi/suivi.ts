@@ -24,4 +24,6 @@ export class SuiviPage {
     console.log('ionViewDidLoad SuiviPage');
   }
 
+
+
 }

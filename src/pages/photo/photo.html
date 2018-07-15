@@ -8,36 +8,16 @@
 </ion-header>
 
 
-<ion-content padding>
-    <!-- <ion-segment [(ngModel)]="galleryType" color="primary">
-        <ion-segment-button value="regular">
-          Regular
-        </ion-segment-button>
-        <ion-segment-button value="pinterest">
-          Pinterest
-        </ion-segment-button>
-      </ion-segment>
-      -->
-      <div >
-        <!-- Responsive Layout with Ion Grid-->
-        <!-- <ion-grid *ngSwitchCase="'regular'">
-          <ion-row>
-            <ion-col col-6 col-md-4 col-xl-3 *ngFor="let image of imagesArr">
-              <div class="image-container" [style.background-image]="image.photoURL"></div>
-            </ion-col>
-          </ion-row>
-        </ion-grid> -->
-     
-     
-        <!-- More Pinterest floating gallery style -->
+<ion-content class="card-background-page" >
+    
 
-        <div class="images" >
-            <div class="one-image" *ngFor="let image of imagesArr">
-              <img [src]="image.photoURL">
-            </div>
-          </div>
-     
-      </div>
+      <ion-card *ngFor="let image of imagesArr">
+        <img [src]="image.photoURL"/>
+        <div class="card-title" (click)="edit(image.key)">Click for details</div>
+        <div class="card-subtitle">{{image.note}}</div>
+      </ion-card>
+
+
   <ion-fab bottom right #fab>
     <button ion-fab color="add" (tap)="doPhoto()"><ion-icon name="add"></ion-icon></button>
   </ion-fab>
