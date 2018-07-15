@@ -8,15 +8,27 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
+  <ion-list inset>
     <ion-item-sliding *ngFor="let agenda of AgendasArr">
-      <ion-item>
-
-          <ion-icon name="contact" item-start ></ion-icon>
-         
+       <ion-item>
+      
           <h2>{{agenda.name}}</h2>
-          <p item-end>{{agenda.date   | date: 'dd/MM/yyyy'}}</p>
 
+          <ion-item>
+              <p>{{agenda.date   | date: 'dd/MM/yyyy'}}</p>
+              <ion-badge item-start>
+                  <ion-icon name="clock" small></ion-icon>
+              </ion-badge>
+          </ion-item>
+
+          <ion-item >
+              <p>{{agenda.place}}</p>
+              <ion-badge item-start>
+                  <ion-icon name="pin" small></ion-icon>
+              </ion-badge>
+          </ion-item>
+          
+       
           <ion-icon name="arrow-dropright" item-end ></ion-icon>
 
         </ion-item> 

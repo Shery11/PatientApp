@@ -13,10 +13,11 @@
         <ion-item-sliding *ngFor="let contact of ContactsArr">
           <ion-item>
 
-              <ion-icon name="contact" item-start ></ion-icon>
+              <ion-icon name="contact" item-start large></ion-icon>
              
-              <h2>{{contact.name}}</h2>
-              <p item-end>{{contact.startDate   | date: 'dd/MM/yyyy'}}</p>
+              <h2>{{contact.name}} {{contact.surname}}</h2>
+              <p>{{contact.speciality}}</p>
+              <p>{{contact.mobile}}</p>
     
               <ion-icon name="arrow-dropright" item-end ></ion-icon>
     

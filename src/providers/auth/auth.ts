@@ -39,7 +39,7 @@ export class AuthProvider {
 	    firebase
 	    .database()
 	    .ref('/userProfile')
-	    .child(newUser.user.uid)
+	    .child(newUser.uid)
 	    .set({ email: email, name : name });
 	  });
 	}

@@ -1,3 +1,24 @@
 page-suivi {
 
+    .home-widget {
+        .item {
+          padding: 0;
+          &.item-divider {
+            padding: 8px 16px;
+          }
+          .item-inner {
+            padding: 0;
+            .label {
+              margin: 0;
+            }
+          }
+        }
+      }
+
+
+      .bold {
+        font-weight: bold !important;
+      }
+    
+
 }

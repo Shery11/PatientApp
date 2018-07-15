@@ -54,8 +54,8 @@ public loading;
       .then( authData => {
         console.log(authData);
         this.loading.dismiss().then( () => {
-         
-            this.storage.set('userKey', authData.user.uid);
+
+            this.storage.set('userKey', authData.uid);
             this.navCtrl.setRoot(MenuPage);
           
         });
