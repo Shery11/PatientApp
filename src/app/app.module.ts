@@ -15,6 +15,8 @@ import { Calendar } from '@ionic-native/calendar';
 import { AuthProvider } from '../providers/auth/auth';
 import { LoginPage } from '../pages/login/login';
 import { DataProvider } from '../providers/data/data';
+import { File } from '@ionic-native/file';
+import { FileChooser } from '@ionic-native/file-chooser';
 
 var config = {
       backButtonText: '',
@@ -49,6 +51,8 @@ var config = {
     SecureStorage,
     IonicStorageModule,
     Camera,
+    File,
+    FileChooser,
     AndroidPermissions,
     Calendar,
     {provide: ErrorHandler, useClass: IonicErrorHandler},

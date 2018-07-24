@@ -31,6 +31,9 @@ export class MenuPage {
        { title: 'Notes', pageName: 'NotesPage', icon: 'book'},
        { title: 'Clinical history', pageName: 'AntecedentsPage', icon: 'paper' },
        { title: 'Vaccinations', pageName: 'VaccinationsPage', icon: 'paper' },
+       { title: 'Biology', pageName: 'BiologyPage', icon: 'paper' },
+       { title: 'Document', pageName: 'DocumentPage', icon: 'paper' },
+       { title: 'Measurment', pageName: 'MeasurementPage', icon: 'paper' },
    ]
 
    constructor(public toast: ToastController, public navCtrl: NavController, public navParams: NavParams,public authProvider:AuthProvider) {

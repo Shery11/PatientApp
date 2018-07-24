@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title>Add Document</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <ion-list-header>
+    Document
+    </ion-list-header>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Date:</ion-label>
+      <ion-datetime displayFormat="DD MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
+   
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Category:</ion-label>
+      <ion-input placeholder="e.g Biology"  [(ngModel)]="catagory"></ion-input>
+    </ion-item>
+    
+
+  </ion-list>
+
+
+  <button ion-button (click)="choose()" >Choose file</button>
+  
+       
+
+
+    <div padding>
+      <ion-row>
+        <ion-col>
+          <button ion-button full (tap)="save()" color="Enregistrer">Save </button>
+        </ion-col>
+    
+        <ion-col>
+          <ion-buttons end>
+        <button ion-button full (tap)="close()" color="danger">Cancel</button>
+        </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </div>
+    
+</ion-content>

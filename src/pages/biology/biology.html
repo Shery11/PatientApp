@@ -1,0 +1,41 @@
+<ion-header>
+	<ion-navbar color="primary">
+		 <button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Biology</ion-title>
+	</ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+		<ion-list>
+        <ion-item-sliding *ngFor="let biology of BiologyArr">
+          <ion-item>
+             
+              <h2 (click)="edit(biology.key)">{{biology.catagory}}</h2>
+              <p item-end>{{biology.myDate | date: 'dd/MM/yyyy'}}</p>
+    
+              <ion-icon name="arrow-dropright" item-end ></ion-icon>
+    
+            </ion-item> 
+            
+             <ion-item-options icon-left icon-start>
+              <button ion-button color="primary" (click)="edit(biology.key)">
+                <ion-icon name="open"></ion-icon>
+                Edit
+              </button>
+              <button ion-button color="danger" (click)="delete(biology.key)">
+                  <ion-icon name="trash"></ion-icon>
+                  remove
+                </button>
+            </ion-item-options> 
+           
+          </ion-item-sliding>
+        </ion-list>
+
+  <ion-fab bottom right #fab>
+    <button ion-fab color="add" (tap)="doBiology()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>
