@@ -10,7 +10,7 @@
 <ion-content padding>
   <ion-list inset>
     <ion-item-sliding *ngFor="let agenda of AgendasArr">
-       <ion-item>
+       <ion-item (click)="openDetailPage(agenda.key)">
       
           <h2>{{agenda.name}}</h2>
 

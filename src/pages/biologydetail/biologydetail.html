@@ -1,18 +1,44 @@
 <!--
-  Generated template for the BiologydetailPage page.
+  Generated template for the TreatmentdetailPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>biologydetail</ion-title>
-  </ion-navbar>
+    <ion-navbar color="primary">
+      <ion-title *ngIf="data">{{data.myDate | date: 'dd/MM/yyyy'}}</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  
+  
+    <ion-list *ngIf="data">
+  
+      <ion-item>
+          Catagory
+        <ion-card>
+          <ion-card-content text-wrap>
+              <ion-item>
+                  {{data.catagory}}
+                  <ion-badge color="primary" item-end>{{data.value}}</ion-badge>
+              </ion-item>
+          
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
 
-</ion-header>
-
-
-<ion-content padding>
-
-</ion-content>
+     
+  
+    
+     
+   
+      
+    </ion-list>
+  
+     
+  </ion-content>
+  

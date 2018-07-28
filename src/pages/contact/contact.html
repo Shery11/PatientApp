@@ -11,7 +11,7 @@
 <ion-content padding>
     <ion-list>
         <ion-item-sliding *ngFor="let contact of ContactsArr">
-          <ion-item>
+          <ion-item (click)="openDetailPage(contact.key)">
 
               <ion-icon name="contact" item-start large></ion-icon>
              

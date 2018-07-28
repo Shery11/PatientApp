@@ -53,6 +53,15 @@ export class MeasurementPage {
   }
 
 
+  openDetailPage(id){
+
+    console.log(id);
+
+    this.navCtrl.push('MeasurmentdetailPage',{id:id});
+
+  }
+
+
   edit(id){
 
     // id = '-LHO4WxZY7u-ChFT_2Xt';

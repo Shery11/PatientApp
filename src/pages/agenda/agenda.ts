@@ -55,6 +55,14 @@ export class AgendaPage {
     this.navCtrl.push('AddagendaPage');
   }
 
+  openDetailPage(id){
+
+    console.log(id);
+
+    this.navCtrl.push('AgendadetailPage',{id:id});
+
+  }
+
   edit(id){
 
     // id = '-LHO4WxZY7u-ChFT_2Xt';

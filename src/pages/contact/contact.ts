@@ -57,6 +57,14 @@ export class ContactPage {
     console.log('ionViewDidLoad ContactPage');
   }
 
+  openDetailPage(id){
+
+    console.log(id);
+
+    this.navCtrl.push('ContactdetailPage',{id:id});
+
+  }
+
 
   edit(id){
 

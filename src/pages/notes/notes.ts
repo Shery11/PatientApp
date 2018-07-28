@@ -52,7 +52,7 @@ export class NotesPage {
         this.loading.dismiss();
       })
   }
-  doPhoto() {
+  doNotes() {
     this.navCtrl.push('AddnotePage');
   }
   ionViewDidLoad() {
@@ -67,6 +67,15 @@ export class NotesPage {
     console.log(id);
 
     this.navCtrl.push('AddnotePage', {id : id});
+
+  }
+
+
+  openDetailPage(id){
+
+    console.log(id);
+
+    this.navCtrl.push('NotedetailPage',{id:id});
 
   }
 

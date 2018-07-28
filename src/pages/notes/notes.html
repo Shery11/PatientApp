@@ -13,8 +13,8 @@
 
   <ion-card *ngFor="let image of imagesArr">
     <img [src]="image.photoURL"/>
-    <div class="card-title" (click)="edit(image.key)">Click for details</div>
-    <div class="card-subtitle">{{image.note}}</div>
+    <div class="card-title" (click)="openDetailPage(image.key)">Click for details</div>
+    <div class="card-subtitle" (click)="edit(image.key)">Click to edit</div>
   </ion-card>
   <ion-fab bottom right #fab>
     <button ion-fab color="add" (tap)="doNotes()"><ion-icon name="add"></ion-icon></button>

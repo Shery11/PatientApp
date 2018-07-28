@@ -14,8 +14,8 @@
         <ion-item-sliding *ngFor="let biology of BiologyArr">
           <ion-item>
              
-              <h2 (click)="edit(biology.key)">{{biology.catagory}}</h2>
-              <p item-end>{{biology.myDate | date: 'dd/MM/yyyy'}}</p>
+              <h2>{{biology.catagory}}</h2>
+              <p item-end (click)="openDetailPage(biology.key)">{{biology.myDate | date: 'dd/MM/yyyy'}}</p>
     
               <ion-icon name="arrow-dropright" item-end ></ion-icon>
     

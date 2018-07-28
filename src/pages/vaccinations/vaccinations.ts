@@ -70,6 +70,14 @@ export class VaccinationsPage {
 
   }
 
+  openDetailPage(id){
+
+    console.log(id);
+
+    this.navCtrl.push('VaccinationdetailPage',{id:id});
+
+  }
+
   delete(id){
 
     // id = '-LHO4WxZY7u-ChFT_2Xt';

@@ -12,8 +12,8 @@
         <ion-item-sliding *ngFor="let vaccine of VaccinesArr">
           <ion-item>
              
-              <h2 (click)="edit(vaccine.key)">{{vaccine.name}}</h2>
-              <p item-end>{{vaccine.startDate   | date: 'dd/MM/yyyy'}}</p>
+              <h2>{{vaccine.name}}</h2>
+              <p (click)="openDetailPage(vaccine.key)" item-end>{{vaccine.startDate   | date: 'dd/MM/yyyy'}}</p>
     
               <ion-icon name="arrow-dropright" item-end ></ion-icon>
     

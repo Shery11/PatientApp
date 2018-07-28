@@ -1,18 +1,52 @@
 <!--
-  Generated template for the MeasurmentdetailPage page.
+  Generated template for the TreatmentdetailPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>measurmentdetail</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
-</ion-content>
+    <ion-navbar color="primary">
+      <ion-title *ngIf="data">{{data.myDate | date: 'dd/MM/yyyy'}}</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  
+  
+    <ion-list *ngIf="data">
+  
+      <ion-item>
+          Gender
+          <ion-badge color="primary" item-end>{{data.gender}}</ion-badge>
+      </ion-item>
+  
+     
+      <ion-item>
+           Size
+          <ion-badge color="primary" item-end>{{data.size}} cm</ion-badge>
+      </ion-item>
+  
+      <ion-item>
+          Temperature
+          <ion-badge color="primary" item-end>{{data.temperature}} `C</ion-badge>
+      </ion-item>
+  
+      
+      <ion-item>
+          Weight
+          <ion-badge color="primary" item-end>{{data.weight}} kg</ion-badge>
+      </ion-item>
+      <ion-item>
+          Tension Art
+          <ion-badge color="primary" item-end>{{data.tensionArt}} mmHg</ion-badge>
+      </ion-item>
+     
+      
+    </ion-list>
+  
+     
+  </ion-content>
+  

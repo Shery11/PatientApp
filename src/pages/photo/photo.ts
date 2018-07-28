@@ -57,6 +57,15 @@ export class PhotoPage {
   }
 
 
+  openDetailPage(id){
+
+    console.log(id);
+
+    this.navCtrl.push('PhotodetailPage',{id:id});
+
+  }
+
+
   edit(id){
 
     // id = '-LHO4WxZY7u-ChFT_2Xt';

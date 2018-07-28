@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title *ngIf="data">{{data.date | date: 'dd/MM/yyyy'}}</ion-title>
   </ion-navbar>
 
@@ -30,10 +30,8 @@
     </ion-item>
 
     <ion-item>
+        Details
       <ion-card>
-        <ion-card-header>
-          Details
-        </ion-card-header>
         <ion-card-content text-wrap>
           {{data.detail}}
         </ion-card-content>
@@ -55,10 +53,8 @@
         <ion-badge color="primary" item-end>{{data.stopDate}}</ion-badge>
     </ion-item>
    <ion-item>
-      <ion-card>
-        <ion-card-header>
-          Stopping Details
-        </ion-card-header>
+      Stopping Details   
+       <ion-card>
         <ion-card-content text-wrap>
           {{data.stoppingDetail}}
         </ion-card-content>

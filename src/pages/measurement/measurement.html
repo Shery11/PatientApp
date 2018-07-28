@@ -14,8 +14,8 @@
         <ion-item-sliding *ngFor="let measurment of MeasurmentsArr">
           <ion-item>
              
-              <h2 (click)="edit(measurment.key)">{{measurment.gender}}</h2>
-              <p item-end>{{measurment.myDate | date: 'dd/MM/yyyy'}}</p>
+              <h2>{{measurment.gender}}</h2>
+              <p item-end (click)="openDetailPage(measurment.key)">{{measurment.myDate | date: 'dd/MM/yyyy'}}</p>
     
               <ion-icon name="arrow-dropright" item-end ></ion-icon>
     

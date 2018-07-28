@@ -13,8 +13,8 @@
     <ion-item-sliding *ngFor="let clinicalHistory of clinicalHistoryArr">
       <ion-item>
          
-          <h2 (click)="edit(clinicalHistory.key)">{{clinicalHistory.drug}}</h2>
-          <p item-end>{{clinicalHistory.date   | date: 'dd/MM/yyyy'}}</p>
+          <h2 >{{clinicalHistory.drug}}</h2>
+          <p (click)="openDetailPage(clinicalHistory.key)" item-end>{{clinicalHistory.date   | date: 'dd/MM/yyyy'}}</p>
 
           <ion-icon name="arrow-dropright" item-end ></ion-icon>
 
