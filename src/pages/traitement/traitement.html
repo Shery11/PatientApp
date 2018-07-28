@@ -14,8 +14,8 @@
         <ion-item-sliding *ngFor="let treatment of TreatmentsArr">
           <ion-item>
              
-              <h2 (click)="edit(treatment.key)">{{treatment.name}}</h2>
-              <p item-end>{{treatment.date | date: 'dd/MM/yyyy'}}</p>
+              <h2>{{treatment.name}}</h2>
+              <p item-end (click)="openDetailPage(treatment.key)">{{treatment.date | date: 'dd/MM/yyyy'}}</p>
     
               <ion-icon name="arrow-dropright" item-end ></ion-icon>
     

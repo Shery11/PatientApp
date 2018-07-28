@@ -101,6 +101,17 @@ export class TraitementPage {
 
   }
 
+  openDetailPage(id){
+
+    console.log(id);
+
+    this.navCtrl.push('TreatmentdetailPage',{id:id});
+
+  }
+
+
+  TreatmentdetailPage
+
 
 
 
