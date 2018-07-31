@@ -34,6 +34,8 @@ export class AddphotoPage {
   photoURL = 'http://tradepending.com/wp-content/uploads/2015/03/placeholder.png';
   base64Image;
 
+ 
+
   constructor(public storage: Storage, public navCtrl: NavController, public navParams: NavParams,public toast: ToastController
     ,public loadingCtrl: LoadingController,private androidPermissions: AndroidPermissions,public camera:Camera,) {
 
@@ -120,9 +122,6 @@ export class AddphotoPage {
   firebase.storage().ref().child(`images/${filename}.jpg`).
   putString(this.base64Image, 'data_url').then((snapShot)=>{
       if(this.category && this.note){
-    
-
-
         if(this.id){
     
         firebase.database().ref('userProfile/'+this.userKey+'/photos/'+this.id).update({

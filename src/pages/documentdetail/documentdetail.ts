@@ -61,6 +61,11 @@ export class DocumentdetailPage {
 
   }
 
+
+  share(){
+    alert("Share details");
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad DocumentdetailPage');
   }

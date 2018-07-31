@@ -17,15 +17,34 @@
     </ion-item>
     <ion-item>
       <ion-label color="primary">Category:</ion-label>
-      <ion-input placeholder="e.g Biology"  [(ngModel)]="catagory"></ion-input>
+      <ion-input placeholder="e.g Biology"  [(ngModel)]="category"></ion-input>
     </ion-item>
+
+
+    <ion-item>
+      <ion-label color="primary">{{filename1}}</ion-label>
+      <button ion-button (click)="choose1('gallery')" item-end>Upload</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">{{filename2}}</ion-label>
+      <button ion-button (click)="choose2('gallery')" item-end >Upload</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">{{filename3}}</ion-label>
+      <button ion-button (click)="choose3('gallery')" item-end >Upload</button>
+    </ion-item>
+
+
     
+  
+  
 
   </ion-list>
 
 
-  <button ion-button (click)="choose()" >Choose file</button>
-  
+ 
        
 
 

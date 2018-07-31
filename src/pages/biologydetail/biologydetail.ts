@@ -61,6 +61,11 @@ export class BiologydetailPage {
 
   }
 
+
+  share(){
+    alert("Share details");
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad BiologydetailPage');
   }

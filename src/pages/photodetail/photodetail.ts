@@ -62,6 +62,11 @@ export class PhotodetailPage {
   }
 
 
+  share(){
+    alert("Share details");
+  }
+
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad PhotodetailPage');
   }
