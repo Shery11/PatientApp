@@ -16,3 +16,145 @@ h3{
 .bar-button-ios {
     font-size: 1.4rem;
 }
+
+
+.tabbar, .tabs-ios, .tabs-md , .tabs-wp{
+    .tab-button-icon {
+        background-repeat:no-repeat;
+        background-position:center;
+        height:40px;
+        width:40px;
+        background-size:contain;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        &:before {
+            display:none;
+        }
+    }
+}
+
+.tabs-ios {
+  a[aria-selected=false]{
+     .tab-button-icon[ng-reflect-name=homes], .tab-button-icon[aria-label="homes"] {
+      background-image: url(../assets/imgs/briefcase.png);
+    }
+    .tab-button-icon[ng-reflect-name=document], .tab-button-icon[aria-label=document] {
+      background-image: url(../assets/imgs/document_inactive.png);
+    }
+    .tab-button-icon[ng-reflect-name=contact], .tab-button-icon[aria-label=contact] {
+      background-image: url(../assets/imgs/contact_inactive.png);
+    }
+     .tab-button-icon[ng-reflect-name=calendar], .tab-button-icon[aria-label=calendar] {
+      background-image: url(../assets/imgs/calendar_inactive.png);
+    }
+    .tab-button-icon[ng-reflect-name=camera], .tab-button-icon[aria-label=camera] {
+        background-image: url(../assets/imgs/camera_inactive.png);
+      }
+  }
+ a[aria-selected=true] {
+   //führ eventuellen text
+   //span {
+      //color: #f00; //whatever colour you want to use for the text
+    //}
+    .tab-button-icon[ng-reflect-name=homes], .tab-button-icon[aria-label=homes] {
+      background-image: url(../assets/imgs/briefcase_active.png);
+    }
+    .tab-button-icon[ng-reflect-name=document], .tab-button-icon[aria-label=document] {
+      background-image: url(../assets/imgs/document_active.png);
+    }
+    .tab-button-icon[ng-reflect-name=contact], .tab-button-icon[aria-label=contact] {
+      background-image: url(../assets/imgs/contact_active.png);
+    }
+     .tab-button-icon[ng-reflect-name=calendar], .tab-button-icon[aria-label=calendar] {
+      background-image: url(../assets/imgs/calendar_active.png);
+    }
+    .tab-button-icon[ng-reflect-name=camera], .tab-button-icon[aria-label=camera] {
+        background-image: url(../assets/imgs/camera_active.png);
+      }
+  }
+}
+
+.tabs-md {
+  a[aria-selected=false]{
+     .tab-button-icon[ng-reflect-name=homes], .tab-button-icon[aria-label="homes"] {
+      background-image: url(../assets/imgs/briefcase.png);
+    }
+    .tab-button-icon[ng-reflect-name=document], .tab-button-icon[aria-label=document] {
+      background-image: url(../assets/imgs/document_inactive.png);
+    }
+    .tab-button-icon[ng-reflect-name=contact], .tab-button-icon[aria-label=contact] {
+      background-image: url(../assets/imgs/contact_inactive.png);
+    }
+    .tab-button-icon[ng-reflect-name=calendar], .tab-button-icon[aria-label=calendar] {
+      background-image: url(../assets/imgs/calendar_inactive.png);
+    }
+    .tab-button-icon[ng-reflect-name=camera], .tab-button-icon[aria-label=camera] {
+        background-image: url(../assets/imgs/camera_inactive.png);
+      }
+  }
+
+ a[aria-selected=true] {
+   //führ eventuellen text
+   //span {
+      //color: #f00; //whatever colour you want to use for the text
+    //}
+    .tab-button-icon[ng-reflect-name=homes], .tab-button-icon[aria-label=homes] {
+      background-image: url(../assets/imgs/briefcase_active.png);
+    }
+    .tab-button-icon[ng-reflect-name=document], .tab-button-icon[aria-label=document] {
+      background-image: url(../assets/imgs/document_active.png);
+    }
+    .tab-button-icon[ng-reflect-name=contact], .tab-button-icon[aria-label=contact] {
+      background-image: url(../assets/imgs/contact_active.png);
+    }
+    .tab-button-icon[ng-reflect-name=calendar], .tab-button-icon[aria-label=calendar] {
+      background-image: url(../assets/imgs/calendar_active.png);
+    }
+    .tab-button-icon[ng-reflect-name=camera], .tab-button-icon[aria-label=camera] {
+        background-image: url(../assets/imgs/camera_active.png);
+      }
+  }
+}
+
+.tabs-wp {
+  a[aria-selected=false]{
+     .tab-button-icon[ng-reflect-name=homes], .tab-button-icon[aria-label="homes"] {
+      background-image: url(../assets/imgs/briefcase.png);
+    }
+    .tab-button-icon[ng-reflect-name=document], .tab-button-icon[aria-label=document] {
+      background-image: url(../assets/imgs/document_inactive.png);
+    }
+    .tab-button-icon[ng-reflect-name=contact], .tab-button-icon[aria-label=contact] {
+      background-image: url(../assets/imgs/contact_inactive.png);
+    }
+    .tab-button-icon[ng-reflect-name=calendar], .tab-button-icon[aria-label=calendar] {
+      background-image: url(../assets/imgs/calendar_inactive.png);
+    }
+    .tab-button-icon[ng-reflect-name=camera], .tab-button-icon[aria-label=camera] {
+        background-image: url(../assets/imgs/camera_inactive.png);
+      }
+  }
+
+ a[aria-selected=true] {
+   //führ eventuellen text
+   //span {
+      //color: #f00; //whatever colour you want to use for the text
+    //}
+    .tab-button-icon[ng-reflect-name=homes], .tab-button-icon[aria-label=homes] {
+      background-image: url(../assets/imgs/briefcase_active.png);
+    }
+    .tab-button-icon[ng-reflect-name=document], .tab-button-icon[aria-label=document] {
+      background-image: url(../assets/imgs/document_active.png);
+    }
+    .tab-button-icon[ng-reflect-name=contact], .tab-button-icon[aria-label=contact] {
+      background-image: url(../assets/imgs/contact_active.png);
+    }
+    .tab-button-icon[ng-reflect-name=calendar], .tab-button-icon[aria-label=calendar] {
+      background-image: url(../assets/imgs/calendar_active.png);
+    }
+    .tab-button-icon[ng-reflect-name=camera], .tab-button-icon[aria-label=camera] {
+        background-image: url(../assets/imgs/camera_active.png);
+      }
+  }
+}

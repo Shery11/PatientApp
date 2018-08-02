@@ -48,8 +48,8 @@ export class MenuPage {
        params = { pageIndex: page.index};
      }
 
-     if (this.nav.getActiveChildNav() && page.index != undefined) {
-         this.nav.getActiveChildNav().select(page.index);
+     if (this.nav.getActiveChildNavs()[0] && page.index != undefined) {
+         this.nav.getActiveChildNavs()[0].select(page.index);
      } else {
        this.nav.setRoot(page.pageName, params);
 
@@ -57,7 +57,7 @@ export class MenuPage {
 
  }
  isActive(page: PageInterface) {
-   let childNav = this.nav.getActiveChildNav();
+   let childNav = this.nav.getActiveChildNavs()[0];
 
    if (childNav) {
      if (childNav.getSelected() && childNav.getSelected().root === page.tabComponement)

@@ -14,8 +14,6 @@ page-login {
     }
            
     
-    
-    
     ion-content{
      background-color: #ddd !important;
     .login_content{
@@ -31,7 +29,7 @@ page-login {
 
         .login_tabs{
             .segment-button{
-                color: darken(color($colors,light), 40%);
+                color: darken(color($colors,light), 5%);
                 background: color($colors,primary);
                 text-transform: uppercase;
             &.segment-activated{
