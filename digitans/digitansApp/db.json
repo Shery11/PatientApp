@@ -1,0 +1,4598 @@
+{
+  "actionSheet" : {
+    "layout1" : {
+      "actionSheet" : {
+        "buttons" : [ {
+          "role" : "destructive",
+          "text" : "Add to Cart"
+        }, {
+          "text" : "Add to Favorites"
+        }, {
+          "text" : "Read more info"
+        }, {
+          "text" : "Delete Item"
+        }, {
+          "role" : "cancel",
+          "text" : "Cancel"
+        } ]
+      },
+      "headerImage" : "assets/images/background/6.jpg",
+      "headerTitle" : "Basic",
+      "items" : [ {
+        "button" : "$63.99",
+        "category" : "NEW OFFER",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "id" : 1,
+        "productDescriptions" : [ {
+          "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "id" : 1
+        }, {
+          "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          "id" : 2
+        }, {
+          "description" : "Passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum",
+          "id" : 3
+        }, {
+          "description" : "Passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum",
+          "id" : 4
+        } ],
+        "subtitle" : "Available Now",
+        "title" : "Super & Black"
+      } ],
+      "shareIcon" : "more"
+    },
+    "layout2" : {
+      "actionSheet" : {
+        "buttons" : [ {
+          "role" : "destructive",
+          "text" : "Add to Cart"
+        }, {
+          "text" : "Add to Favorites"
+        }, {
+          "text" : "Read more info"
+        }, {
+          "text" : "Delete Item"
+        }, {
+          "role" : "cancel",
+          "text" : "Cancel"
+        } ]
+      },
+      "avatar" : "assets/images/avatar/20.jpg",
+      "category" : "ENGINEERING",
+      "headerImage" : "assets/images/background/21.jpg",
+      "headerTitle" : "News",
+      "items" : [ {
+        "id" : 1,
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }, {
+        "id" : 2,
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "title" : "Lorem ipsum dolor sit amet"
+      }, {
+        "id" : 3,
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+        "title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }, {
+        "id" : 4,
+        "subtitle" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "title" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      } ],
+      "shareIcon" : "more",
+      "subtitle" : "by Victoria Kuijpers",
+      "title" : "Infinit bridge made in China."
+    },
+    "layout3" : {
+      "actionSheet" : {
+        "buttons" : [ {
+          "role" : "destructive",
+          "text" : "Read more"
+        }, {
+          "text" : "Add to Favorites"
+        }, {
+          "text" : "Delete Card"
+        }, {
+          "text" : "Disable Card"
+        }, {
+          "role" : "cancel",
+          "text" : "Cancel"
+        } ],
+        "title" : "Choose what to do with this card?"
+      },
+      "headerTitle" : "With Text Header",
+      "items" : [ {
+        "button" : "$35.99",
+        "category" : "best offer",
+        "id" : 1,
+        "image" : "assets/images/background/2.jpg",
+        "subtitle" : "West Avenue, NYC",
+        "title" : "Free Ride Tour"
+      }, {
+        "button" : "$12.99",
+        "category" : "main event",
+        "id" : 2,
+        "image" : "assets/images/background/1.jpg",
+        "subtitle" : "Hyde Park, London",
+        "title" : "Open Air Concert"
+      }, {
+        "button" : "$13.45",
+        "category" : "Best Tourt",
+        "id" : 3,
+        "image" : "assets/images/background/0.jpg",
+        "subtitle" : "Guilin, Kweilin",
+        "title" : "Sea ture"
+      }, {
+        "button" : "$38.60",
+        "category" : "Mountain",
+        "id" : 4,
+        "image" : "assets/images/background/3.jpg",
+        "subtitle" : "SMountain Trout Camp",
+        "title" : "Mountain Trout"
+      }, {
+        "button" : "$40.85",
+        "category" : "Bridge Tour",
+        "id" : 5,
+        "image" : "assets/images/background/4.jpg",
+        "subtitle" : "BridgeClimb, Sydney",
+        "title" : "Bridge Tour"
+      }, {
+        "button" : "$56.55",
+        "category" : "best events",
+        "id" : 6,
+        "image" : "assets/images/background/5.jpg",
+        "subtitle" : "Hyde Park, London ",
+        "title" : "Main Stage Event"
+      } ],
+      "shareIcon" : "more"
+    }
+  },
+  "checkBoxes" : {
+    "layout1" : {
+      "items" : [ {
+        "id" : 1,
+        "isChecked" : false,
+        "title" : "plegros@gmail.com"
+      }, {
+        "id" : 2,
+        "isChecked" : false,
+        "title" : "fyundt@gmail.com"
+      }, {
+        "id" : 4,
+        "isChecked" : true,
+        "title" : "godfrey.von@gmail.com"
+      }, {
+        "id" : 3,
+        "isChecked" : true,
+        "title" : "joey.feil@gmail.com"
+      }, {
+        "id" : 5,
+        "isChecked" : true,
+        "title" : "yframi@yahoo.com"
+      }, {
+        "id" : 6,
+        "isChecked" : true,
+        "title" : "ytillman@gmail.com"
+      }, {
+        "id" : 7,
+        "isChecked" : true,
+        "title" : "leola.kerluke@yahoo.com"
+      }, {
+        "id" : 8,
+        "isChecked" : true,
+        "title" : "ignacio20@yahoo.com"
+      }, {
+        "id" : 9,
+        "isChecked" : true,
+        "title" : "travis34@gmail.com"
+      }, {
+        "id" : 10,
+        "isChecked" : true,
+        "title" : "sauer.brenna@gmail.com"
+      }, {
+        "id" : 11,
+        "isChecked" : true,
+        "title" : "michelle27@gmail.com"
+      }, {
+        "id" : 12,
+        "isChecked" : true,
+        "title" : "ludie56@gmail.com"
+      }, {
+        "id" : 13,
+        "isChecked" : true,
+        "title" : "luisa.hauck@yahoo.com"
+      } ],
+      "title" : "Contacts"
+    },
+    "layout2" : {
+      "items" : [ {
+        "id" : 1,
+        "image" : "assets/images/avatar/11.jpg",
+        "isChecked" : false,
+        "subtitle" : "@isabel",
+        "title" : "Isabel Anguiano"
+      }, {
+        "id" : 2,
+        "image" : "assets/images/avatar/10.jpg",
+        "isChecked" : false,
+        "subtitle" : "@luna",
+        "title" : "Luna Adorno"
+      }, {
+        "id" : 4,
+        "image" : "assets/images/avatar/9.jpg",
+        "isChecked" : true,
+        "subtitle" : "@abbie",
+        "title" : "Abbie Kelly"
+      }, {
+        "id" : 3,
+        "image" : "assets/images/avatar/14.jpg",
+        "isChecked" : true,
+        "subtitle" : "@silvia",
+        "title" : "Silvia Salvador"
+      }, {
+        "id" : 5,
+        "image" : "assets/images/avatar/13.jpg",
+        "isChecked" : true,
+        "subtitle" : "@teresa",
+        "title" : "Teresa Puga"
+      }, {
+        "id" : 6,
+        "image" : "assets/images/avatar/12.jpg",
+        "isChecked" : true,
+        "subtitle" : "@tara34",
+        "title" : "Tara Saunders"
+      }, {
+        "id" : 7,
+        "image" : "assets/images/avatar/17.jpg",
+        "isChecked" : true,
+        "subtitle" : "@lisa957",
+        "title" : "Lisa Chapman"
+      }, {
+        "id" : 8,
+        "image" : "assets/images/avatar/16.jpg",
+        "isChecked" : true,
+        "subtitle" : "@evie957",
+        "title" : "Evie Stevens"
+      }, {
+        "id" : 9,
+        "image" : "assets/images/avatar/15.jpg",
+        "isChecked" : true,
+        "subtitle" : "@eva",
+        "title" : "Eva Tapia"
+      }, {
+        "id" : 10,
+        "image" : "assets/images/avatar/18.jpg",
+        "isChecked" : true,
+        "subtitle" : "@julia",
+        "title" : "Julia Requena"
+      } ],
+      "title" : "Followers"
+    },
+    "layout3" : {
+      "items" : [ {
+        "detail" : "General Electric",
+        "id" : 1,
+        "isChecked" : true,
+        "subtitle" : "United States",
+        "title" : "New York"
+      }, {
+        "detail" : "Ferrari",
+        "id" : 2,
+        "isChecked" : false,
+        "subtitle" : "Italy",
+        "title" : "Maranello"
+      }, {
+        "detail" : "Gillette",
+        "id" : 3,
+        "isChecked" : false,
+        "subtitle" : "United States",
+        "title" : "Boston"
+      }, {
+        "detail" : "Siemens AG",
+        "id" : 4,
+        "isChecked" : true,
+        "subtitle" : "Germany",
+        "title" : "Munich"
+      }, {
+        "detail" : "Hyundai",
+        "id" : 5,
+        "isChecked" : true,
+        "subtitle" : "South Korea",
+        "title" : "Seul"
+      }, {
+        "detail" : "Adidas",
+        "id" : 6,
+        "isChecked" : true,
+        "subtitle" : "Germany",
+        "title" : "Herzogenaurach"
+      }, {
+        "detail" : "Oracle Corporation",
+        "id" : 7,
+        "isChecked" : true,
+        "subtitle" : "United States",
+        "title" : "Redwood City"
+      }, {
+        "detail" : "Heineken Brewery",
+        "id" : 8,
+        "isChecked" : true,
+        "subtitle" : "Netherlands",
+        "title" : "Amsterdam"
+      }, {
+        "detail" : "Canon",
+        "id" : 9,
+        "isChecked" : true,
+        "subtitle" : "Japan",
+        "title" : "Tokyo"
+      }, {
+        "detail" : "463 Harbor Court",
+        "id" : 10,
+        "isChecked" : true,
+        "subtitle" : "Austria",
+        "title" : "London"
+      }, {
+        "detail" : "Gucci",
+        "id" : 11,
+        "isChecked" : true,
+        "subtitle" : "Italy",
+        "title" : "Florence"
+      } ],
+      "title" : "Companies"
+    }
+  },
+  "home" : {
+    "background" : "assets/images/background/39.jpg",
+    "description" : "For better understanding how our template works please read documentation.",
+    "link" : "https://csform.com/documentation-for-ionic-3-angular-6-ui-theme-template-app-multipurpose-starter-app-orange-light/",
+    "subtitle" : "OF DEVELOPING",
+    "subtitle2" : "and make apps fast as light!",
+    "title" : "SAVE HOURS",
+    "toolbarTitle" : "Ionic 3 / Angular 6 UI Theme / Template App - Multipurpose Starter App - Orange Light"
+  },
+  "imageGallery" : {
+    "layout1" : {
+      "items" : [ {
+        "id" : 1,
+        "image" : "assets/images/gallery/full-gallery-content-1/0.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-1/1.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-1/2.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-1/3.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-1/4.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-1/5.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-1/6.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-1/7.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-1/8.jpg"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/gallery/full-gallery-content-1/9.jpg"
+        }, {
+          "id" : 10,
+          "image" : "assets/images/gallery/full-gallery-content-1/1.jpg"
+        }, {
+          "id" : 11,
+          "image" : "assets/images/gallery/full-gallery-content-1/3.jpg"
+        }, {
+          "id" : 12,
+          "image" : "assets/images/gallery/full-gallery-content-1/12.jpg"
+        }, {
+          "id" : 13,
+          "image" : "assets/images/gallery/full-gallery-content-1/4.jpg"
+        }, {
+          "id" : 14,
+          "image" : "assets/images/gallery/full-gallery-content-1/8.jpg"
+        } ],
+        "title" : "Bass Guitar"
+      }, {
+        "id" : 2,
+        "image" : "assets/images/gallery/full-gallery-content-2/0.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-2/2.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-2/5.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-2/6.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-2/7.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-2/8.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-2/9.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-2/3.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-2/4.jpg"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/gallery/full-gallery-content-2/9.jpg"
+        }, {
+          "id" : 10,
+          "image" : "assets/images/gallery/full-gallery-content-2/1.jpg"
+        }, {
+          "id" : 11,
+          "image" : "assets/images/gallery/full-gallery-content-2/6.jpg"
+        }, {
+          "id" : 12,
+          "image" : "assets/images/gallery/full-gallery-content-2/5.jpg"
+        }, {
+          "id" : 13,
+          "image" : "assets/images/gallery/full-gallery-content-2/2.jpg"
+        }, {
+          "id" : 14,
+          "image" : "assets/images/gallery/full-gallery-content-2/9.jpg"
+        }, {
+          "id" : 15,
+          "image" : "assets/images/gallery/full-gallery-content-2/5.jpg"
+        }, {
+          "id" : 16,
+          "image" : "assets/images/gallery/full-gallery-content-2/6.jpg"
+        } ],
+        "title" : "Bridge"
+      }, {
+        "id" : 3,
+        "image" : "assets/images/gallery/full-gallery-content-3/0.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-3/1.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-3/2.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-3/3.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-3/4.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-3/5.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-3/6.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-3/7.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-3/8.jpg"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/gallery/full-gallery-content-3/9.jpg"
+        }, {
+          "id" : 10,
+          "image" : "assets/images/gallery/full-gallery-content-3/10.jpg"
+        }, {
+          "id" : 11,
+          "image" : "assets/images/gallery/full-gallery-content-3/11.jpg"
+        }, {
+          "id" : 12,
+          "image" : "assets/images/gallery/full-gallery-content-3/12.jpg"
+        }, {
+          "id" : 13,
+          "image" : "assets/images/gallery/full-gallery-content-3/12.jpg"
+        }, {
+          "id" : 14,
+          "image" : "assets/images/gallery/full-gallery-content-3/13.jpg"
+        }, {
+          "id" : 15,
+          "image" : "assets/images/gallery/full-gallery-content-3/14.jpg"
+        } ],
+        "title" : "Camera"
+      }, {
+        "id" : 4,
+        "image" : "assets/images/gallery/full-gallery-content-4/0.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-4/0.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-4/1.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-4/2.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-4/3.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-4/4.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-4/5.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-4/6.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-4/7.jpg"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/gallery/full-gallery-content-4/8.jpg"
+        }, {
+          "id" : 10,
+          "image" : "assets/images/gallery/full-gallery-content-4/9.jpg"
+        }, {
+          "image" : "assets/images/gallery/full-gallery-content-4/1.jpg"
+        } ],
+        "title" : "Guitar"
+      }, {
+        "id" : 5,
+        "image" : "assets/images/gallery/full-gallery-content-5/0.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-5/1.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-5/2.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-5/9.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-5/3.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-5/6.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-5/5.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-5/6.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-5/1.jpg"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/gallery/full-gallery-content-5/7.jpg"
+        }, {
+          "id" : 10,
+          "image" : "assets/images/gallery/full-gallery-content-5/8.jpg"
+        }, {
+          "id" : 11,
+          "image" : "assets/images/gallery/full-gallery-content-5/9.jpg"
+        }, {
+          "id" : 12,
+          "image" : "assets/images/gallery/full-gallery-content-5/3.jpg"
+        }, {
+          "id" : 13,
+          "image" : "assets/images/gallery/full-gallery-content-5/2.jpg"
+        }, {
+          "id" : 14,
+          "image" : "assets/images/gallery/full-gallery-content-5/4.jpg"
+        }, {
+          "id" : 15,
+          "image" : "assets/images/gallery/full-gallery-content-5/5.jpg"
+        } ],
+        "title" : "Party"
+      }, {
+        "favorite" : true,
+        "id" : 6,
+        "image" : "assets/images/gallery/full-gallery-content-6/0.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-6/1.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-6/2.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-6/4.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-6/3.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-6/6.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-6/10.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-6/5.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-6/7.jpg"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/gallery/full-gallery-content-6/9.jpg"
+        }, {
+          "id" : 10,
+          "image" : "assets/images/gallery/full-gallery-content-6/8.jpg"
+        }, {
+          "id" : 11,
+          "image" : "assets/images/gallery/full-gallery-content-6/10.jpg"
+        }, {
+          "id" : 12,
+          "image" : "assets/images/gallery/full-gallery-content-6/3.jpg"
+        }, {
+          "id" : 13,
+          "image" : "assets/images/gallery/full-gallery-content-6/2.jpg"
+        }, {
+          "id" : 14,
+          "image" : "assets/images/gallery/full-gallery-content-6/4.jpg"
+        }, {
+          "id" : 15,
+          "image" : "assets/images/gallery/full-gallery-content-6/5.jpg"
+        }, {
+          "id" : 16,
+          "image" : "assets/images/gallery/full-gallery-content-6/8.jpg"
+        }, {
+          "id" : 17,
+          "image" : "assets/images/gallery/full-gallery-content-6/1.jpg"
+        } ],
+        "title" : "preamps"
+      }, {
+        "id" : 7,
+        "image" : "assets/images/gallery/full-gallery-content-7/0.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-7/3.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-7/5.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-7/4.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-7/7.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-7/8.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-7/9.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-7/1.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-7/4.jpg"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/gallery/full-gallery-content-7/9.jpg"
+        }, {
+          "id" : 10,
+          "image" : "assets/images/gallery/full-gallery-content-7/2.jpg"
+        }, {
+          "id" : 11,
+          "image" : "assets/images/gallery/full-gallery-content-7/8.jpg"
+        }, {
+          "id" : 12,
+          "image" : "assets/images/gallery/full-gallery-content-7/6.jpg"
+        }, {
+          "id" : 13,
+          "image" : "assets/images/gallery/full-gallery-content-7/2.jpg"
+        }, {
+          "id" : 14,
+          "image" : "assets/images/gallery/full-gallery-content-7/9.jpg"
+        }, {
+          "id" : 15,
+          "image" : "assets/images/gallery/full-gallery-content-7/5.jpg"
+        }, {
+          "id" : 16,
+          "image" : "assets/images/gallery/full-gallery-content-7/4.jpg"
+        } ],
+        "title" : "Watch"
+      }, {
+        "id" : 8,
+        "image" : "assets/images/gallery/full-gallery-content-8/0.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-8/1.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-8/2.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-8/12.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-8/13.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-8/16.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-8/15.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-8/5.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-8/16.jpg"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/gallery/full-gallery-content-8/11.jpg"
+        }, {
+          "id" : 10,
+          "image" : "assets/images/gallery/full-gallery-content-8/2.jpg"
+        }, {
+          "id" : 11,
+          "image" : "assets/images/gallery/full-gallery-content-8/10.jpg"
+        }, {
+          "id" : 12,
+          "image" : "assets/images/gallery/full-gallery-content-8/3.jpg"
+        }, {
+          "id" : 13,
+          "image" : "assets/images/gallery/full-gallery-content-8/2.jpg"
+        }, {
+          "id" : 14,
+          "image" : "assets/images/gallery/full-gallery-content-8/4.jpg"
+        }, {
+          "id" : 15,
+          "image" : "assets/images/gallery/full-gallery-content-8/5.jpg"
+        } ],
+        "title" : "Travel"
+      } ]
+    },
+    "layout3" : {
+      "items" : [ {
+        "id" : 1,
+        "image" : "assets/images/gallery/full-gallery-content-1/10.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-1/1.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-1/2.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-1/3.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-1/4.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-1/5.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-10.jpg"
+        } ],
+        "subtitle" : "Friday, August 07, 2017",
+        "title" : "Bass Guitar"
+      }, {
+        "id" : 2,
+        "image" : "assets/images/gallery/full-gallery-content-2/10.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-2/2.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-2/4.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-2/6.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-2/8.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-2/10.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-2/9.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-2/1.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-2/3.jpg"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/gallery/full-gallery-content-2/5.jpg"
+        }, {
+          "id" : 10,
+          "image" : "assets/images/gallery/full-gallery-content-2/7.jpg"
+        }, {
+          "id" : 11,
+          "image" : "assets/images/gallery/full-gallery-content-2/10.jpg"
+        }, {
+          "id" : 12,
+          "image" : "assets/images/gallery/full-gallery-content-2/9.jpg"
+        }, {
+          "id" : 13,
+          "image" : "assets/images/gallery/full-gallery-content-2/8.jpg"
+        }, {
+          "id" : 14,
+          "image" : "assets/images/gallery/full-gallery-content-2/7.jpg"
+        } ],
+        "subtitle" : "Wednesday, July 05, 2017",
+        "title" : "Bridge"
+      }, {
+        "id" : 3,
+        "image" : "assets/images/gallery/full-gallery-content-3/1.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-3/8.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-3/7.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-3/6.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-3/5.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-3/4.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-3/3.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-3/2.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-3/1.jpg"
+        } ],
+        "subtitle" : "Sunday, October 08, 2016",
+        "title" : "Camera"
+      }, {
+        "id" : 4,
+        "image" : "assets/images/gallery/full-gallery-content-4/1.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-4/1.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-4/2.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-4/3.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-4/4.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-4/5.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-4/6.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-4/7.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-4/8.jpg"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/gallery/full-gallery-content-4/9.jpg"
+        } ],
+        "subtitle" : "Monday, June 26, 2017",
+        "title" : "Guitar"
+      }, {
+        "id" : 5,
+        "image" : "assets/images/gallery/full-gallery-content-5/1.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-5/10.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-5/9.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-5/8.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-5/7.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-5/6.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-5/5.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-5/4.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-5/3.jpg"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/gallery/full-gallery-content-5/2.jpg"
+        }, {
+          "id" : 10,
+          "image" : "assets/images/gallery/full-gallery-content-5/1.jpg"
+        }, {
+          "id" : 11,
+          "image" : "assets/images/gallery/full-gallery-content-5/0.jpg"
+        } ],
+        "subtitle" : "Thursday, May 19, 2016",
+        "title" : "Party"
+      }, {
+        "id" : 6,
+        "image" : "assets/images/gallery/full-gallery-content-6/10.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-6/1.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-6/2.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-6/3.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-6/4.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-6/5.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-6/6.jpg"
+        } ],
+        "subtitle" : "Monday, September 01, 2016",
+        "title" : "Preamps"
+      }, {
+        "id" : 7,
+        "image" : "assets/images/gallery/full-gallery-content-7/7.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-7/0.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-7/2.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-7/3.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-7/5.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-7/6.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-7/7.jpg"
+        } ],
+        "subtitle" : "Tuesday, September 05, 2016",
+        "title" : "Watch"
+      }, {
+        "id" : 8,
+        "image" : "assets/images/gallery/full-gallery-content-8/12.jpg",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/gallery/full-gallery-content-8/1.jpg"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/gallery/full-gallery-content-8/3.jpg"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/gallery/full-gallery-content-8/2.jpg"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/gallery/full-gallery-content-8/5.jpg"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/gallery/full-gallery-content-8/4.jpg"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/gallery/full-gallery-content-8/6.jpg"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/gallery/full-gallery-content-8/7.jpg"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/gallery/full-gallery-content-8/8.jpg"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/gallery/full-gallery-content-8/9.jpg"
+        } ],
+        "subtitle" : "Saturday, April 25, 2016",
+        "title" : "Travel"
+      } ]
+    },
+    "subcategory" : {
+      "items" : [ {
+        "id" : 1,
+        "image" : "assets/images/gallery/thumb-grid/16.jpg"
+      }, {
+        "id" : 2,
+        "image" : "assets/images/gallery/thumb-grid/15.jpg"
+      }, {
+        "id" : 3,
+        "image" : "assets/images/gallery/thumb-grid/13.jpg"
+      }, {
+        "id" : 4,
+        "image" : "assets/images/gallery/thumb-grid/7.jpg"
+      }, {
+        "id" : 5,
+        "image" : "assets/images/gallery/thumb-grid/8.jpg"
+      }, {
+        "id" : 6,
+        "image" : "assets/images/gallery/thumb-grid/14.jpg"
+      }, {
+        "id" : 7,
+        "image" : "assets/images/gallery/thumb-grid/1.jpg"
+      }, {
+        "id" : 8,
+        "image" : "assets/images/gallery/thumb-grid/4.jpg"
+      }, {
+        "id" : 9,
+        "image" : "assets/images/gallery/thumb-grid/9.jpg"
+      }, {
+        "id" : 10,
+        "image" : "assets/images/gallery/thumb-grid/10.jpg"
+      }, {
+        "id" : 11,
+        "image" : "assets/images/gallery/thumb-grid/8.jpg"
+      }, {
+        "id" : 12,
+        "image" : "assets/images/gallery/thumb-grid/12.jpg"
+      }, {
+        "id" : 13,
+        "image" : "assets/images/gallery/thumb-grid/2.jpg"
+      }, {
+        "id" : 14,
+        "image" : "assets/images/gallery/thumb-grid/9.jpg"
+      }, {
+        "id" : 15,
+        "image" : "assets/images/gallery/thumb-grid/15.jpg"
+      }, {
+        "id" : 16,
+        "image" : "assets/images/gallery/thumb-grid/1.jpg"
+      } ]
+    }
+  },
+  "intro" : {
+    "btnFinish" : "Finish",
+    "btnNext" : "Next",
+    "btnPrev" : "Previous",
+    "items" : [ {
+      "backgroundImage" : "assets/images/background/28.jpg",
+      "description" : "Finished layouts and components for Ionic 3. Ready to use!",
+      "logo" : "assets/images/logo/1.png",
+      "title" : "Welcome to our new Ionic 3 / Angular 6 UI Theme / Template App - Multipurpose Starter App - Orange Light"
+    }, {
+      "backgroundImage" : "assets/images/background/29.jpg",
+      "description" : "Save hours of developing. Tons of funcional components.",
+      "logo" : "assets/images/logo/1.png",
+      "subtitle" : "subtitle"
+    }, {
+      "backgroundImage" : "assets/images/background/30.jpg",
+      "description" : "Endless possibilities. Combine layouts as you wish.",
+      "logo" : "assets/images/logo/1.png",
+      "title" : "For Designers"
+    } ]
+  },
+  "listView" : {
+    "appearanceAnimations" : {
+      "layout1" : {
+        "items" : [ {
+          "favorite" : true,
+          "id" : 1,
+          "image" : "assets/images/avatar/24.jpg",
+          "title" : "Theresa Mason"
+        }, {
+          "favorite" : false,
+          "id" : 2,
+          "image" : "assets/images/avatar/23.jpg",
+          "title" : "Samantha Kennedy"
+        }, {
+          "favorite" : true,
+          "id" : 3,
+          "image" : "assets/images/avatar/22.jpg",
+          "title" : "Ray Clarke"
+        }, {
+          "favorite" : false,
+          "id" : 4,
+          "image" : "assets/images/avatar/21.jpg",
+          "title" : "Alice Kelly"
+        }, {
+          "favorite" : false,
+          "id" : 5,
+          "image" : "assets/images/avatar/20.jpg",
+          "title" : "Rosie Harrison"
+        }, {
+          "favorite" : true,
+          "id" : 6,
+          "image" : "assets/images/avatar/19.jpg",
+          "title" : "Graham Shaw"
+        }, {
+          "favorite" : false,
+          "id" : 7,
+          "image" : "assets/images/avatar/18.jpg",
+          "title" : "Edward Chapma"
+        }, {
+          "favorite" : true,
+          "id" : 8,
+          "image" : "assets/images/avatar/16.jpg",
+          "title" : "Fiona Edwards"
+        }, {
+          "favorite" : true,
+          "id" : 9,
+          "image" : "assets/images/avatar/15.jpg",
+          "title" : "Benjamin Wilson"
+        }, {
+          "favorite" : true,
+          "id" : 10,
+          "image" : "assets/images/avatar/14.jpg",
+          "title" : "Imogen Wilkinson"
+        }, {
+          "favorite" : false,
+          "id" : 11,
+          "image" : "assets/images/avatar/13.jpg",
+          "title" : "Jamie Clark"
+        }, {
+          "favorite" : false,
+          "id" : 12,
+          "image" : "assets/images/avatar/12.jpg",
+          "title" : "Olivia Stevens"
+        }, {
+          "favorite" : false,
+          "id" : 13,
+          "image" : "assets/images/avatar/11.jpg",
+          "title" : "Leo Carter"
+        }, {
+          "favorite" : false,
+          "id" : 14,
+          "image" : "assets/images/avatar/10.jpg",
+          "title" : "Sebastian Bennett"
+        }, {
+          "favorite" : false,
+          "id" : 15,
+          "image" : "assets/images/avatar/9.jpg",
+          "title" : "Ella Richardsont"
+        }, {
+          "favorite" : false,
+          "id" : 16,
+          "image" : "assets/images/avatar/17.jpg",
+          "title" : "Jennifer Reid"
+        } ]
+      },
+      "layout2" : {
+        "items" : [ {
+          "favorite" : true,
+          "id" : 1,
+          "image" : "assets/images/avatar/24.jpg",
+          "title" : "Theresa Mason"
+        }, {
+          "favorite" : false,
+          "id" : 2,
+          "image" : "assets/images/avatar/23.jpg",
+          "title" : "Samantha Kenned"
+        }, {
+          "favorite" : true,
+          "id" : 3,
+          "image" : "assets/images/avatar/22.jpg",
+          "title" : "Ray Clarke"
+        }, {
+          "favorite" : false,
+          "id" : 4,
+          "image" : "assets/images/avatar/21.jpg",
+          "title" : "Alice Kelly"
+        }, {
+          "favorite" : false,
+          "id" : 5,
+          "image" : "assets/images/avatar/20.jpg",
+          "title" : "Rosie Harrison"
+        }, {
+          "favorite" : true,
+          "id" : 6,
+          "image" : "assets/images/avatar/19.jpg",
+          "title" : "Graham Shaw"
+        }, {
+          "favorite" : false,
+          "id" : 7,
+          "image" : "assets/images/avatar/18.jpg",
+          "title" : "Edward Chapman"
+        }, {
+          "favorite" : true,
+          "id" : 8,
+          "image" : "assets/images/avatar/16.jpg",
+          "title" : "Fiona Edwards"
+        }, {
+          "favorite" : true,
+          "id" : 9,
+          "image" : "assets/images/avatar/15.jpg",
+          "title" : "Benjamin Wilson"
+        }, {
+          "favorite" : true,
+          "id" : 10,
+          "image" : "assets/images/avatar/14.jpg",
+          "title" : "Victoria Mitchell"
+        }, {
+          "favorite" : false,
+          "id" : 11,
+          "image" : "assets/images/avatar/13.jpg",
+          "title" : "Jamie Clark"
+        }, {
+          "favorite" : false,
+          "id" : 12,
+          "image" : "assets/images/avatar/12.jpg",
+          "title" : "Olivia Stevens"
+        }, {
+          "favorite" : false,
+          "id" : 13,
+          "image" : "assets/images/avatar/11.jpg",
+          "title" : "Leo Carter"
+        }, {
+          "favorite" : false,
+          "id" : 14,
+          "image" : "assets/images/avatar/10.jpg",
+          "title" : "Sebastian Bennett"
+        }, {
+          "favorite" : false,
+          "id" : 15,
+          "image" : "assets/images/avatar/9.jpg",
+          "title" : "Ella Richardson"
+        }, {
+          "favorite" : false,
+          "id" : 16,
+          "image" : "assets/images/avatar/17.jpg",
+          "title" : "Jennifer Reid"
+        } ]
+      },
+      "layout3" : {
+        "items" : [ {
+          "favorite" : true,
+          "id" : 1,
+          "image" : "assets/images/avatar/24.jpg",
+          "title" : "Theresa Mason"
+        }, {
+          "favorite" : false,
+          "id" : 2,
+          "image" : "assets/images/avatar/23.jpg",
+          "title" : "Samantha Kennedy"
+        }, {
+          "favorite" : true,
+          "id" : 3,
+          "image" : "assets/images/avatar/22.jpg",
+          "title" : "Ray Clarke"
+        }, {
+          "favorite" : false,
+          "id" : 4,
+          "image" : "assets/images/avatar/21.jpg",
+          "title" : "Alice Kelly"
+        }, {
+          "favorite" : false,
+          "id" : 5,
+          "image" : "assets/images/avatar/20.jpg",
+          "title" : "Rosie Harrison"
+        }, {
+          "favorite" : true,
+          "id" : 6,
+          "image" : "assets/images/avatar/19.jpg",
+          "title" : "Graham Shaw"
+        }, {
+          "favorite" : false,
+          "id" : 7,
+          "image" : "assets/images/avatar/18.jpg",
+          "title" : "Edward Chapman"
+        }, {
+          "favorite" : true,
+          "id" : 8,
+          "image" : "assets/images/avatar/16.jpg",
+          "title" : "Fiona Edwards"
+        }, {
+          "favorite" : true,
+          "id" : 9,
+          "image" : "assets/images/avatar/15.jpg",
+          "title" : "Benjamin Wilson"
+        }, {
+          "favorite" : true,
+          "id" : 10,
+          "image" : "assets/images/avatar/14.jpg",
+          "title" : "Imogen Wilkinson"
+        }, {
+          "favorite" : false,
+          "id" : 11,
+          "image" : "assets/images/avatar/13.jpg",
+          "title" : "Jamie Clark"
+        }, {
+          "favorite" : false,
+          "id" : 12,
+          "image" : "assets/images/avatar/12.jpg",
+          "title" : "Olivia Stevens"
+        }, {
+          "favorite" : false,
+          "id" : 13,
+          "image" : "assets/images/avatar/11.jpg",
+          "title" : "Leo Carter"
+        }, {
+          "favorite" : false,
+          "id" : 14,
+          "image" : "assets/images/avatar/10.jpg",
+          "title" : "Sebastian Bennett"
+        }, {
+          "favorite" : false,
+          "id" : 15,
+          "image" : "assets/images/avatar/9.jpg",
+          "title" : "Ella Richardson"
+        }, {
+          "favorite" : false,
+          "id" : 16,
+          "image" : "assets/images/avatar/17.jpg",
+          "title" : "Jennifer Reid"
+        } ]
+      },
+      "layout4" : {
+        "items" : [ {
+          "favorite" : true,
+          "id" : 1,
+          "image" : "assets/images/avatar/24.jpg",
+          "title" : "Theresa Mason"
+        }, {
+          "favorite" : false,
+          "id" : 2,
+          "image" : "assets/images/avatar/23.jpg",
+          "title" : "Samantha Kennedy"
+        }, {
+          "favorite" : true,
+          "id" : 3,
+          "image" : "assets/images/avatar/22.jpg",
+          "title" : "Ray Clarke"
+        }, {
+          "favorite" : false,
+          "id" : 4,
+          "image" : "assets/images/avatar/21.jpg",
+          "title" : "Alice Kelly"
+        }, {
+          "favorite" : false,
+          "id" : 5,
+          "image" : "assets/images/avatar/20.jpg",
+          "title" : "Nicholas Henderson"
+        }, {
+          "favorite" : true,
+          "id" : 6,
+          "image" : "assets/images/avatar/19.jpg",
+          "title" : "Graham Shaw"
+        }, {
+          "favorite" : false,
+          "id" : 7,
+          "image" : "assets/images/avatar/18.jpg",
+          "title" : "Edward Chapman"
+        }, {
+          "favorite" : true,
+          "id" : 8,
+          "image" : "assets/images/avatar/16.jpg",
+          "title" : "Fiona Edwards"
+        }, {
+          "favorite" : true,
+          "id" : 9,
+          "image" : "assets/images/avatar/15.jpg",
+          "title" : "Benjamin Wilson"
+        }, {
+          "favorite" : true,
+          "id" : 10,
+          "image" : "assets/images/avatar/14.jpg",
+          "title" : "Imogen Wilkinson"
+        }, {
+          "favorite" : false,
+          "id" : 11,
+          "image" : "assets/images/avatar/13.jpg",
+          "title" : "Jamie Clark"
+        }, {
+          "favorite" : false,
+          "id" : 12,
+          "image" : "assets/images/avatar/12.jpg",
+          "title" : "Olivia Stevens"
+        }, {
+          "favorite" : false,
+          "id" : 13,
+          "image" : "assets/images/avatar/11.jpg",
+          "title" : "Leo Carter"
+        }, {
+          "favorite" : false,
+          "id" : 14,
+          "image" : "assets/images/avatar/10.jpg",
+          "title" : "Sebastian Bennett"
+        }, {
+          "favorite" : false,
+          "id" : 15,
+          "image" : "assets/images/avatar/9.jpg",
+          "title" : "Ella Richardson"
+        }, {
+          "favorite" : false,
+          "id" : 16,
+          "image" : "assets/images/avatar/17.jpg",
+          "title" : "Jennifer Reid"
+        } ]
+      },
+      "layout5" : {
+        "items" : [ {
+          "favorite" : true,
+          "id" : 1,
+          "image" : "assets/images/avatar/24.jpg",
+          "title" : "Theresa Mason"
+        }, {
+          "favorite" : false,
+          "id" : 2,
+          "image" : "assets/images/avatar/23.jpg",
+          "title" : "Samantha Kennedy"
+        }, {
+          "favorite" : true,
+          "id" : 3,
+          "image" : "assets/images/avatar/22.jpg",
+          "title" : "Ray Clarke"
+        }, {
+          "favorite" : false,
+          "id" : 4,
+          "image" : "assets/images/avatar/21.jpg",
+          "title" : "Alice Kelly"
+        }, {
+          "favorite" : false,
+          "id" : 5,
+          "image" : "assets/images/avatar/20.jpg",
+          "title" : "Rosie Harrison"
+        }, {
+          "favorite" : true,
+          "id" : 6,
+          "image" : "assets/images/avatar/19.jpg",
+          "title" : "Graham Shaw"
+        }, {
+          "favorite" : false,
+          "id" : 7,
+          "image" : "assets/images/avatar/18.jpg",
+          "title" : "Edward Chapman"
+        }, {
+          "favorite" : true,
+          "id" : 8,
+          "image" : "assets/images/avatar/16.jpg",
+          "title" : "Fiona Edwards"
+        }, {
+          "favorite" : true,
+          "id" : 9,
+          "image" : "assets/images/avatar/15.jpg",
+          "title" : "Benjamin Wilson"
+        }, {
+          "favorite" : true,
+          "id" : 10,
+          "image" : "assets/images/avatar/14.jpg",
+          "title" : "Imogen Wilkinson"
+        }, {
+          "favorite" : false,
+          "id" : 11,
+          "image" : "assets/images/avatar/13.jpg",
+          "title" : "Jamie Clark"
+        }, {
+          "favorite" : false,
+          "id" : 12,
+          "image" : "assets/images/avatar/12.jpg",
+          "title" : "Olivia Stevens"
+        }, {
+          "favorite" : false,
+          "id" : 13,
+          "image" : "assets/images/avatar/11.jpg",
+          "title" : "Leo Carter"
+        }, {
+          "favorite" : false,
+          "id" : 14,
+          "image" : "assets/images/avatar/10.jpg",
+          "title" : "Sebastian Bennett"
+        }, {
+          "favorite" : false,
+          "id" : 15,
+          "image" : "assets/images/avatar/9.jpg",
+          "title" : "Ella Richardson"
+        }, {
+          "favorite" : false,
+          "id" : 16,
+          "image" : "assets/images/avatar/17.jpg",
+          "title" : "Jennifer Reid"
+        } ]
+      }
+    },
+    "dragAndDrop" : {
+      "layout1" : {
+        "header" : "Restaurants",
+        "items" : [ {
+          "id" : 1,
+          "subtitle" : "New York City",
+          "textIcon" : "7186 km",
+          "title" : "Rainforest Cafe"
+        }, {
+          "id" : 2,
+          "subtitle" : "Los Angeles",
+          "textIcon" : "2281 km",
+          "title" : "Big Boy"
+        }, {
+          "id" : 3,
+          "subtitle" : "Beijing",
+          "textIcon" : "1748 km",
+          "title" : "California Pizza Kitchen"
+        }, {
+          "id" : 4,
+          "subtitle" : "MDelhi",
+          "textIcon" : "3450 km",
+          "title" : "Cheese Burger in Paradise"
+        }, {
+          "id" : 5,
+          "subtitle" : "Shanghai",
+          "textIcon" : "7374 km",
+          "title" : "T.G.I. Friday's"
+        }, {
+          "id" : 6,
+          "subtitle" : "Paris",
+          "textIcon" : "6070 km",
+          "title" : "Heart Attack Grill"
+        }, {
+          "id" : 7,
+          "subtitle" : "Istanbul",
+          "textIcon" : "8158 km",
+          "title" : "Heart Attack Grill"
+        }, {
+          "id" : 8,
+          "subtitle" : "Tokyo",
+          "textIcon" : "292 km",
+          "title" : "Dick's Last Resort"
+        }, {
+          "id" : 9,
+          "subtitle" : "Guangzhou",
+          "textIcon" : "9231 km",
+          "title" : "Steak 'n Shake"
+        }, {
+          "id" : 10,
+          "subtitle" : "Mumbai",
+          "textIcon" : "9972 km",
+          "title" : "Bluepoint Sage Cafe"
+        }, {
+          "id" : 11,
+          "subtitle" : "Moscow",
+          "textIcon" : "9720 km",
+          "title" : "Ground Round"
+        }, {
+          "id" : 12,
+          "subtitle" : "São Paulo",
+          "textIcon" : "988 km",
+          "title" : "Waffle House"
+        }, {
+          "id" : 13,
+          "subtitle" : "Shenzhen",
+          "textIcon" : "1000 km",
+          "title" : "Quaker Steak & Lube"
+        }, {
+          "id" : 14,
+          "subtitle" : "Boston",
+          "textIcon" : "2565 km",
+          "title" : "Boston Pizza"
+        } ]
+      },
+      "layout2" : {
+        "button" : "get",
+        "header" : "Cart",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/avatar/2.jpg",
+          "price" : "$199.99",
+          "subtitle" : "20% Off",
+          "title" : "500+"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/avatar/3.jpg",
+          "price" : "$295.99",
+          "subtitle" : "15% Off",
+          "title" : "iWatch black"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/avatar/6.jpg",
+          "price" : "$1032.99",
+          "subtitle" : "22% Off",
+          "title" : "Nikon Photoaparat"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/avatar/0.jpg",
+          "price" : "$1269.99",
+          "subtitle" : "10% Off",
+          "title" : "Canon Photoaparat"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/avatar/5.jpg",
+          "price" : "$34.99",
+          "subtitle" : "12% Off",
+          "title" : "50mm"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/avatar/7.jpg",
+          "price" : "$499.99",
+          "subtitle" : "14% Off",
+          "title" : "Sony PS"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/avatar/2.jpg",
+          "price" : "$799.99",
+          "subtitle" : "20% Off",
+          "title" : "500+"
+        } ],
+        "subtitle" : "Reorder list by your wish.",
+        "title" : "Make order now!"
+      },
+      "layout3" : {
+        "button" : "Confirm",
+        "header" : "List friends",
+        "items" : [ {
+          "id" : 1,
+          "image" : "assets/images/avatar/13.jpg",
+          "subtitle" : "@erica",
+          "title" : "Erica Romaguera"
+        }, {
+          "id" : 2,
+          "image" : "assets/images/avatar/14.jpg",
+          "subtitle" : "@nia234",
+          "title" : "Nia Gutkowski"
+        }, {
+          "id" : 3,
+          "image" : "assets/images/avatar/15.jpg",
+          "subtitle" : "@camila",
+          "title" : "Camila Hintz"
+        }, {
+          "id" : 4,
+          "image" : "assets/images/avatar/16.jpg",
+          "subtitle" : "@anna",
+          "title" : "Anna Yost"
+        }, {
+          "id" : 5,
+          "image" : "assets/images/avatar/17.jpg",
+          "subtitle" : "@georgianna",
+          "title" : "Georgianna Baumbach"
+        }, {
+          "id" : 6,
+          "image" : "assets/images/avatar/18.jpg",
+          "subtitle" : "@jaqueline",
+          "title" : "Jaqueline Stehr"
+        }, {
+          "id" : 7,
+          "image" : "assets/images/avatar/19.jpg",
+          "subtitle" : "@naomi",
+          "title" : "Naomi Mante"
+        }, {
+          "id" : 8,
+          "image" : "assets/images/avatar/20.jpg",
+          "subtitle" : "@amaya",
+          "title" : "Amaya Abshire"
+        }, {
+          "id" : 9,
+          "image" : "assets/images/avatar/21.jpg",
+          "subtitle" : "@rickie",
+          "title" : "Rickie Glover"
+        }, {
+          "id" : 10,
+          "image" : "assets/images/avatar/22.jpg",
+          "subtitle" : "@antone",
+          "title" : "Antone Mayert"
+        }, {
+          "id" : 11,
+          "image" : "assets/images/avatar/23.jpg",
+          "subtitle" : "@alison",
+          "title" : "Alison Streich"
+        } ]
+      }
+    },
+    "expandable" : {
+      "layout1" : {
+        "header" : "Catalogue",
+        "items" : [ {
+          "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "expandItems" : [ {
+            "description" : "Lorem ipsum",
+            "details" : "$399.99",
+            "id" : 1,
+            "image" : "assets/images/avatar/7.jpg",
+            "title" : "Sony PC"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$2058.99",
+            "id" : 2,
+            "image" : "assets/images/avatar/6.jpg",
+            "title" : "Nikon Photoaparat"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$89.99",
+            "id" : 3,
+            "image" : "assets/images/avatar/5.jpg",
+            "title" : "Objective"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "1999.99",
+            "id" : 4,
+            "image" : "assets/images/avatar/4.jpg",
+            "title" : "Canon Photoaparat"
+          } ],
+          "id" : 1,
+          "image" : "assets/images/avatar/0.jpg",
+          "title" : "Nikon"
+        }, {
+          "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "expandItems" : [ {
+            "description" : "Lorem ipsum",
+            "details" : "$99.99",
+            "id" : 1,
+            "image" : "assets/images/avatar/3.jpg",
+            "title" : "Watch black"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$499.99",
+            "id" : 2,
+            "image" : "assets/images/avatar/7.jpg",
+            "title" : "Sony PC"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$1199.99",
+            "id" : 3,
+            "image" : "assets/images/avatar/1.jpg",
+            "title" : "iPhone 8 Plus"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$798.99",
+            "id" : 4,
+            "image" : "assets/images/avatar/0.jpg",
+            "title" : "Canon Photoaparat"
+          } ],
+          "id" : 2,
+          "image" : "assets/images/avatar/2.jpg",
+          "title" : "500+"
+        }, {
+          "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "expandItems" : [ {
+            "description" : "Lorem ipsum",
+            "details" : "$589.99",
+            "id" : 1,
+            "image" : "assets/images/avatar/2.jpg",
+            "title" : "500+"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$799.99",
+            "id" : 2,
+            "image" : "assets/images/avatar/4.jpg",
+            "title" : "Nikon Photoaparat"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$99.99",
+            "id" : 3,
+            "image" : "assets/images/avatar/6.jpg",
+            "title" : "Objective"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$599.99",
+            "id" : 4,
+            "image" : "assets/images/avatar/7.jpg",
+            "title" : "Sony PC"
+          } ],
+          "id" : 3,
+          "image" : "assets/images/avatar/4.jpg",
+          "title" : "Canon Photoaparat"
+        }, {
+          "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "expandItems" : [ {
+            "description" : "Lorem ipsum",
+            "details" : "$412.99",
+            "id" : 1,
+            "image" : "assets/images/avatar/4.jpg",
+            "title" : "Canon Photoaparat"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$657.99",
+            "id" : 2,
+            "image" : "assets/images/avatar/3.jpg",
+            "title" : "Watch black"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$58.99",
+            "id" : 3,
+            "image" : "assets/images/avatar/5.jpg",
+            "title" : "50mm"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$856.99",
+            "id" : 4,
+            "image" : "assets/images/avatar/7.jpg",
+            "title" : "Sony PC"
+          } ],
+          "id" : 4,
+          "image" : "assets/images/avatar/1.jpg",
+          "title" : "iPhone 8 Plus"
+        }, {
+          "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "expandItems" : [ {
+            "description" : "Lorem ipsum",
+            "details" : "$999.99",
+            "id" : 1,
+            "image" : "assets/images/avatar/6.jpg",
+            "title" : "Nikon"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$299.99",
+            "id" : 2,
+            "image" : "assets/images/avatar/3.jpg",
+            "title" : "Watch black"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$658.99",
+            "id" : 3,
+            "image" : "assets/images/avatar/7.jpg",
+            "title" : "Sony PC"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$158.99",
+            "id" : 4,
+            "image" : "assets/images/avatar/2.jpg",
+            "title" : "500+"
+          } ],
+          "id" : 5,
+          "image" : "assets/images/avatar/5.jpg",
+          "title" : "50mm"
+        }, {
+          "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "expandItems" : [ {
+            "description" : "Lorem ipsum",
+            "details" : "$1008.99",
+            "id" : 1,
+            "image" : "assets/images/avatar/1.jpg",
+            "title" : "iPhone 8 Plus"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$258.99",
+            "id" : 2,
+            "image" : "assets/images/avatar/5.jpg",
+            "title" : "50mm"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$628.99",
+            "id" : 3,
+            "image" : "assets/images/avatar/2.jpg",
+            "title" : "500+"
+          }, {
+            "description" : "Lorem ipsum",
+            "details" : "$580.99s",
+            "id" : 4,
+            "image" : "assets/images/avatar/7.jpg",
+            "title" : "Sony PC"
+          } ],
+          "id" : 6,
+          "image" : "assets/images/avatar/6.jpg",
+          "title" : "Nikon Photoaparat"
+        } ]
+      },
+      "layout2" : {
+        "items" : [ {
+          "backgroundImage" : "assets/images/background/11.jpg",
+          "expandItems" : {
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            "iconsStars" : [ {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : false
+            } ],
+            "reviews" : "4.12 (78 reviews)",
+            "title" : "Lorem ipsum dolor sit amet"
+          },
+          "icon" : "ios-arrow-dropright",
+          "iconText" : "Watch now",
+          "id" : 1,
+          "subtitle" : "Monday, 15th Oct. 2018",
+          "title" : "Open Air Concerts"
+        }, {
+          "backgroundImage" : "assets/images/background/14.jpg",
+          "expandItems" : {
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            "iconsStars" : [ {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : false
+            } ],
+            "reviews" : "4.12 (78 reviews)",
+            "title" : "Lorem ipsum dolor sit amet"
+          },
+          "icon" : "ios-arrow-dropright",
+          "iconText" : "Watch now",
+          "id" : 2,
+          "subtitle" : "Wendsday, 21st Oct. 2018",
+          "title" : "Concert Summer"
+        }, {
+          "backgroundImage" : "assets/images/background/13.jpg",
+          "expandItems" : {
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            "iconsStars" : [ {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : false
+            } ],
+            "reviews" : "4.12 (78 reviews)",
+            "title" : "Lorem ipsum dolor sit amet"
+          },
+          "icon" : "ios-arrow-dropright",
+          "iconText" : "Watch now",
+          "id" : 3,
+          "subtitle" : "Wendsday, 21st Oct. 2018",
+          "title" : "Summer Open Air Festival"
+        }, {
+          "backgroundImage" : "assets/images/background/10.jpg",
+          "expandItems" : {
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            "iconsStars" : [ {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : false
+            } ],
+            "reviews" : "4.12 (78 reviews)",
+            "title" : "Lorem ipsum dolor sit amet"
+          },
+          "icon" : "ios-arrow-dropright",
+          "iconText" : "Watch now",
+          "id" : 4,
+          "subtitle" : "Wendsday, 21st Oct. 2018",
+          "title" : "Classic Open Air"
+        }, {
+          "backgroundImage" : "assets/images/background/14.jpg",
+          "expandItems" : {
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            "iconsStars" : [ {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : false
+            } ],
+            "reviews" : "4.12 (78 reviews)",
+            "title" : "Lorem ipsum dolor sit amet"
+          },
+          "icon" : "ios-arrow-dropright",
+          "iconText" : "Watch now",
+          "id" : 5,
+          "subtitle" : "Monday, 15th Oct. 2018",
+          "title" : "Concert Summer"
+        }, {
+          "backgroundImage" : "assets/images/background/13.jpg",
+          "expandItems" : {
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            "iconsStars" : [ {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : true
+            }, {
+              "iconActive" : "icon-star",
+              "iconInactive" : "icon-star-outline",
+              "isActive" : false
+            } ],
+            "reviews" : "4.12 (78 reviews)",
+            "title" : "Lorem ipsum dolor sit amet"
+          },
+          "icon" : "ios-arrow-dropright",
+          "iconText" : "Watch now",
+          "id" : 6,
+          "subtitle" : "Thursday, 21st Oct. 2018",
+          "title" : "Summer Open Air Festival"
+        } ]
+      },
+      "layout3" : {
+        "button" : "CHOOSE",
+        "header" : "Popular Car",
+        "items" : [ {
+          "expandItems" : [ {
+            "isChecked" : "true",
+            "title" : "year"
+          }, {
+            "isChecked" : "false",
+            "title" : "price"
+          }, {
+            "isChecked" : "true",
+            "title" : "fuel"
+          }, {
+            "isChecked" : "false",
+            "title" : "color"
+          }, {
+            "isChecked" : "true",
+            "title" : "horse power"
+          } ],
+          "icon" : "icon-chevron-right",
+          "id" : 1,
+          "title" : "Tesla Model S"
+        }, {
+          "expandItems" : [ {
+            "isChecked" : "false",
+            "title" : "year"
+          }, {
+            "isChecked" : "false",
+            "title" : "price"
+          }, {
+            "isChecked" : "true",
+            "title" : "fuel"
+          }, {
+            "isChecked" : "true",
+            "title" : "color"
+          }, {
+            "isChecked" : "true",
+            "title" : "horse powe"
+          } ],
+          "icon" : "icon-chevron-right",
+          "id" : 2,
+          "title" : "Toyota RAV4"
+        }, {
+          "expandItems" : [ {
+            "isChecked" : "true",
+            "title" : "year"
+          }, {
+            "isChecked" : "true",
+            "title" : "price"
+          }, {
+            "isChecked" : "true",
+            "title" : "fuel"
+          }, {
+            "isChecked" : "false",
+            "title" : "color"
+          }, {
+            "isChecked" : "false",
+            "title" : "horse power"
+          } ],
+          "icon" : "icon-chevron-right",
+          "id" : 3,
+          "title" : "Audi Q5"
+        }, {
+          "expandItems" : [ {
+            "isChecked" : "false",
+            "title" : "year"
+          }, {
+            "isChecked" : "false",
+            "title" : "price"
+          }, {
+            "isChecked" : "false",
+            "title" : "fuel"
+          }, {
+            "isChecked" : "true",
+            "title" : "color"
+          }, {
+            "isChecked" : "true",
+            "title" : "horse power"
+          } ],
+          "icon" : "icon-chevron-right",
+          "id" : 4,
+          "title" : "BMW 3 Series"
+        }, {
+          "expandItems" : [ {
+            "isChecked" : "true",
+            "title" : "year"
+          }, {
+            "isChecked" : "true",
+            "title" : "price"
+          }, {
+            "isChecked" : "false",
+            "title" : "fuel"
+          }, {
+            "isChecked" : "false",
+            "title" : "color"
+          }, {
+            "isChecked" : "false",
+            "title" : "horse power"
+          } ],
+          "icon" : "icon-chevron-right",
+          "id" : 5,
+          "title" : "Audi Q7"
+        }, {
+          "expandItems" : [ {
+            "isChecked" : "true",
+            "title" : "year"
+          }, {
+            "isChecked" : "true",
+            "title" : "price"
+          }, {
+            "isChecked" : "false",
+            "title" : "fuel"
+          }, {
+            "isChecked" : "false",
+            "title" : "color"
+          }, {
+            "isChecked" : "false",
+            "title" : "horse power"
+          } ],
+          "icon" : "icon-chevron-right",
+          "id" : 6,
+          "title" : "Subaru Impreza"
+        }, {
+          "expandItems" : [ {
+            "isChecked" : "true",
+            "title" : "year"
+          }, {
+            "isChecked" : "true",
+            "title" : "price"
+          }, {
+            "isChecked" : "false",
+            "title" : "fuel"
+          }, {
+            "isChecked" : "false",
+            "title" : "color"
+          }, {
+            "isChecked" : "false",
+            "title" : "horse power"
+          } ],
+          "icon" : "icon-chevron-right",
+          "id" : 7,
+          "title" : "BMW X5"
+        }, {
+          "expandItems" : [ {
+            "isChecked" : "true",
+            "title" : "year"
+          }, {
+            "isChecked" : "true",
+            "title" : "price"
+          }, {
+            "isChecked" : "false",
+            "title" : "fuel"
+          }, {
+            "isChecked" : "false",
+            "title" : "color"
+          }, {
+            "isChecked" : "false",
+            "title" : "horse power"
+          } ],
+          "icon" : "icon-chevron-right",
+          "id" : 8,
+          "title" : "Hyundai Tucson"
+        }, {
+          "expandItems" : [ {
+            "isChecked" : "true",
+            "title" : "year"
+          }, {
+            "isChecked" : "true",
+            "title" : "price"
+          }, {
+            "isChecked" : "false",
+            "title" : "fuel"
+          }, {
+            "isChecked" : "false",
+            "title" : "color"
+          }, {
+            "isChecked" : "false",
+            "title" : "horse power"
+          } ],
+          "icon" : "icon-chevron-right",
+          "id" : 9,
+          "title" : "Lexus RX 350"
+        }, {
+          "expandItems" : [ {
+            "isChecked" : "true",
+            "title" : "year"
+          }, {
+            "isChecked" : "true",
+            "title" : "price"
+          }, {
+            "isChecked" : "false",
+            "title" : "fuel"
+          }, {
+            "isChecked" : "false",
+            "title" : "color"
+          }, {
+            "isChecked" : "false",
+            "title" : "horse power"
+          } ],
+          "icon" : "icon-chevron-right",
+          "id" : 10,
+          "title" : "Jeep Wrangler"
+        }, {
+          "expandItems" : [ {
+            "isChecked" : "true",
+            "title" : "year"
+          }, {
+            "isChecked" : "true",
+            "title" : "price"
+          }, {
+            "isChecked" : "false",
+            "title" : "fuel"
+          }, {
+            "isChecked" : "false",
+            "title" : "color"
+          }, {
+            "isChecked" : "false",
+            "title" : "horse power"
+          } ],
+          "icon" : "icon-chevron-right",
+          "id" : 11,
+          "title" : "Subaru Outback"
+        } ]
+      }
+    },
+    "googleCards" : {
+      "layout1" : {
+        "items" : [ {
+          "backgroundImage" : "assets/images/background/2.jpg",
+          "description" : "Cras odio felis, blandit sit amet mi nec, euismod mattis tellus.",
+          "id" : 1,
+          "title" : "Free Ride"
+        }, {
+          "backgroundImage" : "assets/images/background/5.jpg",
+          "description" : "Cras odio felis, blandit sit amet mi nec, euismod mattis tellus.",
+          "id" : 2,
+          "title" : "Bridge Tour"
+        }, {
+          "backgroundImage" : "assets/images/background/21.jpg",
+          "description" : "Cras odio felis, blandit sit amet mi nec, euismod mattis tellus.",
+          "id" : 3,
+          "title" : "Sea Tour"
+        }, {
+          "backgroundImage" : "assets/images/background/7.jpg",
+          "description" : "Cras odio felis, blandit sit amet mi nec, euismod mattis tellus.",
+          "id" : 4,
+          "title" : "Main Stage Event"
+        }, {
+          "backgroundImage" : "assets/images/background/11.jpg",
+          "description" : "Cras odio felis, blandit sit amet mi nec, euismod mattis tellus.",
+          "id" : 5,
+          "title" : "Classic Open Air"
+        }, {
+          "backgroundImage" : "assets/images/background/14.jpg",
+          "description" : "Cras odio felis, blandit sit amet mi nec, euismod mattis tellus.",
+          "id" : 6,
+          "title" : "Concert Summer"
+        }, {
+          "backgroundImage" : "assets/images/background/10.jpg",
+          "description" : "Cras odio felis, blandit sit amet mi nec, euismod mattis tellus.",
+          "id" : 7,
+          "title" : "Open Air Concerts"
+        } ]
+      },
+      "layout2" : {
+        "items" : [ {
+          "button" : "Buy",
+          "description" : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC",
+          "id" : 1,
+          "image" : "assets/images/background/6.jpg",
+          "price" : "$144.50",
+          "shareIcon" : "more",
+          "subtitle" : "Category: Watch",
+          "title" : "Digital Watch"
+        }, {
+          "button" : "$130.99",
+          "description" : "Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words",
+          "id" : 2,
+          "image" : "assets/images/background/9.jpg",
+          "price" : "$130.99",
+          "shareIcon" : "more",
+          "subtitle" : "Category: Watch",
+          "title" : "Android Watch"
+        }, {
+          "button" : "Buy",
+          "description" : "Icero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum",
+          "id" : 3,
+          "image" : "assets/images/background/10.jpg",
+          "price" : "$354.05",
+          "shareIcon" : "more",
+          "subtitle" : "Category: Guitars",
+          "title" : "Acoustic Guitars"
+        }, {
+          "button" : "Buy",
+          "description" : "Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+          "id" : 4,
+          "image" : "assets/images/background/13.jpg",
+          "price" : "$338.99",
+          "shareIcon" : "more",
+          "subtitle" : "Category: Guitars",
+          "title" : "Bass guitar"
+        }, {
+          "button" : "Buy",
+          "description" : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC",
+          "id" : 5,
+          "image" : "assets/images/background/15.jpg",
+          "price" : "$109.60",
+          "shareIcon" : "more",
+          "subtitle" : "Category: Guitars",
+          "title" : "Classical guitar"
+        } ]
+      },
+      "layout3" : {
+        "items" : [ {
+          "button" : "$135.99",
+          "category" : "best offer",
+          "id" : 1,
+          "image" : "assets/images/background/11.jpg",
+          "subtitle" : "West Avenue, NYC",
+          "title" : "Free Ride Tour"
+        }, {
+          "button" : "$312.99",
+          "category" : "main event",
+          "id" : 2,
+          "image" : "assets/images/background/14.jpg",
+          "subtitle" : "Hyde Park, London",
+          "title" : "Open Air Concert"
+        }, {
+          "button" : "$213.45",
+          "category" : "Best Tourt",
+          "id" : 3,
+          "image" : "assets/images/background/21.jpg",
+          "subtitle" : "Guilin, Kweilin",
+          "title" : "Sea ture"
+        }, {
+          "button" : "$338.60",
+          "category" : "Mountain",
+          "id" : 4,
+          "image" : "assets/images/background/7.jpg",
+          "subtitle" : "Mountain Trout Camp",
+          "title" : "Mountain Trout"
+        }, {
+          "button" : "$410.85",
+          "category" : "Bridge Tour",
+          "id" : 5,
+          "image" : "assets/images/background/5.jpg",
+          "subtitle" : "BridgeClimb, Sydney",
+          "title" : "Bridge Tour"
+        }, {
+          "button" : "$516.55",
+          "category" : "best events",
+          "id" : 6,
+          "image" : "assets/images/background/2.jpg",
+          "subtitle" : "Hyde Park, London ",
+          "title" : "Main Stage Event"
+        } ]
+      }
+    },
+    "stickyListHeader" : {
+      "layout1" : {
+        "items" : [ {
+          "groupName" : "Jazz",
+          "items" : [ {
+            "id" : 1,
+            "image" : "assets/images/avatar/24.jpg",
+            "price" : "$58.99",
+            "subtitle" : "58 songs",
+            "title" : "Iria Mascareñas"
+          }, {
+            "id" : 2,
+            "image" : "assets/images/avatar/23.jpg",
+            "price" : "$116.99",
+            "subtitle" : "158 songs",
+            "title" : "Isaac Alvarado"
+          }, {
+            "id" : 3,
+            "image" : "assets/images/avatar/22.jpg",
+            "price" : "$8.29",
+            "subtitle" : "18 songs",
+            "title" : "Joan Alemán"
+          } ]
+        }, {
+          "groupName" : "Pop",
+          "items" : [ {
+            "id" : 1,
+            "image" : "assets/images/avatar/21.jpg",
+            "price" : "$13.95",
+            "subtitle" : "18 songs",
+            "title" : "Liam Hughes"
+          }, {
+            "id" : 2,
+            "image" : "assets/images/avatar/20.jpg",
+            "price" : "$3.89",
+            "subtitle" : "13 songs",
+            "title" : "Yasmine Hassan"
+          }, {
+            "id" : 3,
+            "image" : "assets/images/avatar/19.jpg",
+            "price" : "$45.06",
+            "subtitle" : "58 songs",
+            "title" : "Fatima Hussein"
+          }, {
+            "id" : 4,
+            "image" : "assets/images/avatar/18.jpg",
+            "price" : "$56.66",
+            "subtitle" : "34 songs",
+            "title" : "Mia Vegt"
+          }, {
+            "id" : 5,
+            "image" : "assets/images/avatar/17.jpg",
+            "price" : "$6.78",
+            "subtitle" : "43 songs",
+            "title" : "Amina Mohan"
+          } ]
+        }, {
+          "groupName" : "Rock",
+          "items" : [ {
+            "id" : 1,
+            "image" : "assets/images/avatar/16.jpg",
+            "price" : "$13.99",
+            "subtitle" : "53 songs",
+            "title" : "Jéssica Baptista"
+          }, {
+            "id" : 2,
+            "image" : "assets/images/avatar/15.jpg",
+            "price" : "$19.99",
+            "subtitle" : "31 songs",
+            "title" : "Ana Rodrigues"
+          }, {
+            "id" : 3,
+            "image" : "assets/images/avatar/14.jpg",
+            "price" : "$7.99",
+            "subtitle" : "23 songs",
+            "title" : "Diana Oliveira"
+          }, {
+            "id" : 4,
+            "image" : "assets/images/avatar/13.jpg",
+            "price" : "$45.99",
+            "subtitle" : "45 songs",
+            "title" : "Ariana Barros"
+          }, {
+            "id" : 5,
+            "image" : "assets/images/avatar/12.jpg",
+            "price" : "$39.75",
+            "subtitle" : "64 songs",
+            "title" : "Bárbara Lima"
+          } ]
+        }, {
+          "groupName" : "Pop and Rock",
+          "items" : [ {
+            "id" : 1,
+            "image" : "assets/images/avatar/11.jpg",
+            "price" : "$34.59",
+            "subtitle" : "67 songs",
+            "title" : "Theresa Mason"
+          }, {
+            "id" : 2,
+            "image" : "assets/images/avatar/10.jpg",
+            "price" : "$44.99",
+            "subtitle" : "40 songs",
+            "title" : "Samantha Kennedy"
+          }, {
+            "id" : 3,
+            "image" : "assets/images/avatar/9.jpg",
+            "price" : "$89.45",
+            "subtitle" : "74 songs",
+            "title" : "Alice Kelly"
+          }, {
+            "id" : 4,
+            "image" : "assets/images/avatar/24.jpg",
+            "price" : "$3.10",
+            "subtitle" : "80 songs",
+            "title" : "Caitlin Wilkinson"
+          } ]
+        }, {
+          "groupName" : "Bluz",
+          "items" : [ {
+            "id" : 1,
+            "image" : "assets/images/avatar/20.jpg",
+            "price" : "$77.99",
+            "subtitle" : "180 songs",
+            "title" : "Jennifer Robertson"
+          }, {
+            "id" : 2,
+            "image" : "assets/images/avatar/19.jpg",
+            "price" : "$7.39",
+            "subtitle" : "85 songs",
+            "title" : "Jennifer Robertson"
+          }, {
+            "id" : 3,
+            "image" : "assets/images/avatar/18.jpg",
+            "price" : "$13.99",
+            "subtitle" : "10 songs",
+            "title" : "Amanda Smith"
+          }, {
+            "id" : 4,
+            "image" : "assets/images/avatar/17.jpg",
+            "price" : "$75.95",
+            "subtitle" : "120 songs",
+            "title" : "Eileen Owen"
+          } ]
+        } ]
+      },
+      "layout2" : {
+        "items" : [ {
+          "groupName" : "Shirts",
+          "items" : [ {
+            "buy" : "buy",
+            "id" : 1,
+            "image1" : "assets/images/background/34.jpg",
+            "image2" : "assets/images/avatar/11.jpg",
+            "image3" : "assets/images/avatar/12.jpg",
+            "image4" : "assets/images/avatar/13.jpg",
+            "image5" : "assets/images/avatar/14.jpg",
+            "image6" : "assets/images/avatar/15.jpg",
+            "image7" : "assets/images/avatar/16.jpg",
+            "price" : "$33.99",
+            "subtitle" : "Free shipping"
+          }, {
+            "buy" : "buy",
+            "id" : 2,
+            "image1" : "assets/images/background/3.jpg",
+            "image2" : "assets/images/avatar/17.jpg",
+            "image3" : "assets/images/avatar/19.jpg",
+            "image4" : "assets/images/avatar/20.jpg",
+            "image5" : "assets/images/avatar/21.jpg",
+            "image6" : "assets/images/avatar/22.jpg",
+            "image7" : "assets/images/avatar/23.jpg",
+            "price" : "$28.17",
+            "subtitle" : "Free shipping"
+          } ]
+        }, {
+          "groupName" : "Shoes",
+          "items" : [ {
+            "buy" : "buy",
+            "id" : 1,
+            "image1" : "assets/images/background/36.jpg",
+            "image2" : "assets/images/avatar/18.jpg",
+            "image3" : "assets/images/avatar/19.jpg",
+            "image4" : "assets/images/avatar/16.jpg",
+            "image5" : "assets/images/avatar/17.jpg",
+            "image6" : "assets/images/avatar/22.jpg",
+            "image7" : "assets/images/avatar/23.jpg",
+            "price" : "$31.99",
+            "subtitle" : "Free shipping"
+          }, {
+            "buy" : "buy",
+            "id" : 2,
+            "image1" : "assets/images/background/16.jpg",
+            "image2" : "assets/images/avatar/18.jpg",
+            "image3" : "assets/images/avatar/16.jpg",
+            "image4" : "assets/images/avatar/15.jpg",
+            "image5" : "assets/images/avatar/19.jpg",
+            "image6" : "assets/images/avatar/21.jpg",
+            "image7" : "assets/images/avatar/24.jpg",
+            "price" : "$25.69",
+            "subtitle" : "Free shipping"
+          }, {
+            "buy" : "buy",
+            "id" : 3,
+            "image1" : "assets/images/background/37.jpg",
+            "image2" : "assets/images/avatar/17.jpg",
+            "image3" : "assets/images/avatar/18.jpg",
+            "image4" : "assets/images/avatar/19.jpg",
+            "image5" : "assets/images/avatar/15.jpg",
+            "image6" : "assets/images/avatar/21.jpg",
+            "image7" : "assets/images/avatar/20.jpg",
+            "price" : "$13.66",
+            "subtitle" : "Free shipping"
+          } ]
+        }, {
+          "groupName" : "Jacket",
+          "items" : [ {
+            "buy" : "buy",
+            "id" : 1,
+            "image1" : "assets/images/background/38.jpg",
+            "image2" : "assets/images/avatar/18.jpg",
+            "image3" : "assets/images/avatar/17.jpg",
+            "image4" : "assets/images/avatar/16.jpg",
+            "image5" : "assets/images/avatar/15.jpg",
+            "image6" : "assets/images/avatar/22.jpg",
+            "image7" : "assets/images/avatar/23.jpg",
+            "price" : "$17.89",
+            "subtitle" : "Free shipping"
+          }, {
+            "buy" : "buy",
+            "id" : 2,
+            "image1" : "assets/images/background/34.jpg",
+            "image2" : "assets/images/avatar/11.jpg",
+            "image3" : "assets/images/avatar/17.jpg",
+            "image4" : "assets/images/avatar/18.jpg",
+            "image5" : "assets/images/avatar/19.jpg",
+            "image6" : "assets/images/avatar/18.jpg",
+            "image7" : "assets/images/avatar/10.jpg",
+            "price" : "$55.01",
+            "subtitle" : "Free shipping"
+          }, {
+            "buy" : "buy",
+            "id" : 3,
+            "image1" : "assets/images/background/35.jpg",
+            "image2" : "assets/images/avatar/17.jpg",
+            "image3" : "assets/images/avatar/18.jpg",
+            "image4" : "assets/images/avatar/19.jpg",
+            "image5" : "assets/images/avatar/15.jpg",
+            "image6" : "assets/images/avatar/12.jpg",
+            "image7" : "assets/images/avatar/13.jpg",
+            "price" : "$14.45",
+            "subtitle" : "Free shipping"
+          } ]
+        }, {
+          "groupName" : "T-Shirt",
+          "items" : [ {
+            "buy" : "buy",
+            "id" : 1,
+            "image1" : "assets/images/background/36.jpg",
+            "image2" : "assets/images/avatar/15.jpg",
+            "image3" : "assets/images/avatar/16.jpg",
+            "image4" : "assets/images/avatar/17.jpg",
+            "image5" : "assets/images/avatar/18.jpg",
+            "image6" : "assets/images/avatar/20.jpg",
+            "image7" : "assets/images/avatar/23.jpg",
+            "price" : "$17.99",
+            "subtitle" : "Free shipping"
+          }, {
+            "buy" : "buy",
+            "id" : 2,
+            "image1" : "assets/images/background/34.jpg",
+            "image2" : "assets/images/avatar/17.jpg",
+            "image3" : "assets/images/avatar/16.jpg",
+            "image4" : "assets/images/avatar/15.jpg",
+            "image5" : "assets/images/avatar/19.jpg",
+            "image6" : "assets/images/avatar/23.jpg",
+            "image7" : "assets/images/avatar/24.jpg",
+            "price" : "$44.99",
+            "subtitle" : "Free shipping"
+          } ]
+        } ]
+      },
+      "layout3" : {
+        "items" : [ {
+          "dateTime" : "January 19, 2018.",
+          "groupName" : "Yesterday",
+          "items" : [ {
+            "id" : 1,
+            "image" : "assets/images/avatar/9.jpg",
+            "name" : "Adeline O'Reilly",
+            "shareIcon" : "more",
+            "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe nderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu",
+            "title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }, {
+            "id" : 2,
+            "image" : "assets/images/avatar/10.jpg",
+            "name" : "Valentina Fritsch",
+            "shareIcon" : "more",
+            "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe nderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu",
+            "title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+          } ]
+        }, {
+          "dateTime" : "June 26, 2018.",
+          "groupName" : "Today",
+          "items" : [ {
+            "id" : 1,
+            "image" : "assets/images/avatar/11.jpg",
+            "name" : "Reanna Langosh",
+            "shareIcon" : "more",
+            "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe nderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu",
+            "title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }, {
+            "id" : 2,
+            "image" : "assets/images/avatar/12.jpg",
+            "name" : "Theresia Bechtelar",
+            "shareIcon" : "more",
+            "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe nderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu",
+            "title" : "Lorem ipsum dolor sit amet."
+          } ]
+        }, {
+          "dateTime" : "August 07, 2018.",
+          "groupName" : "tomorrow",
+          "items" : [ {
+            "id" : 1,
+            "image" : "assets/images/avatar/13.jpg",
+            "name" : "Jena Lesch",
+            "shareIcon" : "more",
+            "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe nderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu",
+            "title" : "Lorem ipsum dolor sit amet, consectetur."
+          }, {
+            "id" : 2,
+            "image" : "assets/images/avatar/14.jpg",
+            "name" : "Yesenia Beer",
+            "shareIcon" : "more",
+            "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe nderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu",
+            "title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          } ]
+        } ]
+      }
+    },
+    "swipeToDismiss" : {
+      "layout1" : {
+        "button" : "Ok",
+        "header" : "Inbox",
+        "items" : [ {
+          "delate" : "Delete",
+          "icon" : "ios-information-circle-outline",
+          "id" : 1,
+          "reply" : "Reply",
+          "subtitle" : "AIGA Design Conference",
+          "textIcon" : "6min ago",
+          "title" : "Erica Romaguera"
+        }, {
+          "delate" : "Delete",
+          "icon" : "ios-information-circle-outline",
+          "id" : 2,
+          "reply" : "Reply",
+          "subtitle" : "An Event Apart",
+          "textIcon" : "58min ago",
+          "title" : "Lucas Schultz"
+        }, {
+          "delate" : "Delete",
+          "icon" : "ios-information-circle-outline",
+          "id" : 3,
+          "reply" : "Reply",
+          "subtitle" : "Core 77 Conference",
+          "textIcon" : "92min ago",
+          "title" : "Nia Gutkowski"
+        }, {
+          "delate" : "Delete",
+          "icon" : "ios-information-circle-outline",
+          "id" : 4,
+          "reply" : "Reply",
+          "subtitle" : "London Design Festival",
+          "textIcon" : "93min ago",
+          "title" : "Jailyn Pagac"
+        }, {
+          "delate" : "Delete",
+          "icon" : "ios-information-circle-outline",
+          "id" : 5,
+          "reply" : "Reply",
+          "subtitle" : "NeoCon",
+          "textIcon" : "43min ago",
+          "title" : "Giovani Romaguera"
+        }, {
+          "delate" : "Delete",
+          "icon" : "ios-information-circle-outline",
+          "id" : 6,
+          "reply" : "Reply",
+          "subtitle" : "New York Times Cities for Tomorrow",
+          "textIcon" : "62min ago",
+          "title" : "Hector McLaughlin"
+        }, {
+          "delate" : "Delete",
+          "icon" : "ios-information-circle-outline",
+          "id" : 7,
+          "reply" : "Reply",
+          "subtitle" : "Salone del Mobile Milano",
+          "textIcon" : "81min ago",
+          "title" : "Cristina Murphy"
+        }, {
+          "delate" : "Delete",
+          "icon" : "ios-information-circle-outline",
+          "id" : 8,
+          "reply" : "Reply",
+          "subtitle" : "Creative Mornings",
+          "textIcon" : "51min ago",
+          "title" : "Sonny McLaughlin"
+        } ],
+        "subtitle" : "Mark all messages as read.",
+        "title" : "8 new mesages"
+      },
+      "layout2" : {
+        "header" : "Followings",
+        "items" : [ {
+          "delate" : "Delete",
+          "id" : 1,
+          "image" : "assets/images/avatar/9.jpg",
+          "ionBadge" : "Follow",
+          "subtitle" : "Lorem ipsum dolor sit amet, consectetur",
+          "title" : "Isabel Anguiano"
+        }, {
+          "delate" : "Delete",
+          "id" : 2,
+          "image" : "assets/images/avatar/10.jpg",
+          "ionBadge" : "Follow",
+          "subtitle" : "Lorem ipsum dolor sit amet, consectetur",
+          "title" : "Iria Mascareñas"
+        }, {
+          "delate" : "Delete",
+          "id" : 3,
+          "image" : "assets/images/avatar/11.jpg",
+          "ionBadge" : "Follow",
+          "subtitle" : "Lorem ipsum dolor sit amet, consectetur",
+          "title" : "Maria Cardenas"
+        }, {
+          "delate" : "Delete",
+          "id" : 4,
+          "image" : "assets/images/avatar/12.jpg",
+          "ionBadge" : "Follow",
+          "subtitle" : "Lorem ipsum dolor sit amet, consectetur",
+          "title" : "Silvia Salvador"
+        }, {
+          "delate" : "Delete",
+          "id" : 5,
+          "image" : "assets/images/avatar/13.jpg",
+          "ionBadge" : "Follow",
+          "subtitle" : "Lorem ipsum dolor sit amet, consectetur",
+          "title" : "Marina Vidal"
+        }, {
+          "delate" : "Delete",
+          "id" : 6,
+          "image" : "assets/images/avatar/14.jpg",
+          "ionBadge" : "Follow",
+          "subtitle" : "Lorem ipsum dolor sit amet, consectetur",
+          "title" : "Sara Alcántarl"
+        }, {
+          "delate" : "Delete",
+          "id" : 7,
+          "image" : "assets/images/avatar/15.jpg",
+          "ionBadge" : "Follow",
+          "subtitle" : "Lorem ipsum dolor sit amet, consectetur",
+          "title" : "Gabriela Reyes"
+        }, {
+          "delate" : "Delete",
+          "id" : 8,
+          "image" : "assets/images/avatar/16.jpg",
+          "ionBadge" : "Follow",
+          "subtitle" : "Lorem ipsum dolor sit amet, consectetur",
+          "title" : "Alice Kelly"
+        }, {
+          "delate" : "Delete",
+          "id" : 9,
+          "image" : "assets/images/avatar/17.jpg",
+          "ionBadge" : "Follow",
+          "subtitle" : "Lorem ipsum dolor sit amet, consectetur",
+          "title" : "Fiona Edwards"
+        } ]
+      },
+      "layout3" : {
+        "items" : [ {
+          "delate" : "Delete",
+          "id" : 1,
+          "image" : "assets/images/background/10.jpg",
+          "subtitle" : "Pre-sale",
+          "title" : "Acoustic Guitars"
+        }, {
+          "delate" : "Delete",
+          "id" : 2,
+          "image" : "assets/images/background/13.jpg",
+          "subtitle" : "Order now!",
+          "title" : "Bass guitar"
+        }, {
+          "delate" : "Delete",
+          "id" : 3,
+          "image" : "assets/images/background/15.jpg",
+          "subtitle" : "Pre-sale",
+          "title" : "Classical guitar"
+        }, {
+          "delate" : "Delete",
+          "id" : 4,
+          "image" : "assets/images/background/10.jpg",
+          "subtitle" : "Pre-sale",
+          "title" : "Acoustic Guitars"
+        }, {
+          "delate" : "Delete",
+          "id" : 5,
+          "image" : "assets/images/background/13.jpg",
+          "subtitle" : "Order now!",
+          "title" : "Bass guitar"
+        }, {
+          "delate" : "Delete",
+          "id" : 6,
+          "image" : "assets/images/background/15.jpg",
+          "subtitle" : "Pre-sale",
+          "title" : "Classical guitar"
+        } ]
+      }
+    }
+  },
+  "login" : {
+   
+      "background" : "assets/images/background/28.jpg",
+      "errorPassword" : "Field can't be empty.",
+      "errorUser" : "Field can't be empty.",
+      "forgotPassword" : "Forgot password?",
+      "labelPassword" : "PASSWORD",
+      "labelUsername" : "USERNAME",
+      "login" : "Login",
+      "logo" : "assets/images/logo/1.png",
+      "password" : "Enter your password",
+      "register" : "Register",
+      "skip" : "Skip",
+      "subtitle" : "Welcome",
+      "title" : "Login to your account",
+      "username" : "Enter your username"
+    
+  },
+  "maps" : {
+    "layout1" : {
+      "contentDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus semper elit platea; Velit aptent euismod pede euismod facilisis? In ultrices venenatis mauris. Consequat gravida pretium ligula lectus; Lacus natoque elit elit: Imperdiet cursus fermentum suspendisse; Cum iaculis venenatis!",
+      "contentTitle" : "The iconic restaurant that has defined the term power lunch since 1959 is the one and only Four Seasons.",
+      "email" : "dev@csform.com",
+      "headerTitle" : "GMAPS + Location  Details",
+      "icon" : "checkmark-circle",
+      "iconsStars" : [ {
+        "iconActive" : "icon-star",
+        "iconInactive" : "icon-star-outline",
+        "isActive" : true
+      }, {
+        "iconActive" : "icon-star",
+        "iconInactive" : "icon-star-outline",
+        "isActive" : true
+      }, {
+        "iconActive" : "icon-star",
+        "iconInactive" : "icon-star-outline",
+        "isActive" : true
+      }, {
+        "iconActive" : "icon-star",
+        "iconInactive" : "icon-star-outline",
+        "isActive" : true
+      }, {
+        "iconActive" : "icon-star",
+        "iconInactive" : "icon-star-outline",
+        "isActive" : false
+      } ],
+      "location" : "Design street, New York, USA",
+      "map" : {
+        "lat" : 40.712562,
+        "lng" : -74.005911,
+        "mapTypeControl" : true,
+        "streetViewControl" : true,
+        "zoom" : 15
+      },
+      "phone" : "33 222 11",
+      "reviews" : "4.12 (78 reviews)",
+      "time" : "8:00 to 16:00 working days",
+      "title" : "Best Restaurants for Power Lunches",
+      "webSite" : "www.csform.com"
+    },
+    "layout2" : {
+      "contentDescription" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus semper elit platea; Velit aptent euismod pede euismod facilisis? In ultrices venenatis mauris. Consequat gravida pretium ligula lectus; Lacus natoque elit elit: Imperdiet cursus fermentum suspendisse; Cum iaculis venenatis!",
+      "contentTitle" : "About us",
+      "email" : "dev@csform.com",
+      "headerTitle" : "GMAPS + About Us",
+      "icon" : "checkmark-circle",
+      "location" : "Design street, New York, USA",
+      "map" : {
+        "lat" : 40.712562,
+        "lng" : -74.005911,
+        "mapTypeControl" : true,
+        "streetViewControl" : true,
+        "zoom" : 15
+      },
+      "phone" : "33 222 11",
+      "time" : "8:00 to 16:00 working days",
+      "title" : "Creative Studio Form",
+      "titleDescription" : "Design & Development agency",
+      "titleMap" : "Here we are :",
+      "webSite" : "www.csform.com"
+    },
+    "layout3" : {
+      "headerTitle" : "Full Screen View",
+      "map" : {
+        "lat" : 40.712562,
+        "lng" : -74.005911,
+        "mapTypeControl" : true,
+        "streetViewControl" : true,
+        "zoom" : 15
+      },
+      "title" : "Your location"
+    }
+  },
+  "menu" : {
+    "background" : "assets/images/background/16.jpg",
+    "image" : "assets/images/logo/logo.png",
+    "title" : "Ionic 3 / Angular 6 UI Theme / Template App - Multipurpose Starter App - Orange Light"
+  },
+  "parallax" : {
+    "layout1" : {
+      "headerImage" : "assets/images/background/9.jpg",
+      "headerTitle" : "Showbiz",
+      "items" : [ {
+        "button" : "READ",
+        "id" : 1,
+        "image" : "assets/images/avatar/9.jpg",
+        "imageAlt" : "avatar",
+        "subtitle" : "Aenean pretium nunc vel rhoncus.",
+        "title" : "Victoria Simpson"
+      }, {
+        "button" : "READ",
+        "id" : 2,
+        "image" : "assets/images/avatar/10.jpg",
+        "imageAlt" : "avatar",
+        "subtitle" : "Aenean pretium nunc vel rhoncus.",
+        "title" : "Samantha Reynolds"
+      }, {
+        "button" : "READ",
+        "id" : 3,
+        "image" : "assets/images/avatar/11.jpg",
+        "imageAlt" : "avatar",
+        "subtitle" : "Aenean pretium nunc vel rhoncus.",
+        "title" : "Stacey Harris"
+      }, {
+        "button" : "READ",
+        "id" : 4,
+        "image" : "assets/images/avatar/12.jpg",
+        "imageAlt" : "avatar",
+        "subtitle" : "Aenean pretium nunc vel rhoncus.",
+        "title" : "Jacqueline Guyon"
+      }, {
+        "button" : "READ",
+        "id" : 5,
+        "image" : "assets/images/avatar/13.jpg",
+        "imageAlt" : "avatar",
+        "subtitle" : "Aenean pretium nunc vel rhoncus.",
+        "title" : "Mia Langevoort"
+      }, {
+        "button" : "READ",
+        "id" : 6,
+        "image" : "assets/images/avatar/14.jpg",
+        "imageAlt" : "avatar",
+        "subtitle" : "Aenean pretium nunc vel rhoncus.",
+        "title" : "Amy Simsek"
+      }, {
+        "button" : "READ",
+        "id" : 7,
+        "image" : "assets/images/avatar/15.jpg",
+        "imageAlt" : "avatar",
+        "subtitle" : "Aenean pretium nunc vel rhoncus.",
+        "title" : "Charlotte Sital"
+      }, {
+        "button" : "READ",
+        "id" : 8,
+        "image" : "assets/images/avatar/16.jpg",
+        "imageAlt" : "avatar",
+        "subtitle" : "Aenean pretium nunc vel rhoncus.",
+        "title" : "Iria Padrón"
+      }, {
+        "button" : "READ",
+        "id" : 9,
+        "image" : "assets/images/avatar/17.jpg",
+        "imageAlt" : "avatar",
+        "subtitle" : "Aenean pretium nunc vel rhoncus.",
+        "title" : "Laura Sarabia"
+      }, {
+        "button" : "READ",
+        "id" : 10,
+        "image" : "assets/images/avatar/18.jpg",
+        "imageAlt" : "avatar",
+        "subtitle" : "Aenean pretium nunc vel rhoncus.",
+        "title" : "Alexia Bañuelos"
+      }, {
+        "button" : "READ",
+        "id" : 11,
+        "image" : "assets/images/avatar/19.jpg",
+        "imageAlt" : "avatar",
+        "subtitle" : "Aenean pretium nunc vel rhoncus.",
+        "title" : "Erika Quiroz"
+      }, {
+        "button" : "READ",
+        "id" : 12,
+        "image" : "assets/images/avatar/20.jpg",
+        "imageAlt" : "Presque Isle Harbor",
+        "subtitle" : "Aenean pretium nunc vel rhoncus.",
+        "title" : "Emma Banda"
+      } ],
+      "subtitle" : "Startup Pitches",
+      "title" : "Engage real-time"
+    },
+    "layout2" : {
+      "avatar" : "assets/images/avatar/22.jpg",
+      "headerImage" : "assets/images/background/40.jpg",
+      "headerTitle" : "Profile",
+      "items" : [ {
+        "avatar" : "assets/images/avatar/16.jpg",
+        "button" : "Follow",
+        "id" : 1,
+        "subtitle" : "@abbie",
+        "title" : "Abbie Kelly"
+      }, {
+        "avatar" : "assets/images/avatar/17.jpg",
+        "button" : "Follow",
+        "id" : 2,
+        "subtitle" : "@luna",
+        "title" : "Luna Adorno"
+      }, {
+        "avatar" : "assets/images/avatar/18.jpg",
+        "button" : "Follow",
+        "id" : 3,
+        "subtitle" : "@tara",
+        "title" : "Tara Saunders"
+      }, {
+        "avatar" : "assets/images/avatar/19.jpg",
+        "button" : "Follow",
+        "id" : 4,
+        "subtitle" : "@amy",
+        "title" : "Amy Lee"
+      }, {
+        "avatar" : "assets/images/avatar/20.jpg",
+        "button" : "Follow",
+        "id" : 5,
+        "subtitle" : "@silvia",
+        "title" : "Silvia Salvador"
+      }, {
+        "avatar" : "assets/images/avatar/21.jpg",
+        "button" : "Follow",
+        "id" : 6,
+        "subtitle" : "@patrick",
+        "title" : "Patrick Wright"
+      }, {
+        "avatar" : "assets/images/avatar/22.jpg",
+        "button" : "Follow",
+        "id" : 7,
+        "subtitle" : "@gabriel",
+        "title" : "Gabriel Mascareñas"
+      }, {
+        "avatar" : "assets/images/avatar/23.jpg",
+        "button" : "Follow",
+        "id" : 8,
+        "subtitle" : "@Marina654",
+        "title" : "Marin Vidal"
+      } ],
+      "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "title" : "Bruce Wilkerson"
+    },
+    "layout3" : {
+      "headerImage" : "assets/images/background/9.jpg",
+      "headerTitle" : "Product",
+      "items" : [ {
+        "button" : "$63.99",
+        "category" : "NEW OFFER",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "id" : 1,
+        "productDescriptions" : [ {
+          "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "id" : 1
+        }, {
+          "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          "id" : 2
+        }, {
+          "description" : "Passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum",
+          "id" : 3
+        }, {
+          "description" : "Passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum",
+          "id" : 4
+        } ],
+        "subtitle" : "Available Now",
+        "title" : "Super & Black",
+        "titleDescription" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy"
+      } ],
+      "shareIcon" : "more"
+    },
+    "layout4" : {
+      "avatar" : "assets/images/avatar/24.jpg",
+      "category" : "ENGINEERING",
+      "headerImage" : "assets/images/background/5.jpg",
+      "headerTitle" : "News",
+      "items" : [ {
+        "id" : 1,
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }, {
+        "id" : 2,
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "title" : "Lorem ipsum dolor sit amet"
+      }, {
+        "id" : 3,
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+        "title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }, {
+        "id" : 4,
+        "subtitle" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "title" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      } ],
+      "shareIcon" : "more",
+      "subtitle" : "by Myrtle Stiedemann",
+      "title" : "Infinit bridge made in China."
+    }
+  },
+  "radioButton" : {
+    "layout1" : {
+      "items" : [ {
+        "id" : 1,
+        "title" : "The Gambia"
+      }, {
+        "id" : 2,
+        "title" : "Ecuador"
+      }, {
+        "id" : 4,
+        "title" : "Czechia"
+      }, {
+        "id" : 3,
+        "title" : "Brunei"
+      }, {
+        "id" : 5,
+        "title" : "Madagascar"
+      }, {
+        "id" : 6,
+        "title" : "Kuwait"
+      }, {
+        "id" : 7,
+        "title" : "Liechtenstein"
+      }, {
+        "id" : 8,
+        "title" : "Kiribati"
+      }, {
+        "id" : 9,
+        "title" : "Hungarya"
+      }, {
+        "id" : 10,
+        "title" : "Fiji"
+      }, {
+        "id" : 11,
+        "title" : "Serbia"
+      }, {
+        "id" : 12,
+        "title" : "Saint Lucia"
+      }, {
+        "id" : 13,
+        "title" : "Portugal"
+      } ],
+      "selectedItem" : 3,
+      "title" : "Your country"
+    },
+    "layout2" : {
+      "items" : [ {
+        "avatar" : "assets/images/avatar/24.jpg",
+        "id" : 1,
+        "subtitle" : "@tara333",
+        "title" : "Tara Saunders"
+      }, {
+        "avatar" : "assets/images/avatar/23.jpg",
+        "id" : 2,
+        "subtitle" : "@daniel",
+        "title" : "Daniel Perrin"
+      }, {
+        "avatar" : "assets/images/avatar/22.jpg",
+        "id" : 4,
+        "subtitle" : "@jackson",
+        "title" : "Jackson Phillips"
+      }, {
+        "avatar" : "assets/images/avatar/21.jpg",
+        "id" : 3,
+        "subtitle" : "@antoine",
+        "title" : "Antoine Chevallier"
+      }, {
+        "avatar" : "assets/images/avatar/20.jpg",
+        "id" : 5,
+        "subtitle" : "@jessica",
+        "title" : "Jessica White"
+      }, {
+        "avatar" : "assets/images/avatar/19.jpg",
+        "id" : 6,
+        "subtitle" : "@jessica",
+        "title" : "Laetitia Duhamel"
+      }, {
+        "avatar" : "assets/images/avatar/18.jpg",
+        "id" : 7,
+        "subtitle" : "@sylvie",
+        "title" : "Sylvie Rey"
+      }, {
+        "avatar" : "assets/images/avatar/17.jpg",
+        "id" : 8,
+        "subtitle" : "@julie44",
+        "title" : "Julie Lewis"
+      }, {
+        "avatar" : "assets/images/avatar/16.jpg",
+        "id" : 9,
+        "subtitle" : "@layla",
+        "title" : "Layla Chapman"
+      }, {
+        "avatar" : "assets/images/avatar/15.jpg",
+        "id" : 10,
+        "subtitle" : "@charlotte",
+        "title" : "Charlotte Pelletier"
+      } ],
+      "selectedItem" : 4,
+      "title" : "Following"
+    },
+    "layout3" : {
+      "items" : [ {
+        "id" : 1,
+        "subtitle" : "United States",
+        "title" : "New York Citys"
+      }, {
+        "id" : 2,
+        "subtitle" : "France",
+        "title" : "Paris"
+      }, {
+        "id" : 4,
+        "subtitle" : "Turkey",
+        "title" : "Istanbul"
+      }, {
+        "id" : 3,
+        "subtitle" : "‎Japan",
+        "title" : "Tokyo"
+      }, {
+        "id" : 5,
+        "subtitle" : "Russia",
+        "title" : "Moscow"
+      }, {
+        "id" : 6,
+        "subtitle" : "Mexico",
+        "title" : "Mexico City"
+      }, {
+        "id" : 7,
+        "subtitle" : "Brazil",
+        "title" : "Rio de Janeiro"
+      }, {
+        "id" : 8,
+        "subtitle" : "Germany",
+        "title" : "Berlin"
+      }, {
+        "id" : 9,
+        "subtitle" : "Spain",
+        "title" : "Madrid"
+      }, {
+        "id" : 10,
+        "subtitle" : "United Kingdom",
+        "title" : "London"
+      }, {
+        "id" : 11,
+        "subtitle" : "China",
+        "title" : "Shanghai"
+      }, {
+        "id" : 12,
+        "subtitle" : "South Korea",
+        "title" : "Seoul"
+      }, {
+        "id" : 13,
+        "subtitle" : "Egypt",
+        "title" : "Cairo"
+      } ],
+      "selectedItem" : 4,
+      "title" : "Loctions"
+    }
+  },
+  "range" : {
+    "layout1" : {
+      "layout1" : {
+        "iconLeft" : "sunny",
+        "iconRight" : "sunny",
+        "title" : "BASIC",
+        "value" : 0
+      },
+      "layout2" : {
+        "iconLeft" : "volume-mute",
+        "iconRight" : "volume-up",
+        "max" : "200",
+        "min" : "-200",
+        "title" : "WITH ICONS",
+        "value" : 0
+      },
+      "layout3" : {
+        "max" : "2000",
+        "min" : "1000",
+        "step" : "100",
+        "title" : "WITH PREDEFINED STEPS",
+        "value" : 0
+      },
+      "layout4" : {
+        "max" : "2000",
+        "min" : "1000",
+        "step" : "100",
+        "textLeft" : "0",
+        "textRight" : "100",
+        "title" : "Two sliders",
+        "value" : {
+          "lower" : 10,
+          "upper" : 25
+        }
+      },
+      "title" : "Range button"
+    }
+  },
+  "ranges" : {
+    "layout1" : {
+      "title" : "BASIC",
+      "value" : 10
+    },
+    "layout2" : {
+      "iconLeft" : "volume-mute",
+      "iconRight" : "volume-up",
+      "max" : "200",
+      "min" : "-200",
+      "title" : "WITH ICONS",
+      "value" : 0
+    },
+    "layout3" : {
+      "max" : "2000",
+      "min" : "1000",
+      "step" : "100",
+      "textLeft" : "A",
+      "textRight" : "A",
+      "title" : "WITH PREDEFINED STEPS",
+      "value" : 20
+    },
+    "layout4" : {
+      "max" : "100",
+      "min" : "1",
+      "step" : "10",
+      "textLeft" : "1",
+      "textRight" : "10",
+      "title" : "TWO SLIDERS",
+      "value" : {
+        "lower" : 20,
+        "upper" : 70
+      }
+    }
+  },
+  "register" : {
+   
+      "background" : "assets/images/background/2.jpg",
+      "city" : "Your home town",
+      "country" : "Where are you from?",
+      "email" : "Your e-mail address",
+      "errorCity" : "Field can't be empty.",
+      "errorCountry" : "Field can't be empty",
+      "errorEmail" : "Invalid email address.",
+      "errorPassword" : "Field can't be empty.",
+      "errorUser" : "Field can't be empty.",
+      "lableCity" : "CITY",
+      "lableCountry" : "COUNTRY",
+      "lableEmail" : "E-MAIL",
+      "lablePassword" : "PASSWORD",
+      "lableUsername" : "USERNAME",
+      "password" : "Enter your password",
+      "register" : "register",
+      "title" : "Register",
+      "toolbarTitle" : "Register + image",
+      "username" : "Enter your username"
+  
+  },
+  "searchBars" : {
+    "layout1" : {
+      "headerTitle" : "Simple",
+      "items" : [ {
+        "image" : "assets/images/background/1.jpg",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Friends"
+      }, {
+        "image" : "assets/images/background/2.jpg",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Enemies"
+      }, {
+        "image" : "assets/images/background/3.jpg",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Neutral"
+      }, {
+        "image" : "assets/images/background/4.jpg",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Family"
+      }, {
+        "image" : "assets/images/background/5.jpg",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Guests"
+      }, {
+        "image" : "assets/images/background/6.jpg",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Students"
+      }, {
+        "image" : "assets/images/background/7.jpg",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Friends"
+      }, {
+        "image" : "assets/images/background/8.jpg",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Enemies"
+      }, {
+        "image" : "assets/images/background/9.jpg",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Neutral"
+      } ]
+    },
+    "layout2" : {
+      "headerImage" : "assets/images/background/1.jpg",
+      "headerTitle" : "Field + header",
+      "items" : [ {
+        "avatar" : "assets/images/avatar/1.jpg",
+        "button" : "BUY",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "iPhone 8"
+      }, {
+        "avatar" : "assets/images/avatar/2.jpg",
+        "button" : "BUY",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "500+"
+      }, {
+        "avatar" : "assets/images/avatar/3.jpg",
+        "button" : "BUY",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Watch Black"
+      }, {
+        "avatar" : "assets/images/avatar/4.jpg",
+        "button" : "BUY",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Canon Photoaparat"
+      }, {
+        "avatar" : "assets/images/avatar/5.jpg",
+        "button" : "BUY",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "50mm"
+      }, {
+        "avatar" : "assets/images/avatar/6.jpg",
+        "button" : "BUY",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Nikon Photoaparat"
+      }, {
+        "avatar" : "assets/images/avatar/7.jpg",
+        "button" : "BUY",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Sony PS 4"
+      }, {
+        "avatar" : "assets/images/avatar/8.jpg",
+        "button" : "BUY",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Watch New"
+      }, {
+        "avatar" : "assets/images/avatar/1.jpg",
+        "button" : "BUY",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "iPhone 8"
+      } ],
+      "title" : "Just type"
+    },
+    "layout3" : {
+      "headerTitle" : "Field + header 2",
+      "items" : [ {
+        "avatar" : "assets/images/avatar/22.jpg",
+        "detail" : "Berlin",
+        "id" : 1,
+        "subtitle" : "@justine",
+        "title" : "Justine Robinson"
+      }, {
+        "avatar" : "assets/images/avatar/23.jpg",
+        "detail" : "Casablanca",
+        "id" : 2,
+        "subtitle" : "@alexa6543",
+        "title" : "Alexa Richardson"
+      }, {
+        "avatar" : "assets/images/avatar/24.jpg",
+        "detail" : "Cape Town",
+        "id" : 3,
+        "subtitle" : "@abbie453",
+        "title" : "Abbie Wilson"
+      }, {
+        "avatar" : "assets/images/avatar/19.jpg",
+        "detail" : "New Taipei City",
+        "id" : 4,
+        "subtitle" : "@christopher",
+        "title" : "Christopher Walker"
+      }, {
+        "avatar" : "assets/images/avatar/20.jpg",
+        "detail" : "Jakarta",
+        "id" : 5,
+        "subtitle" : "@lizzie",
+        "title" : "Lizzie Rose"
+      }, {
+        "avatar" : "assets/images/avatar/21.jpg",
+        "detail" : "São Paulo",
+        "id" : 6,
+        "subtitle" : "@tanya",
+        "title" : "Tanya Miller"
+      }, {
+        "avatar" : "assets/images/avatar/16.jpg",
+        "detail" : "Guangzhou",
+        "id" : 7,
+        "subtitle" : "@theresa",
+        "title" : "Theresa Stewart"
+      }, {
+        "avatar" : "assets/images/avatar/17.jpg",
+        "detail" : "Shanghai",
+        "id" : 8,
+        "subtitle" : "@helena44",
+        "title" : "Helena Scott"
+      } ],
+      "title" : "Search Friends"
+    }
+  },
+  "select" : {
+    "layout1" : {
+      "header" : "Basic dialog",
+      "items" : [ {
+        "id" : 12,
+        "title" : "New York"
+      }, {
+        "id" : 14,
+        "title" : "Paris"
+      }, {
+        "id" : 13,
+        "title" : "Amsterdam"
+      }, {
+        "id" : 15,
+        "title" : "Gotham City"
+      } ],
+      "selectedItem" : 12,
+      "title" : "City"
+    },
+    "layout2" : {
+      "header" : "One touch dialog",
+      "items" : [ {
+        "id" : 22,
+        "title" : "USA"
+      }, {
+        "id" : 24,
+        "title" : "France"
+      }, {
+        "id" : 23,
+        "title" : "Netherland"
+      }, {
+        "id" : 25,
+        "title" : "Gothamland"
+      } ],
+      "selectedItem" : 22,
+      "title" : "Country"
+    },
+    "layout3" : {
+      "header" : "With Action sheet",
+      "items" : [ {
+        "id" : 31,
+        "title" : "Choose address"
+      }, {
+        "id" : 32,
+        "title" : "222 Duffield Street"
+      }, {
+        "id" : 34,
+        "title" : "198 Clark Street"
+      }, {
+        "id" : 33,
+        "title" : "588 Kenmore Terrace"
+      } ],
+      "selectedItem" : 31,
+      "title" : "Address"
+    },
+    "layout4" : {
+      "header" : "Two option select",
+      "itemsMonth" : [ {
+        "id" : 38,
+        "title" : "January"
+      }, {
+        "id" : 39,
+        "title" : "February"
+      }, {
+        "id" : 40,
+        "title" : "March"
+      }, {
+        "id" : 41,
+        "title" : "April"
+      }, {
+        "id" : 42,
+        "title" : "May"
+      }, {
+        "id" : 43,
+        "title" : "June"
+      }, {
+        "id" : 44,
+        "title" : "July"
+      }, {
+        "id" : 45,
+        "title" : "August"
+      }, {
+        "id" : 46,
+        "title" : "September"
+      }, {
+        "id" : 47,
+        "title" : "October"
+      }, {
+        "id" : 48,
+        "title" : "November"
+      }, {
+        "id" : 49,
+        "title" : "December"
+      } ],
+      "itemsYears" : [ {
+        "id" : 50,
+        "title" : "2009"
+      }, {
+        "id" : 51,
+        "title" : "2010"
+      }, {
+        "id" : 52,
+        "title" : "2011"
+      }, {
+        "id" : 53,
+        "title" : "2012"
+      }, {
+        "id" : 54,
+        "title" : "2013"
+      }, {
+        "id" : 55,
+        "title" : "2014"
+      }, {
+        "id" : 56,
+        "title" : "2015"
+      }, {
+        "id" : 57,
+        "title" : "2016"
+      }, {
+        "id" : 58,
+        "title" : "2017"
+      } ],
+      "selectedItemMonth" : 38,
+      "selectedItemYear" : 50,
+      "title" : "Date"
+    },
+    "layout5" : {
+      "header" : "One touch dialog",
+      "items" : [ {
+        "id" : 22,
+        "title" : "USA"
+      }, {
+        "id" : 24,
+        "title" : "France"
+      }, {
+        "id" : 23,
+        "title" : "Netherland"
+      }, {
+        "id" : 25,
+        "title" : "Gothamland"
+      } ],
+      "selectedItem" : 22,
+      "title" : "Country"
+    },
+    "layout6" : {
+      "header" : "Two option select",
+      "itemsMonth" : [ {
+        "id" : 38,
+        "title" : "January"
+      }, {
+        "id" : 39,
+        "title" : "February"
+      }, {
+        "id" : 40,
+        "title" : "March"
+      }, {
+        "id" : 41,
+        "title" : "April"
+      }, {
+        "id" : 42,
+        "title" : "May"
+      }, {
+        "id" : 43,
+        "title" : "June"
+      }, {
+        "id" : 44,
+        "title" : "July"
+      }, {
+        "id" : 45,
+        "title" : "August"
+      }, {
+        "id" : 46,
+        "title" : "September"
+      }, {
+        "id" : 47,
+        "title" : "October"
+      }, {
+        "id" : 48,
+        "title" : "November"
+      }, {
+        "id" : 49,
+        "title" : "December"
+      } ],
+      "itemsYears" : [ {
+        "id" : 50,
+        "title" : "2009"
+      }, {
+        "id" : 51,
+        "title" : "2010"
+      }, {
+        "id" : 52,
+        "title" : "2011"
+      }, {
+        "id" : 53,
+        "title" : "2012"
+      }, {
+        "id" : 54,
+        "title" : "2013"
+      }, {
+        "id" : 55,
+        "title" : "2014"
+      }, {
+        "id" : 56,
+        "title" : "2015"
+      }, {
+        "id" : 57,
+        "title" : "2016"
+      }, {
+        "id" : 58,
+        "title" : "2017"
+      } ],
+      "selectedItemMonth" : 38,
+      "selectedItemYear" : 50,
+      "title" : "Date"
+    },
+    "title" : "Select"
+  },
+  "tab" : {
+    "tab1" : {
+      "header" : "List Frends",
+      "items" : [ {
+        "avatar" : "assets/images/avatar/24.jpg",
+        "follow" : "follow",
+        "subtitle" : "@theresa.mason",
+        "title" : "Theresa Mason"
+      }, {
+        "avatar" : "assets/images/avatar/23.jpg",
+        "follow" : "follow",
+        "subtitle" : "@edward.chapman",
+        "title" : "Edward Chapman"
+      }, {
+        "avatar" : "assets/images/avatar/22.jpg",
+        "follow" : "follow",
+        "subtitle" : "@liam.hughes",
+        "title" : "Liam Hughes"
+      }, {
+        "avatar" : "assets/images/avatar/21.jpg",
+        "follow" : "follow",
+        "subtitle" : "@thomas.bonnet",
+        "title" : "Thomas Bonnet"
+      }, {
+        "avatar" : "assets/images/avatar/20.jpg",
+        "follow" : "follow",
+        "subtitle" : "@caitlin.wilkinson",
+        "title" : "Caitlin Wilkinson"
+      }, {
+        "avatar" : "assets/images/avatar/19.jpg",
+        "follow" : "follow",
+        "subtitle" : "@isabelle.barthelemy",
+        "title" : "Isabelle Barthelemy"
+      }, {
+        "avatar" : "assets/images/avatar/18.jpg",
+        "follow" : "follow",
+        "subtitle" : "@samantha.ennedy",
+        "title" : "Samantha Kennedy"
+      } ]
+    },
+    "tab10" : {
+      "headerTitle" : "News",
+      "items" : [ {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/0.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$23.06",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/2.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$31.16",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/3.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$38.66",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/4.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$40.99",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/5.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$63.66",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      } ]
+    },
+    "tab11" : {
+      "items" : [ {
+        "avatar" : "assets/images/avatar/9.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Violeta Barros"
+      }, {
+        "avatar" : "assets/images/avatar/11.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Ariana Barros"
+      }, {
+        "avatar" : "assets/images/avatar/13.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Juliana Henriques"
+      }, {
+        "avatar" : "assets/images/avatar/15.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Isabel Anguiano"
+      }, {
+        "avatar" : "assets/images/avatar/17.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Benedita Abreu"
+      }, {
+        "avatar" : "assets/images/avatar/19.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Maria Cardenas"
+      }, {
+        "avatar" : "assets/images/avatar/21.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Luis Saavedra"
+      } ]
+    },
+    "tab12" : {
+      "items" : [ {
+        "avatar" : "assets/images/avatar/23.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Fernando Ortíz"
+      }, {
+        "avatar" : "assets/images/avatar/24.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Nia Gutkowskin"
+      }, {
+        "avatar" : "assets/images/avatar/22.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Lucas Schultz"
+      }, {
+        "avatar" : "assets/images/avatar/20.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Camila Hintz"
+      }, {
+        "avatar" : "assets/images/avatar/18.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Silvia Correa"
+      }, {
+        "avatar" : "assets/images/avatar/16.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Anna Yost"
+      }, {
+        "avatar" : "assets/images/avatar/14.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Teresa Puga"
+      } ]
+    },
+    "tab13" : {
+      "items" : [ {
+        "avatar" : "assets/images/avatar/24.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Eula Wolff"
+      }, {
+        "avatar" : "assets/images/avatar/9.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Velda White"
+      }, {
+        "avatar" : "assets/images/avatar/10.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Daniela Bustamante"
+      }, {
+        "avatar" : "assets/images/avatar/11.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Patricia Flórez"
+      }, {
+        "avatar" : "assets/images/avatar/12.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Viola Bauch"
+      }, {
+        "avatar" : "assets/images/avatar/13.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Helena Garibay"
+      }, {
+        "avatar" : "assets/images/avatar/14.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Martina Brito"
+      } ]
+    },
+    "tab14" : {
+      "items" : [ {
+        "avatar" : "assets/images/avatar/15.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Aya Gaona"
+      }, {
+        "avatar" : "assets/images/avatar/16.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Yasmine Hassan"
+      }, {
+        "avatar" : "assets/images/avatar/17.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Livia Koning"
+      }, {
+        "avatar" : "assets/images/avatar/18.jpg",
+        "price" : "get",
+        "subtitle" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title" : "Sara Varela"
+      } ]
+    },
+    "tab2" : {
+      "header" : "List Frends",
+      "items" : [ {
+        "avatar" : "assets/images/avatar/17.jpg",
+        "follow" : "follow",
+        "subtitle" : "@isabel.villar",
+        "title" : "Isabel Villar"
+      }, {
+        "avatar" : "assets/images/avatar/16.jpg",
+        "follow" : "follow",
+        "subtitle" : "@silvia.salvador",
+        "title" : "Silvia Salvador"
+      }, {
+        "avatar" : "assets/images/avatar/15.jpg",
+        "follow" : "follow",
+        "subtitle" : "@marguerite.thibault",
+        "title" : "Marguerite Thibault"
+      }, {
+        "avatar" : "assets/images/avatar/14.jpg",
+        "follow" : "follow",
+        "subtitle" : "@marianne.maillet",
+        "title" : "Marianne Maillet"
+      }, {
+        "avatar" : "assets/images/avatar/13.jpg",
+        "follow" : "follow",
+        "subtitle" : "@julie.martins",
+        "title" : "Julie Martins"
+      }, {
+        "avatar" : "assets/images/avatar/12.jpg",
+        "follow" : "follow",
+        "subtitle" : "@sofia.zepeda",
+        "title" : "Sofia Zepeda"
+      }, {
+        "avatar" : "assets/images/avatar/11.jpg",
+        "follow" : "follow",
+        "subtitle" : "@nathalie.voisin",
+        "title" : "Nathalie Voisin"
+      } ]
+    },
+    "tab3" : {
+      "header" : "List Frends",
+      "items" : [ {
+        "avatar" : "assets/images/avatar/10.jpg",
+        "follow" : "follow",
+        "subtitle" : "@anne.lesage",
+        "title" : "Anne Lesage"
+      }, {
+        "avatar" : "assets/images/avatar/9.jpg",
+        "follow" : "follow",
+        "subtitle" : "@vera.mertens",
+        "title" : "Vera Mertens"
+      }, {
+        "avatar" : "assets/images/avatar/24.jpg",
+        "follow" : "follow",
+        "subtitle" : "@lilli.sauter",
+        "title" : "Lilli Sauter"
+      }, {
+        "avatar" : "assets/images/avatar/22.jpg",
+        "follow" : "follow",
+        "subtitle" : "@friedhelm.hagen",
+        "title" : "Friedhelm Hagen"
+      }, {
+        "avatar" : "assets/images/avatar/20.jpg",
+        "follow" : "follow",
+        "subtitle" : "@catrin.seidl",
+        "title" : "Catrin Seidl"
+      }, {
+        "avatar" : "assets/images/avatar/18.jpg",
+        "follow" : "follow",
+        "subtitle" : "@juliette.ferreira",
+        "title" : "Juliette Ferreira"
+      }, {
+        "avatar" : "assets/images/avatar/16.jpg",
+        "follow" : "follow",
+        "subtitle" : "@lucia.christ",
+        "title" : "Lucia Christ"
+      } ]
+    },
+    "tab4" : {
+      "header" : "List Frends",
+      "items" : [ {
+        "avatar" : "assets/images/avatar/14.jpg",
+        "follow" : "follow",
+        "subtitle" : "@jacqueline.guyon",
+        "title" : "Jacqueline Guyon"
+      }, {
+        "avatar" : "assets/images/avatar/12.jpg",
+        "follow" : "follow",
+        "subtitle" : "@alice.vieira",
+        "title" : "Alice Vieira"
+      }, {
+        "avatar" : "assets/images/avatar/10.jpg",
+        "follow" : "follow",
+        "subtitle" : "@marine.aubry",
+        "title" : "Marine Aubry"
+      }, {
+        "avatar" : "assets/images/avatar/9.jpg",
+        "follow" : "follow",
+        "subtitle" : "@ana.rodrigues",
+        "title" : "Ana Rodrigues"
+      } ]
+    },
+    "tab5" : {
+      "header" : "List Frends",
+      "items" : [ {
+        "avatar" : "assets/images/avatar/11.jpg",
+        "follow" : "follow",
+        "subtitle" : "@ana.rodrigues",
+        "title" : "Ana Rodrigues"
+      }, {
+        "avatar" : "assets/images/avatar/13.jpg",
+        "follow" : "follow",
+        "subtitle" : "@diana.oliveira",
+        "title" : "Diana Oliveira"
+      }, {
+        "avatar" : "assets/images/avatar/15.jpg",
+        "follow" : "follow",
+        "subtitle" : "@tatiana.abreu",
+        "title" : "Tatiana Abreu"
+      }, {
+        "avatar" : "assets/images/avatar/17.jpg",
+        "follow" : "follow",
+        "subtitle" : "@sofia.zepeda",
+        "title" : "Sofia Zepeda"
+      } ]
+    },
+    "tab6" : {
+      "headerTitle" : "News",
+      "items" : [ {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/1.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$13.66",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/2.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$32.06",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/3.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$45.66",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/4.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$13.69",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/6.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$3.66",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      } ]
+    },
+    "tab7" : {
+      "headerTitle" : "News",
+      "items" : [ {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/6.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$40.66",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/7.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$46.60",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/8.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$13.05",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/9.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$22.56",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/10.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$23.22",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      } ]
+    },
+    "tab8" : {
+      "headerTitle" : "News",
+      "items" : [ {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/7.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$53.66",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/6.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$22.66",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/4.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$23.08",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/3.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$13.14",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/2.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$43.55",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      } ]
+    },
+    "tab9" : {
+      "headerTitle" : "News",
+      "items" : [ {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/8.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$43.01",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/9.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$22.66",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/10.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$23.66",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/11.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$13.16",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      }, {
+        "button" : "Buy",
+        "cardImage" : "assets/images/background/12.jpg",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+        "price" : "$13.11",
+        "shareIcon" : "more",
+        "subtitle" : "Subtitle",
+        "title" : "Lorem ipsum dolor sit 1"
+      } ]
+    }
+  },
+  "toggle" : {
+    "layout1" : {
+      "items" : [ {
+        "avatar" : "assets/images/avatar/9.jpg",
+        "id" : 0,
+        "isChecked" : false,
+        "subtitle" : "theresa.mason@emai",
+        "title" : "Theresa Mason"
+      }, {
+        "avatar" : "assets/images/avatar/10.jpg",
+        "id" : 1,
+        "isChecked" : false,
+        "subtitle" : "laetitia.duhamel@email",
+        "title" : "Laetitia Duhamel"
+      }, {
+        "avatar" : "assets/images/avatar/11.jpg",
+        "id" : 2,
+        "isChecked" : false,
+        "subtitle" : "marine.aubry@email",
+        "title" : "Marine Aubry"
+      }, {
+        "avatar" : "assets/images/avatar/12.jpg",
+        "id" : 3,
+        "isChecked" : false,
+        "subtitle" : "samantha.kennedy@email",
+        "title" : "Samantha Kennedy"
+      }, {
+        "avatar" : "assets/images/avatar/13.jpg",
+        "id" : 4,
+        "isChecked" : false,
+        "subtitle" : "juliette.blondel@email",
+        "title" : "Juliette Blondel"
+      }, {
+        "avatar" : "assets/images/avatar/14.jpg",
+        "id" : 5,
+        "isChecked" : false,
+        "subtitle" : "isabelle.pascal@email",
+        "title" : "Isabelle Pascal"
+      }, {
+        "avatar" : "assets/images/avatar/15.jpg",
+        "id" : 6,
+        "isChecked" : false,
+        "subtitle" : "valentine.roy@email",
+        "title" : "Valentine Roy"
+      }, {
+        "avatar" : "assets/images/avatar/16.jpg",
+        "id" : 7,
+        "isChecked" : false,
+        "subtitle" : "alice.kelly@email",
+        "title" : "Alice Kelly"
+      }, {
+        "avatar" : "assets/images/avatar/17.jpg",
+        "id" : 8,
+        "isChecked" : false,
+        "subtitle" : "caitlin.wilkinson@email",
+        "title" : "Caitlin Wilkinson"
+      }, {
+        "avatar" : "assets/images/avatar/18.jpg",
+        "id" : 9,
+        "isChecked" : false,
+        "subtitle" : "camille.garnier@email",
+        "title" : "Camille Garnier"
+      }, {
+        "avatar" : "assets/images/avatar/19.jpg",
+        "id" : 10,
+        "isChecked" : false,
+        "subtitle" : "suzanne.petit@email",
+        "title" : "Suzanne Petit"
+      }, {
+        "avatar" : "assets/images/avatar/20.jpg",
+        "id" : 11,
+        "isChecked" : false,
+        "subtitle" : "stacey.harris@email",
+        "title" : "Stacey Harris"
+      }, {
+        "avatar" : "assets/images/avatar/21.jpg",
+        "id" : 12,
+        "isChecked" : false,
+        "subtitle" : "jamie.clark@email",
+        "title" : "Jamie Clark"
+      } ],
+      "title" : "With avatars"
+    },
+    "layout2" : {
+      "items" : [ {
+        "id" : 1,
+        "isChecked" : true,
+        "subtitle" : "Danielt",
+        "title" : "bilic@yahoo.com"
+      }, {
+        "id" : 2,
+        "isChecked" : false,
+        "subtitle" : "Manon",
+        "title" : "roussel@yahoo.com"
+      }, {
+        "id" : 4,
+        "isChecked" : false,
+        "subtitle" : "Antoine",
+        "title" : "chevallier@mail.com"
+      }, {
+        "id" : 3,
+        "isChecked" : false,
+        "subtitle" : "Micheli",
+        "title" : "laurent@gmail.com"
+      }, {
+        "id" : 5,
+        "isChecked" : false,
+        "subtitle" : "Laurence",
+        "title" : "delahaye@outlook.com"
+      }, {
+        "id" : 6,
+        "isChecked" : true,
+        "subtitle" : "Pénélope",
+        "title" : "valentin@mail.com"
+      }, {
+        "id" : 7,
+        "isChecked" : false,
+        "subtitle" : "Adèle",
+        "title" : "hebert@mail.com"
+      }, {
+        "id" : 8,
+        "isChecked" : false,
+        "subtitle" : "Monique",
+        "title" : "delattre@yahoo.com"
+      }, {
+        "id" : 9,
+        "isChecked" : false,
+        "subtitle" : "Charles",
+        "title" : "mahe@mail.com"
+      } ],
+      "title" : "Simple 2"
+    },
+    "layout3" : {
+      "items" : [ {
+        "id" : 0,
+        "isChecked" : true,
+        "title" : "United Kingdom"
+      }, {
+        "id" : 1,
+        "isChecked" : false,
+        "title" : "South Africaa"
+      }, {
+        "id" : 2,
+        "isChecked" : false,
+        "title" : "Qatar"
+      }, {
+        "id" : 3,
+        "isChecked" : false,
+        "title" : "Philippines"
+      }, {
+        "id" : 4,
+        "isChecked" : true,
+        "title" : "New Zealand"
+      }, {
+        "id" : 5,
+        "isChecked" : true,
+        "title" : "Mongolia"
+      }, {
+        "id" : 6,
+        "isChecked" : true,
+        "title" : "Luxembourg"
+      }, {
+        "id" : 7,
+        "isChecked" : false,
+        "title" : "Jamaica"
+      }, {
+        "id" : 8,
+        "isChecked" : false,
+        "title" : "India"
+      }, {
+        "id" : 9,
+        "isChecked" : false,
+        "title" : "Grenada"
+      }, {
+        "id" : 10,
+        "isChecked" : false,
+        "title" : "France"
+      }, {
+        "id" : 11,
+        "isChecked" : false,
+        "title" : "Ecuador"
+      }, {
+        "id" : 12,
+        "isChecked" : false,
+        "title" : "Argentina"
+      } ],
+      "title" : "Simple"
+    }
+  },
+  "wizard" : {
+    
+  
+      "btnFinish" : "Finish",
+      "btnNext" : "Next",
+      "items" : [ {
+        "backgroundImage" : "assets/images/background/30.jpg",
+        "subtitle" : "Cosmologist Stephen Hawking",
+        "title" : "Happy Anniversary, Juno! NASA Probe Marks 1 Year at Jupiter."
+      }, {
+        "backgroundImage" : "assets/images/background/27.jpg",
+        "subtitle" : "Bennu is an asteroid",
+        "title" : "Colorful Clouds on Jupiter by Juno"
+      }, {
+        "backgroundImage" : "assets/images/background/31.jpg",
+        "subtitle" : "Light elements clumpeds",
+        "title" : "Best Space Stories of The Week!"
+      } ]
+    
+  }
+}

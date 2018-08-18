@@ -1,0 +1,45 @@
+page-intro {
+
+  .slide-zoom {
+    position: absolute !important;
+    top: 15% !important;
+  // Wizard Content
+  [wizard-content] {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    z-index: 999;
+    position: relative;
+    [wizard-subtitle] {
+      color: color($wizardPage, wizard-subtitle-big-image-text);
+    }
+    [wizard-title] {
+      color: color($wizardPage, wizard-title-big-image-text);
+      font-weight: bold;
+    }
+  }
+}
+  // Button Wizard
+  [button-wizard ] {
+    color: theme-colors('textColors', 'primary') !important;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    z-index: 2;
+    width: 160px;
+    left: 50%;
+    font-weight: 300 !important;
+    margin-left: -80px;
+  }
+
+  // Settings Pagination
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 100px;
+  }
+
+  .swiper-pagination-bullet {
+    background: theme-colors('mainColors', 'accent') !important;
+  }
+
+
+}

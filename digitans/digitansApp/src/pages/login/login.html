@@ -1,0 +1,59 @@
+<!-- Themes Login + logo 2 -->
+<ion-content has-header *ngIf="data != null" background-size [ngStyle]="{'background-image': 'url(' + data.background + ')'}">
+  <ion-grid *ngIf="data != null">
+      <ion-row padding-horizontal align-self-center>
+          <ion-col align-self-start col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+              <button ion-button text-capitalize button-clear clear float-left (click)="onEvent('onSkip')">{{data.skip}}</button>
+              <button ion-button text-capitalize button-clear clear float-right (click)="onEvent('onForgot')">{{data.forgotPassword}}</button>
+          </ion-col>
+          <ion-col align-self-end col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+              <!--DESCRIPTION-->
+              <ion-item transparent no-lines no-padding>
+                <!--LOGO-->
+                <img box-shadow  item-start [src]="data.logo">
+                  <h2 ion-text login-subtitle text-wrap>{{data.subtitle}}</h2>
+                  <h1 login-title text-wrap>{{data.title}}</h1>
+
+              </ion-item>
+          </ion-col>
+          <ion-col align-self-center col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6 form>
+              <!---Input field username-->
+              <ion-item transparent>
+                  <ion-label stacked>{{data.labelUsername}}</ion-label>
+                  <ion-input required placeholder="{{data.username}}" type="text" [(ngModel)]="username"></ion-input>
+                  <ion-label error-field no-margin *ngIf="!isUsernameValid">{{data.errorUser}}</ion-label>
+              </ion-item>
+              <!---Input field password-->
+              <ion-item transparent>
+                  <ion-label stacked>{{data.labelPassword}}</ion-label>
+                  <ion-input required placeholder="{{data.password}}" type="password" [(ngModel)]="password"></ion-input>
+                  <ion-label error-field no-margin *ngIf="!isPasswordValid">{{data.errorPassword}}</ion-label>
+              </ion-item>
+              <!---Login button-->
+              <button ion-button default-button block text-uppercase box-shadow (click)="onEvent('onLogin')">{{data.login}}</button>
+              </ion-col>
+              <ion-col align-self-end text-center col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+              <!---Facebook button-->
+              <button button-icon-clear margin-right box-shadow ion-button icon-only (click)="onEvent('onFacebook')">
+                    <i icon-large class="icon icon-facebook"></i>
+              </button>
+              <!---Twitter button-->
+              <button button-icon-clear margin-right box-shadow ion-button icon-only (click)="onEvent('onTwitter')">
+                <i icon-large class="icon icon-twitter"></i>
+              </button>
+              <!---Pinterest button-->
+              <button button-icon-clear box-shadow ion-button icon-only (click)="onEvent('onPinterest')">
+                <i icon-large class="icon icon-pinterest"></i>
+              </button>
+              <!---Register button-->
+          </ion-col>
+          <ion-col align-self-end col-12 col-sm-12 col-md-12 offset-lg-3 col-lg-6 offset-xl-3 col-xl-6>
+            <div description text-center>
+              <p>Don't have account?</p>
+            </div>
+              <button ion-button default-button block text-uppercase box-shadow (click)="onEvent('onRegister')">{{data.register}}</button>
+          </ion-col>
+          <!---End Share Section-->
+      </ion-row>
+  </ion-grid>
+</ion-content>

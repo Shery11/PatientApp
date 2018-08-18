@@ -1,0 +1,93 @@
+page-register {
+
+ 
+    .scroll-content {
+      margin-top: 0 !important;
+    }
+  
+    .toolbar-ios {
+      min-height: 64px;
+    }
+  
+    .bar-button-default-ios,
+    .toolbar-title-ios {
+      padding-top: 20px;
+    }
+  
+    ion-grid,
+    ion-row {
+      height: 100%;
+    }
+  
+    [form] {
+      padding: 16px 16px 0 16px !important;
+  
+      ion-item {
+        padding-left: 0 !important;
+        padding-bottom: 15px !important;
+  
+        [error-field] {
+          margin: 0 !important;
+          position: absolute !important;
+          bottom: 0 !important;
+          right: 5px !important;
+          font-size: 12px;
+        }
+  
+        .item-inner {
+          border-bottom: none !important;
+          box-shadow: none !important;
+          padding-right: 0 !important;
+        }
+  
+        ion-label {
+          margin: 0 5px !important;
+        }
+  
+        ion-input {
+          background: theme-colors('mainColors', 'primary') !important;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) !important;
+          margin: 9px 10px !important;
+          padding: 5px 10px !important;
+          width: calc(100% - 9px);
+          border-radius: 5px;
+          z-index: 999;
+  
+          .input-cover {
+          display: none;
+          }
+        }
+      }
+  
+      [stacked] {
+        font-size: 10px !important;
+      }
+    }
+    // Settings Background Size
+    [background-size] {
+      height: 40%;
+      position: relative;
+      &::before {
+        content: "";
+        @extend .big-box-shadow;
+      }
+    }
+    // Header Title
+    [register-title] {
+      position: absolute;
+      bottom: 10px;
+      left: 25px;
+      z-index: 999;
+      color: color($register, register-image-title);
+    }
+  
+    [box-shadow-test] {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+    }
+  }
+  
+

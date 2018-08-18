@@ -1,0 +1,81 @@
+page-login {
+
+
+   
+    ion-grid,
+    ion-row {
+      height: 100%;
+    }
+    // Settings Logo
+    img {
+      max-width: 72px;
+      max-height: 72px;
+      margin-bottom: 24px;
+      display: block;
+      border-radius: 8px;
+    }
+  
+    [form] {
+      [default-button] {
+         background: theme-colors('mainColors', 'primary') !important;
+         color: theme-colors('textColors', 'primary') !important;
+     }
+  
+     ion-item {
+       padding-left: 0 !important;
+       padding-bottom: 15px !important;
+  
+       [error-field] {
+         margin: 0 !important;
+         position: absolute !important;
+         bottom: 0 !important;
+         right: 5px !important;
+         font-size: $h6-font-size;
+       }
+       .item-inner {
+         border-bottom: none !important;
+         box-shadow: none !important;
+         padding-right: 0px !important;
+     }
+     ion-label {
+       margin: 0 5px !important;
+     }
+     ion-input {
+       background: theme-colors('mainColors', 'primary') !important;
+       box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2) !important;
+       margin: 9px 10px !important;
+       padding: 5px 10px !important;
+       width: calc(100% - 9px);;
+       border-radius: 5px;
+       z-index: 999;
+       .input-cover {
+         display: none;
+       }
+     }
+    }
+     [stacked] {
+       font-size: 10px !important;
+     }
+    }
+  
+      [login-title] {
+        margin-right: 30%;
+        color: color($loginPage, login-title-logo-2);
+      }
+  
+      [login-subtitle] {
+        color: color($loginPage, login-subtitle-logo-2);
+      }
+      [description] {
+        font-size: 10px !important;
+        font-weight: 400;
+        p {
+        color: theme-colors('textColors', 'primary') !important;
+        margin-top: 0px !important;
+        margin-bottom: 15px !important
+      }
+    }
+  }
+  
+
+
