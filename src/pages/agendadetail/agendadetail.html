@@ -9,30 +9,30 @@
     <ion-navbar color="primary">
       <ion-title *ngIf="data">{{data.name}}</ion-title>
     </ion-navbar>
-  
+
   </ion-header>
-  
-  
+
+
   <ion-content padding>
-  
-  
+
+
     <ion-list *ngIf="data">
-  
+
       <ion-item>
           Place
           <ion-badge color="primary" item-end>{{data.place}}</ion-badge>
       </ion-item>
-  
-     
+
+
       <ion-item>
            Date
           <ion-badge color="primary" item-end>{{data.date | date: 'dd/MM/yyyy'}}</ion-badge>
       </ion-item>
-  
-   
-  
-      
-  
+
+
+
+
+
       <ion-item>
           Note
         <ion-card>
@@ -41,9 +41,8 @@
           </ion-card-content>
         </ion-card>
       </ion-item>
-      
+
     </ion-list>
-  
-     
+
+
   </ion-content>
-  

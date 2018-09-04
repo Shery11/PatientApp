@@ -83,125 +83,162 @@ export class AdddocumentPage {
   }
 
   choose1(source){
+
+
+    if(source=="camera"){
+      this.sourceSelection = this.camera.PictureSourceType.CAMERA;
+   }else if(source=="gallery"){
+      this.sourceSelection = this.camera.PictureSourceType.PHOTOLIBRARY;
+      // alert(source);
+  }
+    this.camera.getPicture({
+        sourceType:this.sourceSelection,
+        destinationType: this.camera.DestinationType.DATA_URL,
+        encodingType: this.camera.EncodingType.JPEG,
+        mediaType: this.camera.MediaType.PICTURE,
+        quality: 100
+     }).then((imageData) => {
+       this.base64Image = "data:image/jpeg;base64," + imageData;
+
+       alert(JSON.stringify(imageData));
+           
+             let loading = this.loadingCtrl.create({
+               content: 'Please wait, saving data...'
+             });
+             const filename = Math.floor(Date.now() / 1000);
+             firebase.storage().ref().child(`images/${filename}.jpg`).
+             putString(this.base64Image, 'data_url').then((snapShot)=>{
+                 this.photoURL = snapShot.downloadURL;
+                 this.filename1 = filename+"";
+                 loading.dismiss();
+             },(err)=>{
+               loading.dismiss();
+               alert(err);
+             });
+    }, (err) => {
+        console.log(err);
+        alert(err);
+       
+    });
      
              
-    if(source=="camera"){
-       this.sourceSelection = this.camera.PictureSourceType.CAMERA;
-    }else if(source=="gallery"){
-       this.sourceSelection = this.camera.PictureSourceType.PHOTOLIBRARY;
-       // alert(source);
-   }
-     this.camera.getPicture({
-         sourceType:this.sourceSelection,
-         destinationType: this.camera.DestinationType.DATA_URL,
-         encodingType: this.camera.EncodingType.JPEG,
-         mediaType: this.camera.MediaType.PICTURE,
-         quality: 100
-      }).then((imageData) => {
-        this.base64Image = "data:image/jpeg;base64," + imageData;
+  //   if(source=="camera"){
+  //      this.sourceSelection = this.camera.PictureSourceType.CAMERA;
+  //   }else if(source=="gallery"){
+  //      this.sourceSelection = this.camera.PictureSourceType.PHOTOLIBRARY;
+  //      // alert(source);
+  //  }
+  //    this.camera.getPicture({
+  //        sourceType:this.sourceSelection,
+  //        destinationType: this.camera.DestinationType.DATA_URL,
+  //        encodingType: this.camera.EncodingType.JPEG,
+  //        mediaType: this.camera.MediaType.PICTURE,
+  //        quality: 100
+  //     }).then((imageData) => {
+  //       this.base64Image = "data:image/jpeg;base64," + imageData;
 
-        alert(JSON.stringify(imageData));
+  //       alert(JSON.stringify(imageData));
            
-        let loading = this.loadingCtrl.create({
-          content: 'Please wait, saving data...'
-        });
-        const filename = Math.floor(Date.now() / 1000);
-        firebase.storage().ref().child(`images/${filename}.jpg`).
-        putString(this.base64Image, 'data_url').then((snapShot)=>{
-            this.photoURL = snapShot.downloadURL;
-            this.filename1 = filename+"";
-            loading.dismiss();
-        },(err)=>{
-          loading.dismiss();
-          alert(err);
-        });
+  //       let loading = this.loadingCtrl.create({
+  //         content: 'Please wait, saving data...'
+  //       });
+  //       const filename = Math.floor(Date.now() / 1000);
+  //       firebase.storage().ref().child(`images/${filename}.jpg`).
+  //       putString(this.base64Image, 'data_url').then((snapShot)=>{
+  //           this.photoURL = snapShot.downloadURL;
+  //           this.filename1 = filename+"";
+  //           loading.dismiss();
+  //       },(err)=>{
+  //         loading.dismiss();
+  //         alert(err);
+  //       });
 
-     }, (err) => {
-         console.log(err);
-         alert(err);
+  //    }, (err) => {
+  //        console.log(err);
+  //        alert(err);
         
-     });
+  //    });
  }
 
  
- choose2(source){
+//  choose2(source){
      
              
-  if(source=="camera"){
-     this.sourceSelection = this.camera.PictureSourceType.CAMERA;
-  }else if(source=="gallery"){
-     this.sourceSelection = this.camera.PictureSourceType.PHOTOLIBRARY;
-     // alert(source);
- }
-   this.camera.getPicture({
-       sourceType:this.sourceSelection,
-       destinationType: this.camera.DestinationType.DATA_URL,
-       encodingType: this.camera.EncodingType.JPEG,
-       mediaType: this.camera.MediaType.PICTURE,
-       quality: 100
-    }).then((imageData) => {
-      this.base64Image = "data:image/jpeg;base64," + imageData;
+//   if(source=="camera"){
+//      this.sourceSelection = this.camera.PictureSourceType.CAMERA;
+//   }else if(source=="gallery"){
+//      this.sourceSelection = this.camera.PictureSourceType.PHOTOLIBRARY;
+//      // alert(source);
+//  }
+//    this.camera.getPicture({
+//        sourceType:this.sourceSelection,
+//        destinationType: this.camera.DestinationType.DATA_URL,
+//        encodingType: this.camera.EncodingType.JPEG,
+//        mediaType: this.camera.MediaType.PICTURE,
+//        quality: 100
+//     }).then((imageData) => {
+//       this.base64Image = "data:image/jpeg;base64," + imageData;
          
-      let loading = this.loadingCtrl.create({
-        content: 'Please wait, saving data...'
-      });
-      const filename = Math.floor(Date.now() / 1000);
-      firebase.storage().ref().child(`images/${filename}.jpg`).
-      putString(this.base64Image, 'data_url').then((snapShot)=>{
-          this.photoURL1 = snapShot.downloadURL;
-          this.filename2 = filename+"";
-          loading.dismiss();
-      },(err)=>{
-        loading.dismiss();
-        alert(err);
-      });
+//       let loading = this.loadingCtrl.create({
+//         content: 'Please wait, saving data...'
+//       });
+//       const filename = Math.floor(Date.now() / 1000);
+//       firebase.storage().ref().child(`images/${filename}.jpg`).
+//       putString(this.base64Image, 'data_url').then((snapShot)=>{
+//           this.photoURL1 = snapShot.downloadURL;
+//           this.filename2 = filename+"";
+//           loading.dismiss();
+//       },(err)=>{
+//         loading.dismiss();
+//         alert(err);
+//       });
 
-   }, (err) => {
-       console.log(err);
-       alert(err);
+//    }, (err) => {
+//        console.log(err);
+//        alert(err);
       
-   });
-}
+//    });
+// }
 
 
-choose3(source){
+// choose3(source){
      
              
-  if(source=="camera"){
-     this.sourceSelection = this.camera.PictureSourceType.CAMERA;
-  }else if(source=="gallery"){
-     this.sourceSelection = this.camera.PictureSourceType.PHOTOLIBRARY;
-     // alert(source);
- }
-   this.camera.getPicture({
-       sourceType:this.sourceSelection,
-       destinationType: this.camera.DestinationType.DATA_URL,
-       encodingType: this.camera.EncodingType.JPEG,
-       mediaType: this.camera.MediaType.PICTURE,
-       quality: 100
-    }).then((imageData) => {
-      this.base64Image = "data:image/jpeg;base64," + imageData;
+//   if(source=="camera"){
+//      this.sourceSelection = this.camera.PictureSourceType.CAMERA;
+//   }else if(source=="gallery"){
+//      this.sourceSelection = this.camera.PictureSourceType.PHOTOLIBRARY;
+//      // alert(source);
+//  }
+//    this.camera.getPicture({
+//        sourceType:this.sourceSelection,
+//        destinationType: this.camera.DestinationType.DATA_URL,
+//        encodingType: this.camera.EncodingType.JPEG,
+//        mediaType: this.camera.MediaType.PICTURE,
+//        quality: 100
+//     }).then((imageData) => {
+//       this.base64Image = "data:image/jpeg;base64," + imageData;
          
-      let loading = this.loadingCtrl.create({
-        content: 'Please wait, saving data...'
-      });
-      const filename = Math.floor(Date.now() / 1000);
-      firebase.storage().ref().child(`images/${filename}.jpg`).
-      putString(this.base64Image, 'data_url').then((snapShot)=>{
-          this.photoURL2 = snapShot.downloadURL;
-          this.filename3 = filename+"";
-          loading.dismiss();
-      },(err)=>{
-        loading.dismiss();
-        alert(err);
-      });
+//       let loading = this.loadingCtrl.create({
+//         content: 'Please wait, saving data...'
+//       });
+//       const filename = Math.floor(Date.now() / 1000);
+//       firebase.storage().ref().child(`images/${filename}.jpg`).
+//       putString(this.base64Image, 'data_url').then((snapShot)=>{
+//           this.photoURL2 = snapShot.downloadURL;
+//           this.filename3 = filename+"";
+//           loading.dismiss();
+//       },(err)=>{
+//         loading.dismiss();
+//         alert(err);
+//       });
 
-   }, (err) => {
-       console.log(err);
-       alert(err);
+//    }, (err) => {
+//        console.log(err);
+//        alert(err);
       
-   });
-}
+//    });
+// }
 
  save(){
   alert(this.category+this.photoURL+this.photoURL1+this.photoURL2);

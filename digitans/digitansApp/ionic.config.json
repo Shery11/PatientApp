@@ -1,7 +1,0 @@
-{
-  "name": "digitansApp",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}

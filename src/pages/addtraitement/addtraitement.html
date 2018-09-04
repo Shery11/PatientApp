@@ -10,60 +10,78 @@
 
 
   <ion-list-header>
-    Add drug
   </ion-list-header>
-      <ion-item>
-  <ion-input placeholder="Drug name" clearInput [(ngModel)]="name" ></ion-input>
-</ion-item>
 
+  <ion-list>
+    <ion-item no-lines>
+      <ion-label color="primary">Drug name</ion-label>
+      <ion-input placeholder="" clearInput [(ngModel)]="name" ></ion-input>
+    </ion-item>
+  </ion-list>
 
-  <ion-list-header>
-  Start
-  </ion-list-header>
 <ion-list>
   <ion-item no-lines>
+    <ion-label color="primary">Start at</ion-label>
     <ion-datetime displayFormat="DD MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
   </ion-item>
 </ion-list>
+<ion-list-header>
+  Moment
+</ion-list-header>
 
-      <ion-list-header>
-      Pick time
-      </ion-list-header>
-
-    <ion-list>
-      <ion-item>
-        <ion-label>Moment</ion-label>
-        <ion-select [(ngModel)]="time">
-          <ion-option value="matin">Morning</ion-option>
-          <ion-option value="midi">Lunch time</ion-option>
-          <ion-option value="soir"> Night </ion-option>
-        </ion-select>
+<ion-grid>
+  <ion-row>
+    <ion-col col-12 col-sm>
+      <ion-item no-lines>
+        <ion-label color="primary">Morning</ion-label>
+        <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [(ngModel)]="time"></ion-datetime>
       </ion-item>
-  </ion-list>
+    </ion-col>
+
+    <ion-col col-12 col-sm>
+      <ion-item no-lines>
+      <ion-label color="primary">Lunch time</ion-label>
+      <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [(ngModel)]="time"></ion-datetime>
+    </ion-item>
+      </ion-col>
+
+    <ion-col col-12 col-sm>
+      <ion-item no-lines>
+      <ion-label color="primary">Night</ion-label>
+      <ion-datetime displayFormat="HH:mm" pickerFormat="HH:mm" [(ngModel)]="time"></ion-datetime>
+    </ion-item>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
+<ion-list-header>
+  Comment
+</ion-list-header>
 
   <ion-list>
-  <ion-item>
-    <ion-textarea placeholder="Add text details" [(ngModel)]="detail"></ion-textarea>
+  <ion-item no-lines>
+    <ion-textarea placeholder="" [(ngModel)]="detail"></ion-textarea>
   </ion-item>
 </ion-list>
 
 
   <ion-list>
-  <ion-item>
-    <ion-label>Stop drug</ion-label>
+  <ion-item no-lines>
+    <ion-label color="primary">Stop drug</ion-label>
     <ion-toggle [(ngModel)]="stop"></ion-toggle>
   </ion-item>
 </ion-list>
 
 <ion-list>
-<ion-item>
+<ion-item no-lines>
+  <ion-label color="primary">Motif d'arrêt</ion-label>
   <ion-textarea placeholder="If stop treatment please add reasons" [(ngModel)]="stoppingDetail"></ion-textarea>
 </ion-item>
 </ion-list>
 
   <ion-list>
     <ion-item no-lines>
-    <ion-label>Stop date </ion-label>
+      <ion-label color="primary">Stop date</ion-label>
     <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="stopDate"></ion-datetime>
     </ion-item>
   </ion-list>

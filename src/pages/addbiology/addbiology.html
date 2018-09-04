@@ -7,21 +7,23 @@
 </ion-header>
 <ion-content>
   <ion-list-header>
-    Date
     </ion-list-header>
+    
   <ion-list>
     <ion-item no-lines>
+      <ion-label color="primary">Dtae</ion-label>
+
       <ion-datetime displayFormat="DD MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
     </ion-item>
   </ion-list>
-  
+
         <ion-list-header>
         Select Category
         </ion-list-header>
-  
+
       <ion-list>
         <ion-item no-lines>
-          <ion-label>Category</ion-label>
+          <ion-label color="primary">Category</ion-label>
           <ion-select [(ngModel)]="catagory">
             <ion-option value="Alat UI/I">Alat- UI/I</ion-option>
             <ion-option value="Asat UI/I">Asat- UI/I</ion-option>
@@ -37,13 +39,13 @@
             <ion-option value="Leucocytes 10^9/I">Leucocytes- 10^9/I</ion-option>
             <ion-option value="Lymphocytes CD4 mm3 ">Lymphocytes CD4- mm3</ion-option>
             <ion-option value="Plaquettes 10^9/I">Plaquettes- 10^9/I</ion-option>
-           
+
             <ion-option value="Sérologies Syphillis VDRL">Sérologies Syphillis- VDRL</ion-option>
             <ion-option value="Tryglycérides mmol/l">Tryglycérides- mmol/l</ion-option>
 
 
 
-            
+
           </ion-select>
         </ion-item>
 
@@ -58,7 +60,7 @@
         <ion-col>
           <button ion-button full (tap)="save()" color="Enregistrer">Save </button>
         </ion-col>
-    
+
         <ion-col>
           <ion-buttons end>
         <button ion-button full (tap)="close()" color="danger">Cancel</button>
@@ -66,5 +68,5 @@
         </ion-col>
       </ion-row>
     </div>
-    
+
 </ion-content>

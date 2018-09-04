@@ -29,24 +29,24 @@ export class ContactPage {
 
       this.loading.present();
       this.storage.get('userKey').then(key=>{
-  
-  
+
+
         console.log(key);
         this.userkey = key;
-  
+
         firebase.database().ref('userProfile/'+key+'/contacts').on('value',snapShot=>{
           console.log(snapShot.val());
           this.loading.dismiss();
-  
+
           this.ContactsArr = snapshotToArray(snapShot);
          this.ContactsArr = this.ContactsArr.reverse();
         })
-  
+
       },err=>{
         alert("unable to get the key");
         this.loading.dismiss();
       })
-  
+
 
   }
 
@@ -100,7 +100,7 @@ export class ContactPage {
             firebase.database().ref('userProfile/'+this.userkey+'/contacts/'+id).remove().then(data=>{
 
               alert("deleted successfully");
-      
+
             }, err=>{
               alert("Try again,Err while deleting");
             });
@@ -132,4 +132,3 @@ export const snapshotToArray = snapshot => {
 
   return returnArr;
 };
-

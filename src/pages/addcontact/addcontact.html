@@ -6,38 +6,52 @@
 
 </ion-header>
 <ion-content>
+
     <ion-list>
       <ion-item no-lines>
-        <ion-input type="text" [(ngModel)]="name" placeholder="Name"></ion-input>
+        <ion-label color="primary">Name</ion-label>
+        <ion-input type="text" [(ngModel)]="name" placeholder=""></ion-input>
       </ion-item>
     </ion-list>
 
   <ion-list>
       <ion-item no-lines>
-        <ion-input type="text" [(ngModel)]="surname" placeholder="Surname"></ion-input>
+        <ion-label color="primary">Surname</ion-label>
+        <ion-input type="text" [(ngModel)]="surname" placeholder=""></ion-input>
       </ion-item>
     </ion-list>
     <ion-list>
       <ion-item no-lines>
-        <ion-input type="text" [(ngModel)]="speciality" placeholder="Spéciality"></ion-input>
+        <ion-label color="primary">Speciality</ion-label>
+        <ion-input type="text" [(ngModel)]="speciality" placeholder=""></ion-input>
       </ion-item>
 </ion-list>
+
 <ion-list>
   <ion-item no-lines>
-    <ion-input type="tel"  [(ngModel)]="phone" placeholder="Phone"></ion-input>
-    <ion-input type="tel" [(ngModel)]="mobile" placeholder="Mobile"></ion-input>
+    <ion-label color="primary">Phone</ion-label>
+    <ion-input type="tel"  [(ngModel)]="phone" placeholder=""></ion-input>
   </ion-item>
 </ion-list>
 
 <ion-list>
   <ion-item no-lines>
-    <ion-input type="email" [(ngModel)]="email" placeholder="Email"></ion-input>
+    <ion-label color="primary">Mobile</ion-label>
+    <ion-input type="tel" [(ngModel)]="mobile" placeholder=""></ion-input>
   </ion-item>
 </ion-list>
 
 <ion-list>
   <ion-item no-lines>
-    <ion-textarea type="textearea" [(ngModel)]="address" placeholder="Address"></ion-textarea>
+    <ion-label color="primary">Email</ion-label>
+    <ion-input type="email" [(ngModel)]="email" placeholder=""></ion-input>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item no-lines>
+    <ion-label color="primary">Address</ion-label>
+    <ion-textarea type="textearea" [(ngModel)]="address" placeholder=""></ion-textarea>
   </ion-item>
 </ion-list>
 

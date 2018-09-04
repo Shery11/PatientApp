@@ -29,11 +29,11 @@ export class MenuPage {
        { title: 'Agenda', pageName: 'TabsPage', tabComponement: 'AgendaPage', index: 3, icon: 'calendar'},
        { title: 'Photo', pageName: 'TabsPage', tabComponement: 'PhotoPage', index: 4, icon: 'camera'},
        { title: 'Notes', pageName: 'NotesPage', icon: 'book'},
-       { title: 'Clinical history', pageName: 'AntecedentsPage', icon: 'paper' },
-       { title: 'Vaccinations', pageName: 'VaccinationsPage', icon: 'paper' },
-       { title: 'Biology', pageName: 'BiologyPage', icon: 'paper' },
-       { title: 'Document', pageName: 'DocumentPage', icon: 'paper' },
-       { title: 'Measurment', pageName: 'MeasurementPage', icon: 'paper' },
+       { title: 'Clinical history', pageName: 'AntecedentsPage', icon: 'archive' },
+       { title: 'Vaccinations', pageName: 'VaccinationsPage', icon: 'medkit' },
+       { title: 'Biology', pageName: 'BiologyPage', icon: 'thermometer' },
+       { title: 'Document', pageName: 'DocumentPage', icon: 'albums' },
+       { title: 'Measurment', pageName: 'MeasurementPage', icon: 'analytics' },
    ]
 
    constructor(public toast: ToastController, public navCtrl: NavController, public navParams: NavParams,public authProvider:AuthProvider) {
@@ -72,20 +72,20 @@ export class MenuPage {
 
   this.authProvider.logoutUser().then(()=>{
 
-    
+
       let toast = this.toast.create({
         message: 'User logged out successfully',
         duration: 1000,
         position: 'top'
       });
-    
+
       toast.onDidDismiss(() => {
         this.navCtrl.setRoot(LoginPage);
       });
-    
+
       toast.present();
-    
-    
+
+
   },err=>{
 
     let toast = this.toast.create({
@@ -93,11 +93,11 @@ export class MenuPage {
       duration: 1000,
       position: 'top'
     });
-  
+
     toast.present();
 
   })
-   
+
  }
 
 

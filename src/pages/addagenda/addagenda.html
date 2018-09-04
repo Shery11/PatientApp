@@ -14,25 +14,31 @@
 
 
 <ion-content padding>
-
-  <ion-item>
-    <ion-label color="primary" stacked>Contact Name</ion-label>
-    <ion-input type="text" placeholder="text" [(ngModel)]="name"></ion-input>
+<ion-list>
+  <ion-item no-lines>
+    <ion-label color="primary">Contact Name</ion-label>
+    <ion-input type="text" placeholder="" [(ngModel)]="name"></ion-input>
   </ion-item>
+</ion-list>
 
-  <ion-item>
-    <ion-label color="primary" stacked>Date</ion-label>
+<ion-list>
+  <ion-item no-lines>
+    <ion-label color="primary">Date</ion-label>
     <ion-datetime displayFormat="DD MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
   </ion-item>
+</ion-list>
 
-  <ion-item>
-    <ion-label color="primary" stacked>Place</ion-label>
-    <ion-input type="text" placeholder="text" [(ngModel)]="place"></ion-input>
+<ion-list>
+  <ion-item no-lines>
+    <ion-label color="primary">Place</ion-label>
+    <ion-input type="text" placeholder="" [(ngModel)]="place"></ion-input>
   </ion-item>
+</ion-list>
 
   <ion-list>
-  <ion-item>
-    <ion-textarea placeholder="Add notes" [(ngModel)]="note"></ion-textarea>
+  <ion-item no-lines>
+    <ion-label color="primary">Note</ion-label>
+    <ion-textarea placeholder="" [(ngModel)]="note"></ion-textarea>
   </ion-item>
   </ion-list>
 

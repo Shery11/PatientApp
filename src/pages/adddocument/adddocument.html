@@ -26,6 +26,15 @@
       <button ion-button (click)="choose1('gallery')" item-end>Upload</button>
     </ion-item>
 
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+         <img [src]="base64Image" *ngIf="base64Image" />
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
     <ion-item>
       <ion-label color="primary">{{filename2}}</ion-label>
       <button ion-button (click)="choose2('gallery')" item-end >Upload</button>

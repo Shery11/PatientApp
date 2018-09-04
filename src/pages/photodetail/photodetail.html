@@ -9,13 +9,13 @@
     <ion-navbar color="primary">
       <ion-title *ngIf="data">Photo Detail</ion-title>
     </ion-navbar>
-  
+
   </ion-header>
-  
-  
+
+
   <ion-content class="card-background-page">
-  
-    
+
+
     <ion-list *ngIf="data">
 
         <ion-item>
@@ -23,12 +23,12 @@
                 <img [src]="data.photoURL"/>
               </ion-card>
         </ion-item>
-  
+
       <ion-item>
           Category
           <ion-badge color="primary" item-end>{{data.category}}</ion-badge>
       </ion-item>
-  
+
      <ion-item>
           Note
         <ion-card>
@@ -37,11 +37,15 @@
           </ion-card-content>
         </ion-card>
       </ion-item>
-      
+
     </ion-list>
 
-    <button ion-button full (click)="share()">Share</button>
-  
-     
+  <ion-fab right bottom>
+  <button ion-fab color="Addpage"><ion-icon name="share"></ion-icon></button>
+  <ion-fab-list side="left">
+    <button ion-fab color="secondary"><ion-icon name="mail"></ion-icon></button>
+  </ion-fab-list>
+</ion-fab>
+
+
   </ion-content>
-  

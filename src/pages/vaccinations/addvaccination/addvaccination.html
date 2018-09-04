@@ -11,7 +11,8 @@
   </ion-list-header>
   <ion-list>
   <ion-item no-lines>
-        <ion-input placeholder="Nom du vaccin" clearInput [(ngModel)]="name"></ion-input>
+    <ion-label color="primary">Nom du vaccin</ion-label>
+        <ion-input placeholder="" clearInput [(ngModel)]="name"></ion-input>
   </ion-item>
 </ion-list>
 
@@ -20,7 +21,7 @@
 </ion-list-header>
 
 <ion-list>
-  <ion-item>
+  <ion-item no-lines>
   <ion-label>Vaccin available 2018</ion-label>
   <ion-select [(ngModel)]="availableVaccines" multiple="true">
     <ion-option>BCG SSI®</ion-option>
@@ -90,10 +91,12 @@
   <ion-datetime displayFormat="MMMM/YYYY" [(ngModel)]="rDate"></ion-datetime>
   </ion-item>
 </ion-list>
-
+<ion-list-header>
+  Details
+</ion-list-header>
   <ion-list>
       <ion-item>
-        <ion-textarea placeholder="Add detais" [(ngModel)]="details"></ion-textarea>
+        <ion-textarea placeholder="" [(ngModel)]="details"></ion-textarea>
       </ion-item>
 
       <button ion-button block outline icon-start (click)="takePicture('camera')">
@@ -103,7 +106,7 @@
         <button ion-button block outline icon-start (click)="takePicture('gallery')">
           <ion-icon name="image"></ion-icon>
         Add photofrom gallery </button>
-      
+
       </ion-list>
 
 
@@ -116,7 +119,7 @@
       </ion-grid>
 
 
-      
+
 
 
   <div padding>
