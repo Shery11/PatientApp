@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Vaccinations</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item-sliding *ngFor="let vaccine of VaccinesArr">
+          <ion-item>
+
+              <h2>{{vaccine.name}}</h2>
+              <p (click)="openDetailPage(vaccine.key)" item-end>{{vaccine.startDate   | date: 'dd/MM/yyyy'}}</p>
+
+              <ion-icon name="arrow-dropright" item-end ></ion-icon>
+
+            </ion-item>
+
+             <ion-item-options icon-left icon-start>
+              <button ion-button color="Addpage" (click)="edit(vaccine.key)">
+                <ion-icon name="open"></ion-icon>
+                Edit
+              </button>
+              <button ion-button color="danger" (click)="delete(vaccine.key)">
+                  <ion-icon name="trash"></ion-icon>
+                  remove
+                </button>
+            </ion-item-options>
+
+          </ion-item-sliding>
+        </ion-list>
+
+
+        <!-- <button (click)="delete('key')">Delete</button>
+        <button (click)="edit('key')">Edit</button> -->
+
+  <ion-fab bottom right #fab>
+    <button ion-fab color="Addpage" (tap)="doVaccinations()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,65 @@
+page-login {
+    .scroll-content{
+        margin-bottom: 0px !important;
+        padding-bottom: 16px !important;
+    }
+
+    .rows{
+        text-align: center;
+        align-content: center;
+        display: flex;
+        border-bottom: 1px solid #000;
+        
+
+    }
+           
+    
+    ion-content{
+     background-color: #ffffff !important;
+    .login_content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        .logo{
+            font-size: 19px;
+            text-align: center;
+            color: color($colors,primary);
+        }
+
+        .login_tabs{
+            .segment-button{
+                color: darken(color($colors,light), 5%);
+                background: color($colors,primary);
+                text-transform: uppercase;
+            &.segment-activated{
+                color:color($colors,light);
+                border-bottom: 4px solid color($colors,secondary);
+            }
+            }
+        }
+
+        .login_form{
+           background: color($colors,light); 
+           .item-ios{
+                border-bottom: 1px solid color($colors,bordercolor) !important;
+                padding: 0;
+                font-size: 14px;
+                ion-icon[item-start]{
+                    margin-top: 14px;
+                    font-size: 20px;
+                    min-width: 30px;
+                    margin-right: 5px;
+                }
+           }
+           .forgetPsw{
+                height: 30px;
+                margin: 0 auto;
+                display: block;
+                font-size: 14px;
+                margin-top: 16px;
+           }
+        }
+      }
+    }    
+}

@@ -1,0 +1,64 @@
+<!--
+  Generated template for the TreatmentdetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="primary">
+      <ion-title *ngIf="data">{{data.startDate | date: 'dd/MM/yyyy'}}</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  
+  
+    <ion-list *ngIf="data">
+  
+      <ion-item>
+          Name
+          <ion-badge color="primary" item-end>{{data.name}}</ion-badge>
+      </ion-item>
+  
+     
+      <ion-item>
+           Reminder Date
+          <ion-badge color="primary" item-end>{{data.remainderDate | date: 'dd/MM/yyyy'}}</ion-badge>
+      </ion-item>
+  
+      <ion-item>
+          Details
+        <ion-card>
+          <ion-card-content text-wrap>
+            {{data.details}}
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+
+      <ion-item>
+          <ion-card>
+              <img [src]="data.photoURL"/>
+            </ion-card>
+      </ion-item>
+  
+    
+     
+     <ion-item>
+        Vaccines  
+         <ion-card>
+          <ion-card-content text-wrap>
+            <ion-item *ngFor=" let vaccine of data.availableVaccines">
+                <ion-badge color="primary">{{vaccine}}</ion-badge>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+      
+    </ion-list>
+  
+     
+  </ion-content>
+  

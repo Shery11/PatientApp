@@ -1,0 +1,66 @@
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title>Add Document</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <ion-list-header>
+    Document
+    </ion-list-header>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Date:</ion-label>
+      <ion-datetime displayFormat="DD MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
+   
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Category:</ion-label>
+      <ion-input placeholder="e.g Biology"  [(ngModel)]="category"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label color="primary">{{filename1}}</ion-label>
+      <button ion-button (click)="choose1('gallery')" item-end>Upload</button>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label color="primary">{{filename2}}</ion-label>
+      <button ion-button (click)="choose2('gallery')" item-end >Upload</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">{{filename3}}</ion-label>
+      <button ion-button (click)="choose3('gallery')" item-end >Upload</button>
+    </ion-item>
+
+
+    
+  
+  
+
+  </ion-list>
+
+
+ 
+       
+
+
+    <div padding>
+      <ion-row>
+        <ion-col>
+          <button ion-button full (tap)="save()" color="Enregistrer">Save </button>
+        </ion-col>
+    
+        <ion-col>
+          <ion-buttons end>
+        <button ion-button full (tap)="close()" color="danger">Cancel</button>
+        </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </div>
+    
+</ion-content>

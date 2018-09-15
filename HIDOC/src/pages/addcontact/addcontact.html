@@ -1,0 +1,71 @@
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title>Add contact</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+    <ion-list>
+      <ion-item no-lines>
+        <ion-input type="text" [(ngModel)]="name" placeholder="Name"></ion-input>
+      </ion-item>
+    </ion-list>
+
+  <ion-list>
+      <ion-item no-lines>
+        <ion-input type="text" [(ngModel)]="surname" placeholder="Surname"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item no-lines>
+        <ion-input type="text" [(ngModel)]="speciality" placeholder="Spéciality"></ion-input>
+      </ion-item>
+</ion-list>
+<ion-list>
+  <ion-item no-lines>
+    <ion-input type="tel"  [(ngModel)]="phone" placeholder="Phone"></ion-input>
+    <ion-input type="tel" [(ngModel)]="mobile" placeholder="Mobile"></ion-input>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item no-lines>
+    <ion-input type="email" [(ngModel)]="email" placeholder="Email"></ion-input>
+  </ion-item>
+</ion-list>
+
+<ion-list>
+  <ion-item no-lines>
+    <ion-textarea type="textearea" [(ngModel)]="address" placeholder="Address"></ion-textarea>
+  </ion-item>
+</ion-list>
+
+<div padding>
+  <ion-row>
+    <ion-col>
+      <button ion-button full (tap)="save()" color="Enregistrer">Save </button>
+    </ion-col>
+
+    <ion-col>
+      <ion-buttons end>
+    <button ion-button full (tap)="close()" color="danger">Cancel</button>
+    </ion-buttons>
+    </ion-col>
+  </ion-row>
+</div>
+
+<ion-list>
+
+  <ion-item>
+    <ion-label>{{contact}}</ion-label>
+  </ion-item>
+
+  <ion-item-sliding *ngFor="let contact of contact">
+  <ion-item-options>
+    <button ion-button icon-only color="danger" (click)="removeContact(contact)"><ion-icon name="trash"></ion-icon></button>
+  </ion-item-options>
+</ion-item-sliding>
+
+</ion-list>
+</ion-content>

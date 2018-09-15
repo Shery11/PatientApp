@@ -1,0 +1,67 @@
+<!--
+  Generated template for the TreatmentdetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title *ngIf="data">{{data.date | date: 'dd/MM/yyyy'}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-list *ngIf="data">
+
+    <ion-item>
+        Name
+        <ion-badge color="primary" item-end>{{data.name}}</ion-badge>
+    </ion-item>
+
+   
+    <ion-item>
+         Time
+        <ion-badge color="primary" item-end>{{data.time}}</ion-badge>
+    </ion-item>
+
+    <ion-item>
+        Details
+      <ion-card>
+        <ion-card-content text-wrap>
+          {{data.detail}}
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+         Stop
+
+         <div *ngIf="data.stop;else other_content" item-end>
+          <ion-badge color="primary" item-end>Yes</ion-badge>
+         </div>
+      
+      <ng-template #other_content item-end><ion-badge color="primary" item-end>No</ion-badge></ng-template>
+        
+    </ion-item>
+    <ion-item>
+        Stop Date
+        <ion-badge color="primary" item-end>{{data.stopDate}}</ion-badge>
+    </ion-item>
+   <ion-item>
+      Stopping Details   
+       <ion-card>
+        <ion-card-content text-wrap>
+          {{data.stoppingDetail}}
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    
+  </ion-list>
+
+   
+</ion-content>

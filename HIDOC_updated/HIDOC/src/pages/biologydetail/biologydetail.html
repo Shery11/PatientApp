@@ -1,0 +1,47 @@
+<!--
+  Generated template for the TreatmentdetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="primary">
+      <ion-title *ngIf="data">{{data.myDate | date: 'dd/MM/yyyy'}}</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  
+  
+    <ion-list *ngIf="data">
+  
+      <ion-item>
+          Catagory
+        <ion-card>
+          <ion-card-content text-wrap>
+              <ion-item>
+                  {{data.catagory}}
+                  <ion-badge color="primary" item-end>{{data.value}}</ion-badge>
+              </ion-item>
+          
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+
+     
+  
+    
+     
+   
+      
+    </ion-list>
+
+
+    <button ion-button full (click)="share()">Share</button> 
+  
+     
+  </ion-content>
+  

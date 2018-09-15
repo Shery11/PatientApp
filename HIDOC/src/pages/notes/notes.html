@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Notes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="card-background-page" >
+    
+
+  <ion-card *ngFor="let image of imagesArr">
+    <img [src]="image.photoURL"/>
+    <div class="card-title" (click)="openDetailPage(image.key)">Click for details</div>
+    <div class="card-subtitle" (click)="edit(image.key)">Click to edit</div>
+  </ion-card>
+  <ion-fab bottom right #fab>
+    <button ion-fab color="add" (tap)="doNotes()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>

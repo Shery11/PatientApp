@@ -1,0 +1,1 @@
+Save data in firebase along with other types habe zone error

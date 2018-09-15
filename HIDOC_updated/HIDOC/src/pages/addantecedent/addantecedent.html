@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+    Add clinical history
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="outer-content">
+  <ion-list-header>
+  </ion-list-header>
+
+    <ion-list>
+      <ion-item no-lines>
+        <ion-label color="primary">Date</ion-label>
+        <ion-datetime displayFormat="DD MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+    <ion-item no-lines>
+      <ion-label color="primary">Clinical history</ion-label>
+      <ion-textarea placeholder="" [(ngModel)]="clinicalHistory"></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-item no-lines>
+        <ion-label color="primary">Drug Intolerance</ion-label>
+        <ion-input [(ngModel)]="drugName" placeholder=""></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+    <ion-item no-lines>
+      <ion-label color="primary">Allergy</ion-label>
+      <ion-textarea placeholder="" [(ngModel)]="clinicalHistory"></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+
+
+    <div padding>
+      <ion-row>
+        <ion-col>
+          <button ion-button full (tap)="saveAntecedent()" color="Enregistrer" [disabled]="!enableform">Save </button>
+        </ion-col>
+
+        <ion-col>
+          <ion-buttons end>
+        <button ion-button full (tap)="close()" color="danger">Cancel</button>
+        </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </div></ion-content>

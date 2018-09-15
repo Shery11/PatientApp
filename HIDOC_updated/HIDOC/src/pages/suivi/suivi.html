@@ -1,0 +1,80 @@
+<ion-header padding-bottom>
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+<ion-item-group>
+        
+        <ion-item-divider color="secondary">
+          <p ion-text class="text-white">
+             Clinical History
+          </p>
+        </ion-item-divider>
+        <ion-item *ngFor="let history of clinicalHistoryArr" >
+
+           
+            <h2>{{history.drug}}</h2>
+            <p item-end>{{history.date | date: 'dd/MM/yyyy' }}</p>
+  
+             
+        </ion-item>
+       
+      
+      </ion-item-group>
+
+
+      <ion-item-group>
+          <ion-item-divider color="primary">
+            <p ion-text class="text-white">
+               Treatments
+            </p>
+          </ion-item-divider>
+          <ion-item *ngFor="let treatment of treatmentArr">  
+            
+            <h2>{{treatment.name}}</h2>
+            <p item-end>{{treatment.date | date: 'dd/MM/yyyy' }}</p>
+  
+              
+          </ion-item>
+        </ion-item-group>
+
+
+        <ion-item-group >
+            <ion-item-divider color="primary">
+              <p ion-text class="text-white">
+                 Vaccines
+              </p>
+            </ion-item-divider>
+            <ion-item *ngFor="let vaccine of vaccinesArr">
+                <h2>{{vaccine.name}}</h2>
+                <p item-end>{{vaccine.startDate | date: 'dd/MM/yyyy' }}</p>
+  
+                
+            </ion-item>
+          </ion-item-group>
+
+          <ion-item-group>
+              <ion-item-divider color="primary">
+                <p ion-text class="text-white">
+                  Measurments
+                </p>
+              </ion-item-divider>
+              <ion-item *ngFor="let measurment of measurmentArr">
+                  <h2>{{measurment.gender}}</h2>
+                  <p item-end>{{measurment.myDate | date: 'dd/MM/yyyy' }}</p>
+  
+  
+                  
+              </ion-item>
+            </ion-item-group>
+
+
+
+</ion-content>
