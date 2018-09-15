@@ -171,38 +171,40 @@ export class AdddocumentPage {
        
     })
 
-   }else if(extension[1]==="docx"){
+   }
+  //  else if(extension[1]==="docx"){
 
-    let blob = new Blob([buffer],{type:"application/vnd.openxmlformats-officedocument.wordprocessingml.document"});
+  //   let blob = new Blob([buffer],{type:"application/vnd.openxmlformats-officedocument.wordprocessingml.document"});
 
-    let storage = firebase.storage();
+  //   let storage = firebase.storage();
  
-    storage.ref('files/'+name).put(blob).then(d=>{
-      // alert("done");
-      if(source == "1"){
-        this.photoURL = d.downloadURL;
-        this.filename1 = name;
-     }else if(source == "2"){
-        this.photoURL1 = d.downloadURL;
-        this.filename2 = name;
-     }else{
-        this.photoURL2 = d.downloadURL
-        this.filename3 = name;
-     }
+  //   storage.ref('files/'+name).put(blob).then(d=>{
+  //     // alert("done");
+  //     if(source == "1"){
+  //       this.photoURL = d.downloadURL;
+  //       this.filename1 = name;
+  //    }else if(source == "2"){
+  //       this.photoURL1 = d.downloadURL;
+  //       this.filename2 = name;
+  //    }else{
+  //       this.photoURL2 = d.downloadURL
+  //       this.filename3 = name;
+  //    }
 
 
 
-     loading.dismiss();
+  //    loading.dismiss();
        
 
-    }).catch(error=>{
-      loading.dismiss();
-      alert("error in storage");
-      alert(JSON.stringify(error));
-    })
+  //   }).catch(error=>{
+  //     loading.dismiss();
+  //     alert("error in storage");
+  //     alert(JSON.stringify(error));
+  //   })
 
-   }else{
-     alert("Invalid format")
+  //  }
+   else{
+     alert("Invalid format,PLease select a pdf file")
      loading.dismiss();
        
    }

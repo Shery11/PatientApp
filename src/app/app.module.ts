@@ -16,8 +16,11 @@ import { AuthProvider } from '../providers/auth/auth';
 import { LoginPage } from '../pages/login/login';
 import { File } from '@ionic-native/file';
 import { FileChooser } from '@ionic-native/file-chooser';
-
+import { FileTransfer } from '@ionic-native/file-transfer';
+import { DocumentViewer } from '@ionic-native/document-viewer';
 import { FilePath } from '@ionic-native/file-path';
+import { FileOpener } from '@ionic-native/file-opener';
+
 
 var config = {
       backButtonText: '',
@@ -55,6 +58,9 @@ var config = {
     File,
     FilePath,
     FileChooser,
+    DocumentViewer,
+    FileTransfer,
+    FileOpener,
     AndroidPermissions,
     Calendar,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
