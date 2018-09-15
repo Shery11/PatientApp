@@ -1,0 +1,61 @@
+
+
+
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title>Add Measurment</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <ion-list-header>
+    Measurment
+    </ion-list-header>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Gender:</ion-label>
+      <ion-input placeholder="Gender"  [(ngModel)]="gender"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">Date:</ion-label>
+      <ion-datetime displayFormat="DD MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
+
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Weight:</ion-label>
+      <ion-input placeholder="(kg)"  [(ngModel)]="weight"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Size:</ion-label>
+      <ion-input placeholder="(cm)"  [(ngModel)]="size"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Temperature:</ion-label>
+      <ion-input placeholder="(`C)"  [(ngModel)]="temperature"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Tension art.:</ion-label>
+      <ion-input placeholder=".../...mmHg"  [(ngModel)]="tensionArt"></ion-input>
+    </ion-item>
+  </ion-list>
+
+
+
+
+    <div padding>
+      <ion-row>
+        <ion-col>
+          <button ion-button full (tap)="save()" color="Enregistrer">Save </button>
+        </ion-col>
+
+        <ion-col>
+          <ion-buttons end>
+        <button ion-button full (tap)="close()" color="danger">Cancel</button>
+        </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </div>
+
+</ion-content>

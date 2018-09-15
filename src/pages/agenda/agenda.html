@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Agenda</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list inset>
+    <ion-item-sliding *ngFor="let agenda of AgendasArr">
+       <ion-item (click)="openDetailPage(agenda.key)">
+      
+          <h2>{{agenda.name}}</h2>
+
+          <ion-item>
+              <p>{{agenda.date   | date: 'dd/MM/yyyy'}}</p>
+              <ion-badge item-start>
+                  <ion-icon name="clock" small></ion-icon>
+              </ion-badge>
+          </ion-item>
+
+          <ion-item >
+              <p>{{agenda.place}}</p>
+              <ion-badge item-start>
+                  <ion-icon name="pin" small></ion-icon>
+              </ion-badge>
+          </ion-item>
+          
+       
+          <ion-icon name="arrow-dropright" item-end ></ion-icon>
+
+        </ion-item> 
+        
+         <ion-item-options icon-left icon-start>
+          <button ion-button color="primary" (click)="edit(agenda.key)">
+            <ion-icon name="open"></ion-icon>
+            Edit
+          </button>
+          <button ion-button color="danger" (click)="delete(agenda.key)">
+              <ion-icon name="trash"></ion-icon>
+              remove
+            </button>
+        </ion-item-options> 
+       
+      </ion-item-sliding>
+    </ion-list>
+  <ion-fab bottom right #fab>
+    <button ion-fab color="Addpage" (tap)="doAgenda()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>

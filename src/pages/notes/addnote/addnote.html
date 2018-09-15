@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title> Add note</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime displayFormat="DD MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+  </ion-list>
+<ion-list>
+    <ion-item>
+      <ion-textarea placeholder="Free notes" [(ngModel)]="note"></ion-textarea>
+    </ion-item>
+
+        <button ion-button block outline icon-start (click)="takePicture('camera')">
+            <ion-icon name="camera"></ion-icon>
+          Take picture</button>
+          <button ion-button block outline icon-start (click)="takePicture('gallery')">
+              <ion-icon name="camera"></ion-icon>
+            Choose From Gallery</button>
+    </ion-list>
+
+    <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+           <img [src]="base64Image" *ngIf="base64Image" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+<div padding>
+  <ion-row>
+    <ion-col>
+      <button ion-button full (tap)="save()" color="Enregistrer">Save </button>
+    </ion-col>
+
+    <ion-col>
+      <ion-buttons end>
+    <button ion-button full (tap)="close()" color="danger">Cancel</button>
+    </ion-buttons>
+    </ion-col>
+  </ion-row>
+</div>
+
+  </ion-content>

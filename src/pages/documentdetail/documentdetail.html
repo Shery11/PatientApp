@@ -1,0 +1,47 @@
+<ion-header>
+
+  <ion-navbar color='primary'>
+    <ion-title *ngIf="data">{{data.category}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <ion-list-header>
+    Document
+    </ion-list-header>
+  <ion-list *ngIf="data">
+      <ion-item>
+        Date
+       <ion-badge color="primary" item-end>{{data.myDate | date: 'dd/MM/yyyy'}}</ion-badge>
+      </ion-item>
+   
+      <ion-item>
+        Category
+       <ion-badge color="primary" item-end>{{data.category}}</ion-badge>
+      </ion-item>
+
+
+    <ion-item *ngIf='data.doc1URL!=""' >
+      <ion-label color="primary">{{data.doc1Name}}</ion-label>
+      <button ion-button (click)="view(data.doc1Name,data.doc1URL)" item-end>View</button>
+    </ion-item>
+
+    <ion-item *ngIf='data.doc2URL!=""'>
+      <ion-label color="primary">{{data.doc2Name}}</ion-label>
+      <button ion-button (click)="view(data.doc2Name,data.doc2URL)" item-end >View</button>
+    </ion-item>
+
+    <ion-item *ngIf='data.doc3URL!=""'>
+      <ion-label color="primary">{{data.doc3Name}}</ion-label>
+      <button ion-button (click)="view(data.doc3Name,data.doc3URL)" item-end >View</button>
+    </ion-item>
+
+
+    
+  
+  
+
+  </ion-list>
+
+    
+</ion-content>
