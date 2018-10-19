@@ -1,0 +1,33 @@
+rest:
+  image: node:7.2-alpine
+  container_name: sharemy-rest
+  ports:
+      - 81:81
+      - 5858:5858
+      - 9229:9229
+  volumes:
+    - .:/opt/sharemy
+  links:
+    - mongo
+    - redis
+  restart: always
+  working_dir: /opt/sharemy
+  command: ["./node_modules/supervisor/lib/cli-wrapper.js", "--inspect", "src"]
+
+mongo:
+  image: mongo:3.4
+  container_name: sharemy-db
+  ports:
+    - 27017:27017
+  volumes:
+    - ./database:/data/db
+  restart: always
+  command: "--auth" 
+
+
+redis:
+  image: redis:3.2-alpine
+  container_name: sharemy-cache
+  ports:
+    - 6379:6379
+  restart: always

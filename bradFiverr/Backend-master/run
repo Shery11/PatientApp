@@ -1,0 +1,45 @@
+#!/bin/bash
+
+#
+# Common commands shortcut
+#
+
+case $1 in
+    ghtml)
+        swagger-codegen generate -i ./build/swagger/rest.yml -l dynamic-html -o dist/dynamic-html
+        ;;
+    gnode)
+        swagger-codegen generate -i ./build/swagger/rest.yml -l nodejs-server -o dist/nodejs-server
+        ;;
+    s3)
+        aws s3 cp build/cloudformation/stack.yml s3://tht-stacks/sharemy.tech/ --profile tht
+        ;;
+    s3-validate)
+        aws cloudformation validate-template --template-url https://tht-stacks.s3.amazonaws.com/sharemy.tech/stack.yml --profile tht
+        ;;
+    npm)
+        docker run -it --rm \
+            -v $(pwd):/code \
+            -w /code --rm \
+            node:7.2-alpine\
+            npm install
+        ;;
+    server)
+         docker-compose up
+#        docker run -it --rm \
+#            -v $(pwd)/src:/code \
+#            -w /code \
+#            -p 80:8080 \
+#            --rm --name sharemy \
+#            node:6.6-slim \
+#            ./node_modules/supervisor/lib/cli-wrapper.js index.js
+        ;;
+    *)
+        echo "Valid commands:"
+        echo "  ghtml"
+        echo "  gnode"
+        echo "  s3"
+        echo "  server"
+        ;;
+esac
+

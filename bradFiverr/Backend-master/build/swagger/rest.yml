@@ -1,0 +1,478 @@
+swagger: '2.0'
+info:
+  title: ShareMy API
+  description: Move your app forward with the sharemy.techt API
+  version: "0.0.1"
+host: api.sharemy.tech
+schemes:
+  - http
+basePath: /v1
+produces:
+  - application/json
+parameters:
+  authorization:
+    name: Authorization
+    in: header
+    description: Authorization method
+    required: true
+    type: string
+      
+paths:
+  /auth/signup:
+    post:
+      summary: Signup
+      description: Create a traditional email + password account on sharemy.tech.
+      tags:
+        - Auth
+      parameters:
+        - $ref: '#/parameters/authorization'
+      responses:
+        200:
+          description: new account creation successful
+          examples:
+            application/json:
+              success: true
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /auth/login:
+    post:
+      summary: Login methods
+      description: |
+        The endpoint returns a 301 redirect to the oAuth app page asking the user
+        to authorize the sharemy.tech app to have access to various information.
+        This will also associate the oAuth user to the apikey.
+        The second time the user tries to login, there will be no more redirects
+        to the oAuth provider.
+      parameters:
+        - $ref: '#/parameters/authorization'
+        - name: userInfo
+          in: body
+          description: User & password
+          schema:
+            $ref: '#/definitions/UserAuth'
+          required: true
+      tags:
+        - Auth
+      responses:
+        200:
+          description: login successful
+          examples:
+            application/json:
+              success: true
+              token: 8768768AE878FBC8778C
+        301:
+          description: redirect to facebook app page for first time login
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /auth/getBasicInfo:
+    get:
+      summary: Get basic user info
+      description: Get basic user info
+      tags: 
+        - Auth
+      parameters:
+        - $ref: '#/parameters/authorization'
+      responses:
+        200:
+          description: Get basic user information, provided by auth login
+          examples: 
+            application/json:
+              email: john@example.com
+              firstName: John
+              lastName: doe
+              profileImageUrl: https://gravatar.com/112312312312312
+          schema:
+            $ref: '#/definitions/UserInfo'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /auth/logout:
+    post:
+      summary: Logout
+      description: Delete user session
+      tags: 
+        - Auth
+      parameters:
+        - $ref: '#/parameters/authorization'
+      responses:
+        200:
+          description: Successful logout
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /payment:
+    post:
+      summary: Start payment
+      description: Send required information for payment, for one of the payment providers
+      tags:
+        - Pay
+      parameters:
+        - $ref: '#/parameters/authorization'
+        - name: payment
+          in: body
+          description: Online payment data
+          schema:
+            $ref: '#/definitions/OnlinePaymentRequest'
+          required: true
+      responses:
+        301:
+          description: redirected to payment processor page
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+    get:
+      summary: Get all payments
+      description: get all payment transactions for current user
+      tags:
+        - Pay
+      parameters:
+        - $ref: '#/parameters/authorization'
+        - name: state
+          in: query
+          required: false
+          type: string
+      responses:
+        200:
+          description: an array of payments
+          schema:
+            title: Payments
+            type: array
+            items:
+              $ref: '#/definitions/OnlinePaymentTransaction'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /user/{userId}/info:
+    get:
+      summary: User info
+      description: Get information about another user
+      tags:
+        - User
+      parameters:
+        - $ref: '#/parameters/authorization'
+        - name: userId
+          in: path
+          required: true
+          type: string
+      responses:
+        200:
+          description: Information about another user
+          schema: 
+            $ref: '#/definitions/PublicUserInfo'
+          examples:
+            application/json:
+              id: 0
+              firstName: Lauren
+              lastName: Bourg
+              summary: Daytime lawyer, weekend cook
+              description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cupiditate ducimus eos esse et id laudantium libero, molestias necessitatibus recusandae repellat tempora, tempore. Ab accusamus aperiam esse nihil nostrum placeat.
+              profileImageUrl: img/profile.png
+              rating: 3
+              ratingVotes: 97
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /vendor/mealEvents/meals:
+    get:
+      summary: Get all meals
+      description: Get a list of meals from vendor1
+      tags:
+        - mealEvents
+      parameters:
+        - $ref: '#/parameters/authorization'
+      responses:
+        200:
+          description: a list of meal events
+          schema:
+            $ref: '#/definitions/Meal'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /vendor/mealEvents/meal/{mealId}:
+    get:
+      summary: Get meal
+      description: Get meal details
+      tags:
+        - mealEvents
+      parameters:
+        - $ref: '#/parameters/authorization'
+        - name: mealId
+          in: path
+          type: number
+          required: true
+          description: id of the meal. Blank for a list of all meals
+      responses:
+        200:
+          description: a list of meal events
+          schema:
+            $ref: '#/definitions/Meal'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /vendor/wineDb/wines:
+    get:
+      summary: Get all wines
+      description: Vendor specific API, returns a list of wines
+      tags:
+        - wineDb
+      parameters:
+        - $ref: '#/parameters/authorization'
+      responses:
+        200:
+          description: list of wines
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Wine'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /vendor/wineDb/wine/{wineId}:
+    get:
+      summary: Get wine info
+      description: Vendor specific API, which exposes wine information
+      tags:
+        - wineDb
+      parameters:
+        - $ref: '#/parameters/authorization'
+        - name: wineId
+          in: path
+          type: string
+          required: true
+          description: Id of the wine. Blank for a list of wines
+      responses:
+        200:
+          description: wine details
+          schema:
+            $ref: '#/definitions/Wine'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /vendor/marketShop/ingredients:
+    get:
+      summary: Get all ingredients
+      description: Get a list of ingredients from vendor3
+      tags:
+        - marketShop
+      parameters:
+        - $ref: '#/parameters/authorization'
+      responses:
+        200:
+          description: a list of all ingredients
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Ingredient'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /vendor/marketShop/ingredient/{ingredientId}:
+    get:
+      summary: Get ingredient
+      description: Get ingredient data
+      tags:
+        - marketShop
+      parameters:
+        - $ref: '#/parameters/authorization'
+        - name: ingredientId
+          in: path
+          type: number
+          required: true
+          description: id of the ingredient. Blank for a list of all ingredients
+      responses:
+        200:
+          description: ingredient details
+          schema:
+            $ref: '#/definitions/Ingredient'
+        default:
+          description: Unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  /status:
+    get:  
+      summary: Status
+      description: Get server status
+      tags:
+        - Status
+      responses:
+        200:
+          description: server status
+          schema:
+            $ref: '#/definitions/Status'
+definitions:
+  UserAuth:
+    type: object
+    properties:
+      provider:
+        type: string
+        description: |
+          can be an oAuth identifier (e.g. facebook, google, github) or 'sharemy' 
+          for local account
+      user:
+        type: string
+        description: only used for sharemytech login
+      pass:
+        type: string
+        description: only used for sharemytech login
+  UserInfo:
+    type: object
+    properties:
+      email: 
+        type: string
+        description: User email
+      firstName:
+        type: string
+        description: User's first name
+      lastName:
+        type: string
+        description: User's last name
+      profileImageUrl:
+        type: string
+        description: Link to a profile picture for the user
+  PublicUserInfo:
+    type: object
+    properties:
+      id:
+        type: number
+      firstName:
+        type: string
+        description: User's first name
+      lastName:
+        type: string
+        description: User's last name
+      profileImageUrl:
+        type: string
+        description: Link to a profile picture for the user
+      summary:
+        type: string
+        description: Short user description
+      description:
+        type: string
+        description: Long user description
+      rating:
+        type: string
+        description: User rating
+      ratingVotes:
+        type: string
+        description: Number of ratings for user
+  OnlinePaymentRequest:
+    type: object
+    properties:
+      amount:
+        type: number
+        format: double
+      email: 
+        type: string
+        description: User email
+      firstName:
+        type: string
+        description: User's first name
+      lastName:
+        type: string
+        description: User's last name
+      provider:
+        type: string
+        description: Online payment provider
+      idReceiver:
+        type: string
+        description: id of the person receiving the payment
+  OnlinePaymentTransaction:
+    type: object
+    properties:
+      transactionId:
+        type: number
+      date: 
+        type: string
+        format: date-time
+      state:
+        type: string
+        description: transaction state
+        enum:
+          - SENT
+          - FINISH
+          - FAIL
+  Meal:
+    type: object
+    properties: 
+      id:
+        type: number
+        description: id 
+      date:
+        type: number
+        format: date-time
+      location:
+        type: string
+      img: 
+        type: string
+        description: link to a meal sample image
+      title: 
+        type: string
+        description: The name of the meal
+      like: 
+        type: number
+        description: Number of positive reviews
+      rating: 
+        type: number
+        description: overall rating
+      hostName:
+        type: string
+        description: The full name of the host
+      idHost: 
+        type: number
+        description: the id of the host 
+      ingredients: 
+        type: array
+        description: Array of ingredients ids 
+        items:
+          type: number
+  Ingredient:
+    type: object
+    properties:
+      id:
+        type: number
+      name:
+        type: string
+        description: ingredient name
+  Wine:
+    type: object
+    properties:
+      id:
+        type: number
+      rating:
+        type: number
+        format: double
+      name:
+        type: string
+        description: wine name
+      description:
+        type: string
+  Status:
+    type: object
+    properties:
+      version:
+        type: integer
+        format: int32
+  Error:
+    type: object
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string
+      fields:
+        type: string
